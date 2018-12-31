@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Helm Charts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/es5.shim/4.4.1/es5-shim.min.js"></script>
+    <script src="https://unpkg.com/js-yaml@3.12.0/dist/js-yaml.min.js"></script>
+    <script src="https://unpkg.com/whatwg-fetch@3.0.0/dist/fetch.umd.js"></script>
+    
+    <h1>Helm Charts</h1>
+    <ul>
+    </ul>
+    <div id="generated"></div>
+    <script type="text/javascript">
+      'use strict';
+      function clearNode(node) {
+        while (node.firstChild) {
+          node.removeChild(node.firstChild);
+        }
+        return node;
+      }
+      fetch('index.yaml').then(response => response.text()).then(text => {
+        const doc = jsyaml.load(text);
+        console.log(doc);
+
+        clearNode(document.getElementById('generated')).appendChild(
+          document.createTextNode(doc.generated.toString())
+        );
+        const ul = clearNode(document.querySelectorAll('ul')[0]);
+        console.log('ul', ul);
+        Object.keys(doc.entries).forEach(chart => {
+          const node = document.createElement("LI");
+          node.appendChild(document.createTextNode(chart));
+          node.appendChild(document.createElement("BR"));
+          node.appendChild(document.createTextNode(doc.entries[chart][0].description));
+          ul.appendChild(node); 
+        });
+      });
+    </script>
+  </body>
+</html>
