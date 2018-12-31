@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  pgadmin:
+  - apiVersion: v1
+    appVersion: "3.6"
+    created: 2018-12-30T20:04:54.731366479-08:00
+    description: pgAdmin is the most popular and feature rich Open Source administration
+      and development platform for PostgreSQL, the most advanced Open Source database
+      in the world.
+    digest: 140dbf9d876067209664010695cd2ec9c87c9d5db1ef2603863859dc9eba9575
+    home: https://www.pgadmin.org/
+    keywords:
+    - pgadmin
+    - postgres
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: pgadmin
+    urls:
+    - pgadmin/pgadmin-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-12-30T20:04:54.730105748-08:00
