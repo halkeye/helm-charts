@@ -3,7 +3,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-01-01T05:08:04.840435149Z
+    created: 2019-01-01T05:36:07.73011104Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -21,7 +21,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-01-01T05:08:04.839694367Z
+    created: 2019-01-01T05:36:07.729320823Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -40,7 +40,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-01-01T05:08:04.841175617Z
+    created: 2019-01-01T05:36:07.730736497Z
     description: Modern web IRC client designed for self-hosting
     digest: dd687fcddf6981c6976298f1e6d226540f95711bd42fb53468be8ef929880b18
     home: https://thelounge.chat/
@@ -57,7 +57,24 @@ entries:
   turtl:
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-01T05:08:04.842622725Z
+    created: 2019-01-01T05:36:07.732897792Z
+    description: The secure, collaborative notebook - Totally private personal database
+      and note taking app.
+    digest: 6ea019e47bbb2b8ccf8b0b444f5f171b7cfbc99776a515ac3a1b2af7a3f6c6f7
+    home: https://turtlapp.com/
+    keywords:
+    - turtl
+    - postgres
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: turtl
+    urls:
+    - turtl/turtl-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v1
+    appVersion: "0.7"
+    created: 2019-01-01T05:36:07.732164555Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3a560ad398b913d622b31dcfdfd1471ec08910524111aea4c9f46dbc3611d771
@@ -74,7 +91,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-01T05:08:04.841890058Z
+    created: 2019-01-01T05:36:07.731464019Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: cc4ffe23aaa87b67a4685fa98653d3f843d4126b7fe13eba1e5d5982548e7a95
@@ -89,4 +106,4 @@ entries:
     urls:
     - turtl/turtl-0.1.0.tgz
     version: 0.1.0
-generated: 2019-01-01T05:08:04.838517554Z
+generated: 2019-01-01T05:36:07.728149872Z
