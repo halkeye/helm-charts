@@ -63,7 +63,7 @@
         console.log('ul', ul);
         Object.keys(doc.entries).forEach(chart => {
           const node = document.createElement("LI");
-          node.appendChild(document.createTextNode(chart));
+          node.appendChild(document.createTextNode(chart + '(' + doc.entries[chart][0].version + ')'));
           node.appendChild(document.createElement("BR"));
           node.appendChild(document.createTextNode(doc.entries[chart][0].description));
           ul.appendChild(node); 
