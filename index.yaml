@@ -3,7 +3,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2018-12-31T07:27:51.28908652Z
+    created: 2019-01-01T04:03:41.40398277Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -21,7 +21,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2018-12-31T07:27:51.288278857Z
+    created: 2019-01-01T04:03:41.403194902Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -40,7 +40,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2018-12-31T07:27:51.289756771Z
+    created: 2019-01-01T04:03:41.404670893Z
     description: Modern web IRC client designed for self-hosting
     digest: dd687fcddf6981c6976298f1e6d226540f95711bd42fb53468be8ef929880b18
     home: https://thelounge.chat/
@@ -54,4 +54,22 @@ entries:
     urls:
     - thelounge/thelounge-0.1.0.tgz
     version: 0.1.0
-generated: 2018-12-31T07:27:51.285216297Z
+  turtl:
+  - apiVersion: v1
+    appVersion: "0.7"
+    created: 2019-01-01T04:03:41.405460561Z
+    description: The secure, collaborative notebook - Totally private personal database
+      and note taking app.
+    digest: 2849c1ebae2533be1a6046784eb6f4fd06bfede3af195feffce076d22833339f
+    home: https://turtlapp.com/
+    keywords:
+    - turtl
+    - postgres
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: turtl
+    urls:
+    - turtl/turtl-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-01-01T04:03:41.401880284Z
