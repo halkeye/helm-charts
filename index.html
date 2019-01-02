@@ -24,10 +24,7 @@
   </head>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/es5.shim/4.4.1/es5-shim.min.js"></script>
-    <script src="https://unpkg.com/js-yaml@3.12.0/dist/js-yaml.min.js"></script>
-    <script src="https://unpkg.com/whatwg-fetch@3.0.0/dist/fetch.umd.js"></script>
-    
+
     <section class="markdown-body">
       <h1>Helm Charts</h1>
 
@@ -44,6 +41,21 @@
     </section>
     <div id="generated"></div>
 
+    <script src="https://cdn.jsdelivr.net/es5.shim/4.4.1/es5-shim.min.js"></script>
+    <script src="https://unpkg.com/js-yaml@3.12.0/dist/js-yaml.min.js"></script>
+    <script src="https://unpkg.com/whatwg-fetch@3.0.0/dist/fetch.umd.js"></script>
+    <script src="https://unpkg.com/blueimp-tmpl@3.11.0/js/tmpl.js"></script>
+    <script type="text/x-tmpl" id="entry">
+      <li>
+        <p>
+          {%= o.name %}
+          (<a href="{%= o.urls[0] %}" title="{%= o.urls[0] %}">{%= o.version %}@{%= o.appVersion %}</a>)
+        </p>
+        <p>
+          {%= o.description %}
+        </p>
+      </li>
+    </script>
     <script type="text/javascript">
       'use strict';
       function clearNode(node) {
@@ -54,21 +66,16 @@
       }
       fetch('index.yaml').then(response => response.text()).then(text => {
         const doc = jsyaml.load(text);
-        console.log(doc);
-
         clearNode(document.getElementById('generated')).appendChild(
           document.createTextNode(doc.generated.toString())
         );
         const ul = clearNode(document.querySelectorAll('ul')[0]);
-        console.log('ul', ul);
+        let lis = '';
         Object.keys(doc.entries).forEach(chart => {
-          const node = document.createElement("LI");
-          node.appendChild(document.createTextNode(chart + '(' + doc.entries[chart][0].version + ')'));
-          node.appendChild(document.createElement("BR"));
-          node.appendChild(document.createTextNode(doc.entries[chart][0].description));
-          ul.appendChild(node); 
+          lis = lis + tmpl("entry", doc.entries[chart][0]);
         });
-      });
+        ul.innerHTML = lis;
+      }).catch(console.error);
     </script>
   </body>
 </html>
