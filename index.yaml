@@ -1,9 +1,25 @@
 apiVersion: v1
 entries:
+  jackett:
+  - apiVersion: v1
+    appVersion: 0.10.554.0
+    created: 2019-01-02T06:29:06.692106361Z
+    description: API Support for your favorite torrent trackers.
+    digest: 3e602d94ca89f1d0308f0461b571007a537fad66c6c8c61d4fa77f41fb56e02f
+    home: https://github.com/Jackett/Jackett
+    keywords:
+    - jackett
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: jackett
+    urls:
+    - jackett/jackett-0.1.0.tgz
+    version: 0.1.0
   nzbhydra2:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-01-02T02:08:36.826358358Z
+    created: 2019-01-02T06:29:06.692862462Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -22,7 +38,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-01-02T02:08:36.827906355Z
+    created: 2019-01-02T06:29:06.69428014Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -40,7 +56,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-01-02T02:08:36.827119519Z
+    created: 2019-01-02T06:29:06.693550275Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -59,7 +75,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-01-02T02:08:36.829366499Z
+    created: 2019-01-02T06:29:06.695606956Z
     description: Modern web IRC client designed for self-hosting
     digest: 01c0f1e2c721689057f01e41e65d05e65f82156b32824e28f36e47235e3fb137
     home: https://thelounge.chat/
@@ -75,7 +91,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-01-02T02:08:36.828606033Z
+    created: 2019-01-02T06:29:06.694900504Z
     description: Modern web IRC client designed for self-hosting
     digest: fc930ccf2ee9fa907f9404c386817e87f4b5ff827e1cb2b5bce421f086761889
     home: https://thelounge.chat/
@@ -92,7 +108,7 @@ entries:
   turtl:
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-02T02:08:36.831955604Z
+    created: 2019-01-02T06:29:06.697829042Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: ac08e4483681624abd0b2a7c7c8dae40da4f5e8f280a15c31a5d68fee3ddcba9
@@ -109,7 +125,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-02T02:08:36.831126771Z
+    created: 2019-01-02T06:29:06.697108921Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3a560ad398b913d622b31dcfdfd1471ec08910524111aea4c9f46dbc3611d771
@@ -126,7 +142,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-02T02:08:36.830249294Z
+    created: 2019-01-02T06:29:06.696351915Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: cc4ffe23aaa87b67a4685fa98653d3f843d4126b7fe13eba1e5d5982548e7a95
@@ -141,4 +157,4 @@ entries:
     urls:
     - turtl/turtl-0.1.0.tgz
     version: 0.1.0
-generated: 2019-01-02T02:08:36.82388269Z
+generated: 2019-01-02T06:29:06.69092323Z
