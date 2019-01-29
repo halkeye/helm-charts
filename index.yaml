@@ -2,8 +2,21 @@ apiVersion: v1
 entries:
   discourse:
   - apiVersion: v1
+    appVersion: v2.2.0.beta10
+    created: 2019-01-29T18:12:00.534693778Z
+    description: A platform for community discussion. Free, open, simple.
+    digest: e198cea9bdac8e2c0c83b86edea26fbf76590d18542f379aa335129134077edc
+    home: https://www.discourse.org
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: discourse
+    urls:
+    - discourse/discourse-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-28T05:00:28.548329845Z
+    created: 2019-01-29T18:12:00.533949669Z
     description: A Helm chart for Kubernetes
     digest: 183693737790a932de2580ccf515b8a926f8534cb676fd1a35e90890be5348e2
     name: discourse
@@ -13,7 +26,7 @@ entries:
   freshrss:
   - apiVersion: v1
     appVersion: 1.13.1
-    created: 2019-01-28T05:00:28.549518358Z
+    created: 2019-01-29T18:12:00.535864366Z
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 882890c648d2591812b1ff27d7018002ddd0afa0548cb09fad395069f51b5a63
     name: freshrss
@@ -22,7 +35,7 @@ entries:
     version: 1.13.1
   - apiVersion: v1
     appVersion: 1.13.0
-    created: 2019-01-28T05:00:28.548938184Z
+    created: 2019-01-29T18:12:00.535286646Z
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 28fb04675ea53ce97a775d1d38ebc8580764ee6eae7ac083d3a58632ab866082
     name: freshrss
@@ -32,7 +45,7 @@ entries:
   irc-slack:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-01-28T05:00:28.550201777Z
+    created: 2019-01-29T18:12:00.536476125Z
     description: IRC-to-Slack gateway
     digest: 596a8c56903710b12d039dc25a0942886d2db49d7614ee3333bb1da0a407777f
     home: https://github.com/insomniacslk/irc-slack
@@ -49,7 +62,7 @@ entries:
   jackett:
   - apiVersion: v1
     appVersion: 0.10.554.0
-    created: 2019-01-28T05:00:28.550926401Z
+    created: 2019-01-29T18:12:00.537228571Z
     description: API Support for your favorite torrent trackers.
     digest: 11d383bb36e903b5523433e17e28207ae74d39a76a15118e08c73dc72ebc70a1
     home: https://github.com/Jackett/Jackett
@@ -65,7 +78,7 @@ entries:
   nzbhydra2:
   - apiVersion: v1
     appVersion: 2.1.6
-    created: 2019-01-28T05:00:28.551648118Z
+    created: 2019-01-29T18:12:00.537991053Z
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -84,7 +97,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-01-28T05:00:28.553135617Z
+    created: 2019-01-29T18:12:00.539486568Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -102,7 +115,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-01-28T05:00:28.552373102Z
+    created: 2019-01-29T18:12:00.538699978Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -121,7 +134,7 @@ entries:
   tautulli:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-01-28T05:00:28.553785572Z
+    created: 2019-01-29T18:12:00.540211267Z
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -133,7 +146,7 @@ entries:
   terraria:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-01-28T05:00:28.554469744Z
+    created: 2019-01-29T18:12:00.540922982Z
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: 1d653d513a3641c8cfe2c51137c3970bea393da6752e35509f3413dc6948f06c
@@ -144,7 +157,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 3.0.0
-    created: 2019-01-28T05:00:28.556462614Z
+    created: 2019-01-29T18:12:00.543136139Z
     description: Modern web IRC client designed for self-hosting
     digest: 573340cadd97c08806c39f835180dd8e01cf3210489670265e8e82be6d564270
     home: https://thelounge.chat/
@@ -160,7 +173,7 @@ entries:
     version: 3.0.0
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-01-28T05:00:28.555813063Z
+    created: 2019-01-29T18:12:00.542401999Z
     description: Modern web IRC client designed for self-hosting
     digest: 01c0f1e2c721689057f01e41e65d05e65f82156b32824e28f36e47235e3fb137
     home: https://thelounge.chat/
@@ -176,7 +189,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-01-28T05:00:28.555119456Z
+    created: 2019-01-29T18:12:00.541625513Z
     description: Modern web IRC client designed for self-hosting
     digest: fc930ccf2ee9fa907f9404c386817e87f4b5ff827e1cb2b5bce421f086761889
     home: https://thelounge.chat/
@@ -193,7 +206,7 @@ entries:
   traefik-forward-auth:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-01-28T05:00:28.557262017Z
+    created: 2019-01-29T18:12:00.54396716Z
     description: Minimal forward authentication service that provides Google oauth
       based login and authentication for the traefik reverse proxy
     digest: 1ae14f5f9016c88763545c945825cfa1f37d2225fef01b759aa2da4408c98a9f
@@ -212,7 +225,7 @@ entries:
   turtl:
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-28T05:00:28.561332418Z
+    created: 2019-01-29T18:12:00.550417597Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 2d8d4aca22329c50820706f5bc6405262a5e720e3a81a804852ca808320e8da6
@@ -229,7 +242,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-28T05:00:28.560523088Z
+    created: 2019-01-29T18:12:00.549233578Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 32c80776f77bbd2a1d63a9b589d4d25cd545ab6847055b892cc03ff9621d7650
@@ -246,7 +259,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-28T05:00:28.559674738Z
+    created: 2019-01-29T18:12:00.548011344Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: ac08e4483681624abd0b2a7c7c8dae40da4f5e8f280a15c31a5d68fee3ddcba9
@@ -263,7 +276,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-28T05:00:28.55885381Z
+    created: 2019-01-29T18:12:00.546386005Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3a560ad398b913d622b31dcfdfd1471ec08910524111aea4c9f46dbc3611d771
@@ -280,7 +293,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-01-28T05:00:28.558033508Z
+    created: 2019-01-29T18:12:00.545170704Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: cc4ffe23aaa87b67a4685fa98653d3f843d4126b7fe13eba1e5d5982548e7a95
@@ -298,7 +311,7 @@ entries:
   vouch:
   - apiVersion: v1
     appVersion: 0.4.3
-    created: 2019-01-28T05:00:28.561963663Z
+    created: 2019-01-29T18:12:00.551038983Z
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: 72ed8467330fa5dac51922017f6e0a9496eed8d5d420015149561c6a3920289e
@@ -309,11 +322,11 @@ entries:
   whoami-helm-chart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-28T05:00:28.563231521Z
+    created: 2019-01-29T18:12:00.55157779Z
     description: A Helm chart for Kubernetes
     digest: c13cd98a7a40d11e14229760d7495306e0b79fda036aa80afae0df83167031ef
     name: whoami-helm-chart
     urls:
     - whoami-helm-chart/whoami-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: 2019-01-28T05:00:28.547279139Z
+generated: 2019-01-29T18:12:00.532777409Z
