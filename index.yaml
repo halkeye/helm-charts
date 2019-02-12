@@ -3,7 +3,7 @@ entries:
   cops:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: 2019-02-12T15:15:43.04058085Z
+    created: 2019-02-12T15:15:57.736482387Z
     description: Calibre OPDS (and HTML) PHP Server - web-based light alternative
       to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
     digest: 0eee15b82a54afce407a888c2b1b24d1a1385d49a242bbf4cb082d043decf7de
@@ -18,7 +18,7 @@ entries:
   discourse:
   - apiVersion: v1
     appVersion: v2.2.0.beta10
-    created: 2019-02-12T15:15:43.041964526Z
+    created: 2019-02-12T15:15:57.738628045Z
     description: A platform for community discussion. Free, open, simple.
     digest: 79f03080da3d16229fa92526d763eaf74e120888acfd3bc6c1e0fded66c01a8f
     home: https://www.discourse.org
@@ -31,7 +31,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-12T15:15:43.041277823Z
+    created: 2019-02-12T15:15:57.73770941Z
     description: A Helm chart for Kubernetes
     digest: 183693737790a932de2580ccf515b8a926f8534cb676fd1a35e90890be5348e2
     name: discourse
@@ -41,16 +41,16 @@ entries:
   freshrss:
   - apiVersion: v1
     appVersion: 1.13.1
-    created: 2019-02-12T15:15:43.04318182Z
+    created: 2019-02-12T15:15:57.74105841Z
     description: FreshRSS is a self-hosted RSS feed aggregator.
-    digest: 5d2f0cae82f82281829cd7175f0b504530123649747b9186484512d48e700305
+    digest: 5b309cbb4ebcdf04e122b3ea440535081be8bc177b24028ef822b8906c113122
     name: freshrss
     urls:
     - freshrss/freshrss-1.13.1.tgz
     version: 1.13.1
   - apiVersion: v1
     appVersion: 1.13.0
-    created: 2019-02-12T15:15:43.042607372Z
+    created: 2019-02-12T15:15:57.739457122Z
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 28fb04675ea53ce97a775d1d38ebc8580764ee6eae7ac083d3a58632ab866082
     name: freshrss
@@ -60,7 +60,7 @@ entries:
   irc-slack:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-12T15:15:43.04383306Z
+    created: 2019-02-12T15:15:57.741748447Z
     description: IRC-to-Slack gateway
     digest: 6efb9301966bae5e0d8218cda4c1e9584cca19e7e6b7fc761cdfc9f5bcce2597
     home: https://github.com/insomniacslk/irc-slack
@@ -77,7 +77,7 @@ entries:
   jackett:
   - apiVersion: v1
     appVersion: 0.10.554.0
-    created: 2019-02-12T15:15:43.044551225Z
+    created: 2019-02-12T15:15:57.742458395Z
     description: API Support for your favorite torrent trackers.
     digest: 69a06cfa749e8114808877e993c2f6fbfffe4c7bb3029a07076e1cbc86bc2c5f
     home: https://github.com/Jackett/Jackett
@@ -93,7 +93,7 @@ entries:
   nzbhydra2:
   - apiVersion: v1
     appVersion: 2.1.6
-    created: 2019-02-12T15:15:43.045304182Z
+    created: 2019-02-12T15:15:57.74318451Z
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -112,7 +112,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-02-12T15:15:43.046853677Z
+    created: 2019-02-12T15:15:57.744648477Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -130,7 +130,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-02-12T15:15:43.046057258Z
+    created: 2019-02-12T15:15:57.743912168Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -149,7 +149,7 @@ entries:
   tautulli:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-12T15:15:43.047479638Z
+    created: 2019-02-12T15:15:57.745305192Z
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -161,7 +161,7 @@ entries:
   terraria:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-12T15:15:43.04817134Z
+    created: 2019-02-12T15:15:57.74598727Z
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: 913a3c0df88a2ca77a81876b9cda704354ee945f57355c1d93fcd69357b6aa03
@@ -172,7 +172,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 3.0.1
-    created: 2019-02-12T15:15:43.053528193Z
+    created: 2019-02-12T15:15:57.74866214Z
     description: Modern web IRC client designed for self-hosting
     digest: 2c13e6f986b7f2b160e6ba57383c2c3158fbbef8c4da79376c0e010d3346b923
     home: https://thelounge.chat/
@@ -188,7 +188,7 @@ entries:
     version: 3.0.1
   - apiVersion: v1
     appVersion: 3.0.0
-    created: 2019-02-12T15:15:43.05166854Z
+    created: 2019-02-12T15:15:57.748014743Z
     description: Modern web IRC client designed for self-hosting
     digest: 68230b6725235470d90684ce0420ccc48f67eedd913c3f6b7a9f177734495c4b
     home: https://thelounge.chat/
@@ -204,7 +204,7 @@ entries:
     version: 3.0.0
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-02-12T15:15:43.050544963Z
+    created: 2019-02-12T15:15:57.747352181Z
     description: Modern web IRC client designed for self-hosting
     digest: 01c0f1e2c721689057f01e41e65d05e65f82156b32824e28f36e47235e3fb137
     home: https://thelounge.chat/
@@ -220,7 +220,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-02-12T15:15:43.049124641Z
+    created: 2019-02-12T15:15:57.746663803Z
     description: Modern web IRC client designed for self-hosting
     digest: fc930ccf2ee9fa907f9404c386817e87f4b5ff827e1cb2b5bce421f086761889
     home: https://thelounge.chat/
@@ -237,7 +237,7 @@ entries:
   traefik-forward-auth:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-12T15:15:43.054370171Z
+    created: 2019-02-12T15:15:57.749392569Z
     description: Minimal forward authentication service that provides Google oauth
       based login and authentication for the traefik reverse proxy
     digest: 23db40e800c1e349b80511684a3aa034a0073904265cee0d9deb0855fabb53b9
@@ -256,7 +256,7 @@ entries:
   turtl:
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-12T15:15:43.058269069Z
+    created: 2019-02-12T15:15:57.75339406Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: d83b92bcbf67844bc42f040534fe3a6ca487473ae51997c43db65ea294a31585
@@ -273,7 +273,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-12T15:15:43.057514519Z
+    created: 2019-02-12T15:15:57.75260384Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 32c80776f77bbd2a1d63a9b589d4d25cd545ab6847055b892cc03ff9621d7650
@@ -290,7 +290,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-12T15:15:43.056717732Z
+    created: 2019-02-12T15:15:57.751767644Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: ac08e4483681624abd0b2a7c7c8dae40da4f5e8f280a15c31a5d68fee3ddcba9
@@ -307,7 +307,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-12T15:15:43.055937786Z
+    created: 2019-02-12T15:15:57.7509752Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3a560ad398b913d622b31dcfdfd1471ec08910524111aea4c9f46dbc3611d771
@@ -324,7 +324,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-12T15:15:43.055170321Z
+    created: 2019-02-12T15:15:57.750154685Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: cc4ffe23aaa87b67a4685fa98653d3f843d4126b7fe13eba1e5d5982548e7a95
@@ -342,7 +342,7 @@ entries:
   vouch:
   - apiVersion: v1
     appVersion: 0.4.3
-    created: 2019-02-12T15:15:43.058909284Z
+    created: 2019-02-12T15:15:57.754023346Z
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: 21bdc31575f3a5e4b9cfa1d22de42445e6317aa0e4b64df56cb6267cf3ecc018
@@ -353,11 +353,11 @@ entries:
   whoami-helm-chart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-12T15:15:43.059457328Z
+    created: 2019-02-12T15:15:57.754633503Z
     description: A Helm chart for Kubernetes
     digest: e5228af87363b2cbbca117bddcaa4f3a55848dd86479aec8058eea29bded9f74
     name: whoami-helm-chart
     urls:
     - whoami-helm-chart/whoami-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: 2019-02-12T15:15:43.039361751Z
+generated: 2019-02-12T15:15:57.735221854Z
