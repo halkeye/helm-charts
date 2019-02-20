@@ -3,7 +3,7 @@ entries:
   bazarr:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-20T07:14:36.249338323Z
+    created: 2019-02-20T07:14:51.846240763Z
     description: Bazarr is a companion application to Sonarr and Radarr. It can manage
       and download subtitles based on your requirements. You define your preferences
       by TV show or movie and Bazarr takes care of everything for you.
@@ -15,7 +15,7 @@ entries:
   cops:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: 2019-02-20T07:14:36.250030913Z
+    created: 2019-02-20T07:14:51.846930529Z
     description: Calibre OPDS (and HTML) PHP Server - web-based light alternative
       to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
     digest: 84ee05634e86fb3f527ceb31401ad83d37009f30c88f69731201c0f32ea494be
@@ -30,7 +30,7 @@ entries:
   discourse:
   - apiVersion: v1
     appVersion: v2.2.0.beta10
-    created: 2019-02-20T07:14:36.251353529Z
+    created: 2019-02-20T07:14:51.848274757Z
     description: A platform for community discussion. Free, open, simple.
     digest: 2412e7d282a27369719e252b2a9f24390e401d926d834cbdad88f95aa4b6dcb9
     home: https://www.discourse.org
@@ -43,7 +43,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-20T07:14:36.2506636Z
+    created: 2019-02-20T07:14:51.847592806Z
     description: A Helm chart for Kubernetes
     digest: 183693737790a932de2580ccf515b8a926f8534cb676fd1a35e90890be5348e2
     name: discourse
@@ -53,7 +53,7 @@ entries:
   freshrss:
   - apiVersion: v1
     appVersion: 1.13.1
-    created: 2019-02-20T07:14:36.252504007Z
+    created: 2019-02-20T07:14:51.849431485Z
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 4310040059f3094567c87b3cdf0ad53f41dcfc9523e1d37b5d776adb7702bfe5
     name: freshrss
@@ -62,7 +62,7 @@ entries:
     version: 1.13.1
   - apiVersion: v1
     appVersion: 1.13.0
-    created: 2019-02-20T07:14:36.251948196Z
+    created: 2019-02-20T07:14:51.848861079Z
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 28fb04675ea53ce97a775d1d38ebc8580764ee6eae7ac083d3a58632ab866082
     name: freshrss
@@ -72,9 +72,9 @@ entries:
   irc-slack:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-20T07:14:36.253125609Z
+    created: 2019-02-20T07:14:51.850063507Z
     description: IRC-to-Slack gateway
-    digest: beaf68b0a1ec24aad68111b7692c57b1dc8cead2eb21dfd350b0dabbab541fce
+    digest: f3b7a341fee95ec7a6c566393262b88686f12168204b8050c7136cb76596a7c2
     home: https://github.com/insomniacslk/irc-slack
     keywords:
     - irc
@@ -89,7 +89,7 @@ entries:
   jackett:
   - apiVersion: v1
     appVersion: 0.10.554.0
-    created: 2019-02-20T07:14:36.253805533Z
+    created: 2019-02-20T07:14:51.850748179Z
     description: API Support for your favorite torrent trackers.
     digest: bf5b4b528ebe2db8a24cd6d6fd87507089a124b6aa6795eefbdd122091d976fc
     home: https://github.com/Jackett/Jackett
@@ -105,7 +105,7 @@ entries:
   nzbhydra2:
   - apiVersion: v1
     appVersion: 2.1.6
-    created: 2019-02-20T07:14:36.25454048Z
+    created: 2019-02-20T07:14:51.851462186Z
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -124,7 +124,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-02-20T07:14:36.25607189Z
+    created: 2019-02-20T07:14:51.852965492Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -142,7 +142,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2019-02-20T07:14:36.255326329Z
+    created: 2019-02-20T07:14:51.852224529Z
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -161,7 +161,7 @@ entries:
   postfix:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-20T07:14:36.256584183Z
+    created: 2019-02-20T07:14:51.853494977Z
     description: A SMTP relay host for transactional based emails from within a cluster.
     digest: 9bab7a87161bd9d00eda5d247f343e58241490c630dcd4ef3e5ce0f2ee13771c
     name: postfix
@@ -171,7 +171,7 @@ entries:
   tautulli:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-20T07:14:36.257275716Z
+    created: 2019-02-20T07:14:51.854109676Z
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -183,7 +183,7 @@ entries:
   terraria:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-20T07:14:36.258008473Z
+    created: 2019-02-20T07:14:51.854790869Z
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: ffbb3511706b821ea4803b05ccee628ec3b57cec9ae913edcc46882ab7018575
@@ -194,7 +194,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 3.0.1
-    created: 2019-02-20T07:14:36.261106719Z
+    created: 2019-02-20T07:14:51.857767486Z
     description: Modern web IRC client designed for self-hosting
     digest: 276137477e5dbcaa6f455b63c44704209c983d363208d4f919c1df649bbe6e72
     home: https://thelounge.chat/
@@ -210,7 +210,7 @@ entries:
     version: 3.0.1
   - apiVersion: v1
     appVersion: 3.0.0
-    created: 2019-02-20T07:14:36.260231081Z
+    created: 2019-02-20T07:14:51.857048877Z
     description: Modern web IRC client designed for self-hosting
     digest: 68230b6725235470d90684ce0420ccc48f67eedd913c3f6b7a9f177734495c4b
     home: https://thelounge.chat/
@@ -226,7 +226,7 @@ entries:
     version: 3.0.0
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-02-20T07:14:36.259505035Z
+    created: 2019-02-20T07:14:51.85632062Z
     description: Modern web IRC client designed for self-hosting
     digest: 01c0f1e2c721689057f01e41e65d05e65f82156b32824e28f36e47235e3fb137
     home: https://thelounge.chat/
@@ -242,7 +242,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: 2019-02-20T07:14:36.258711011Z
+    created: 2019-02-20T07:14:51.855539808Z
     description: Modern web IRC client designed for self-hosting
     digest: fc930ccf2ee9fa907f9404c386817e87f4b5ff827e1cb2b5bce421f086761889
     home: https://thelounge.chat/
@@ -259,7 +259,7 @@ entries:
   traefik-forward-auth:
   - apiVersion: v1
     appVersion: latest
-    created: 2019-02-20T07:14:36.264551129Z
+    created: 2019-02-20T07:14:51.861263635Z
     description: Minimal forward authentication service that provides Google oauth
       based login and authentication for the traefik reverse proxy
     digest: 71941140f6d73693d4103201cd33029ccf55503b9e039e628ba6c480e9d7b42d
@@ -278,7 +278,7 @@ entries:
   turtl:
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-20T07:14:36.268703567Z
+    created: 2019-02-20T07:14:51.865419022Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 434d810372cb68364e478871f87cdd2d2726d2d7fc93fb22b842c9807650b8f8
@@ -295,7 +295,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-20T07:14:36.267916448Z
+    created: 2019-02-20T07:14:51.864619984Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 32c80776f77bbd2a1d63a9b589d4d25cd545ab6847055b892cc03ff9621d7650
@@ -312,7 +312,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-20T07:14:36.267097614Z
+    created: 2019-02-20T07:14:51.863808038Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: ac08e4483681624abd0b2a7c7c8dae40da4f5e8f280a15c31a5d68fee3ddcba9
@@ -329,7 +329,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-20T07:14:36.266288571Z
+    created: 2019-02-20T07:14:51.862989647Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3a560ad398b913d622b31dcfdfd1471ec08910524111aea4c9f46dbc3611d771
@@ -346,7 +346,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "0.7"
-    created: 2019-02-20T07:14:36.265448946Z
+    created: 2019-02-20T07:14:51.862157231Z
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: cc4ffe23aaa87b67a4685fa98653d3f843d4126b7fe13eba1e5d5982548e7a95
@@ -364,7 +364,7 @@ entries:
   vouch:
   - apiVersion: v1
     appVersion: 0.4.3
-    created: 2019-02-20T07:14:36.2693431Z
+    created: 2019-02-20T07:14:51.866061756Z
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: 7f07a91abb04f0ee31fa6b9ebcc5bad80f883fe77c6566e489ad8a9ad80592d7
@@ -375,11 +375,11 @@ entries:
   whoami-helm-chart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-20T07:14:36.269949294Z
+    created: 2019-02-20T07:14:51.866672549Z
     description: A Helm chart for Kubernetes
     digest: 6da8437309929c5dc96dbb5c63fbc97026b5c510e9e9f20c115ec38d96c29dd5
     name: whoami-helm-chart
     urls:
     - whoami-helm-chart/whoami-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: 2019-02-20T07:14:36.248492023Z
+generated: 2019-02-20T07:14:51.845369325Z
