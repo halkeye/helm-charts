@@ -20,6 +20,48 @@
           padding: 15px;
         }
       }
+      .clippy {
+        margin-top: -3px;
+        position: relative;
+        top: 3px;
+      }
+
+      .snippet { position: relative; }
+      .snippet:hover .btn, .snippet .btn:focus {
+    opacity: 1;
+}
+.snippet .btn {
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    padding: 2px 6px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+}
+
     </style>
     
   </head>
@@ -30,9 +72,13 @@
       <h1>Helm Charts</h1>
 
       <h2>Usage</h2>
-      <pre lang="no-highlight"><code>
-        helm repo add halkeye https://halkeye.github.io/helm-charts
-      </code></pre>
+
+      <pre class="snippet" lang="no-highlight" style="padding: 0">
+        <button class="btn" data-clipboard-snippet="helm repo add halkeye https://halkeye.github.io/helm-charts">
+          <img class="clippy" src="_images/clippy.svg" alt="Copy to clipboard" width="13">
+        </button>
+        <code>helm repo add halkeye https://halkeye.github.io/helm-charts</code>
+      </pre>
 
       <p>These are presented as is. Anyone is free to use them, and make suggestions, but they were created for my own use. At some point I want to submit them to the actual helm charts repo.</p>
 
@@ -48,6 +94,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/bazarr">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.
@@ -62,6 +111,9 @@
 						@
 						1.1.2
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/cops">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Calibre OPDS (and HTML) PHP Server - web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
@@ -76,6 +128,9 @@
 						@
 						v2.2.1
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/discourse">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						A platform for community discussion. Free, open, simple.
@@ -90,6 +145,9 @@
 						@
 						1.14.2
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/freshrss">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						FreshRSS is a self-hosted RSS feed aggregator.
@@ -104,6 +162,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/goplaxt">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Scrobble Plex plays to Trakt with ease!
@@ -118,6 +179,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/irc-slack">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						IRC-to-Slack gateway
@@ -132,6 +196,9 @@
 						@
 						0.10.554.0
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/jackett">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						API Support for your favorite torrent trackers.
@@ -146,6 +213,9 @@
 						@
 						2.5.5-1-01
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/nzbhydra2">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						NZBHydra 2 is a meta search for NZB indexers. It provides easy access to a number of raw and newznab based indexers. You can search all your indexers from one place and use it as an indexer source for tools like Sonarr, Radarr or CouchPotato.
@@ -160,6 +230,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/octobox">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Untangle your GitHub Notifications
@@ -174,6 +247,9 @@
 						@
 						3.6
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/pgadmin">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.
@@ -188,6 +264,9 @@
 						@
 						3.6.1
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/pocketmine">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						A Helm chart for Kubernetes
@@ -202,6 +281,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/postfix">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						A SMTP relay host for transactional based emails from within a cluster.
@@ -216,6 +298,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/tautulli">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Tautulli integrates with Plex to provide you a feature-rich dashboard of statistics from user activity to a graphical history of streams, play count, along with configurable notifications, and more.
@@ -230,6 +315,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/terraria">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Terraria is a 2D sandbox game with gameplay that revolves around exploration, building, combat, and mining.
@@ -244,6 +332,9 @@
 						@
 						3.0.1
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/thelounge">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Modern web IRC client designed for self-hosting
@@ -258,6 +349,9 @@
 						@
 						latest
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/traefik-forward-auth">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						Minimal forward authentication service that provides Google oauth based login and authentication for the traefik reverse proxy
@@ -272,6 +366,9 @@
 						@
 						0.7
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/turtl">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						The secure, collaborative notebook - Totally private personal database and note taking app.
@@ -286,6 +383,9 @@
 						@
 						0.5.12
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/vouch">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						An SSO and OAuth login solution for nginx using the auth_request module
@@ -300,6 +400,9 @@
 						@
 						1.0
 						</a>)
+            <a href="https://github.com/halkeye-helm-charts/whoami-helm-chart">
+              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+            </a>
 					</p>
 					<p>
 						A Helm chart for Kubernetes
@@ -310,5 +413,8 @@
 
     </section>
 		<time datetime="2019-04-28T00:44:13" pubdate id="generated">Sun Apr 28 2019 12:44:13AM UTC&#43;00:00</time>
+
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+    <script>new ClipboardJS('.btn');</script>
   </body>
 </html>
