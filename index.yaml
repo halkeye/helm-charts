@@ -3,7 +3,7 @@ entries:
   bazarr:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.203692651Z"
+    created: "2019-06-10T23:36:05.280375435Z"
     description: Bazarr is a companion application to Sonarr and Radarr. It can manage
       and download subtitles based on your requirements. You define your preferences
       by TV show or movie and Bazarr takes care of everything for you.
@@ -15,7 +15,7 @@ entries:
   cops:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2019-05-31T16:13:03.204384675Z"
+    created: "2019-06-10T23:36:05.281095972Z"
     description: Calibre OPDS (and HTML) PHP Server - web-based light alternative
       to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
     digest: f028940d696cb0d4d5d2b112fbcf486ca8f223ac57c6ff39dc06f1ca0c1cb7db
@@ -30,7 +30,7 @@ entries:
   discord-streamers:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.205052641Z"
+    created: "2019-06-10T23:36:05.281710631Z"
     description: A Helm chart for Kubernetes
     digest: 2fc218f879e27e646046aa4e15de04a4ee5a84bb5e8f044d3fa7cda169c3aa5a
     name: discord-streamers
@@ -40,7 +40,7 @@ entries:
   discourse:
   - apiVersion: v1
     appVersion: v2.2.1
-    created: "2019-05-31T16:13:03.207231044Z"
+    created: "2019-06-10T23:36:05.283888355Z"
     description: A platform for community discussion. Free, open, simple.
     digest: eb54133263dadb754b93820e92a98096efbe7861282a5a103582928810f4b5ed
     home: https://www.discourse.org
@@ -53,7 +53,7 @@ entries:
     version: 0.2.1
   - apiVersion: v1
     appVersion: v2.2.0.beta10
-    created: "2019-05-31T16:13:03.206457767Z"
+    created: "2019-06-10T23:36:05.283166348Z"
     description: A platform for community discussion. Free, open, simple.
     digest: 1d54e0918da53074b9dcd29e766ce0846795cbe91104e499a0ba53093bc3a076
     home: https://www.discourse.org
@@ -66,7 +66,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-05-31T16:13:03.205761144Z"
+    created: "2019-06-10T23:36:05.282439238Z"
     description: A Helm chart for Kubernetes
     digest: 183693737790a932de2580ccf515b8a926f8534cb676fd1a35e90890be5348e2
     name: discourse
@@ -76,7 +76,7 @@ entries:
   freshrss:
   - apiVersion: v1
     appVersion: 1.14.2
-    created: "2019-05-31T16:13:03.208538747Z"
+    created: "2019-06-10T23:36:05.285174239Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 8561e8b0fd40dc9ed58fd9586c09689fed86e2c8889a84ae39f2a026de58c4bb
     name: freshrss
@@ -85,7 +85,7 @@ entries:
     version: 1.13.1
   - apiVersion: v1
     appVersion: 1.13.0
-    created: "2019-05-31T16:13:03.207890371Z"
+    created: "2019-06-10T23:36:05.28455762Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 28fb04675ea53ce97a775d1d38ebc8580764ee6eae7ac083d3a58632ab866082
     name: freshrss
@@ -95,7 +95,7 @@ entries:
   goplaxt:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.209482382Z"
+    created: "2019-06-10T23:36:05.285761117Z"
     description: Scrobble Plex plays to Trakt with ease!
     digest: 0f66f6b1c3158bf6c396f6080172386022316fa82ea59726ee1340cb8380fd44
     name: goplaxt
@@ -105,7 +105,7 @@ entries:
   irc-slack:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.211097097Z"
+    created: "2019-06-10T23:36:05.28777211Z"
     description: IRC-to-Slack gateway
     digest: 50bbebd5848e552275f6fe25fd18612c4f240936a3bbe6b3f77d1c3b236478fc
     home: https://github.com/insomniacslk/irc-slack
@@ -122,7 +122,7 @@ entries:
   jackett:
   - apiVersion: v1
     appVersion: 0.10.554.0
-    created: "2019-05-31T16:13:03.211844775Z"
+    created: "2019-06-10T23:36:05.289164379Z"
     description: API Support for your favorite torrent trackers.
     digest: 0c2c7b5615762f7b77227f20fbc6f28d57dd4f1fe2aa184da732ad341413aabf
     home: https://github.com/Jackett/Jackett
@@ -138,7 +138,7 @@ entries:
   minecraft-ftb:
   - apiVersion: v1
     appVersion: 1.7.1_1.12.2
-    created: "2019-05-31T16:13:03.213889193Z"
+    created: "2019-06-10T23:36:05.291571213Z"
     description: Minecraft FTB chart. Defaults to the Ultimate Reloaded image
     digest: 3ffcfb777619be08f5d3fe5b638187ece819a5650029ff0f718d44e723419d1b
     icon: https://www.feed-the-beast.com/Content/2-0-7081-28093/Skins/FTB/images/ftb-logo.png
@@ -155,7 +155,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-05-31T16:13:03.213120932Z"
+    created: "2019-06-10T23:36:05.290694374Z"
     description: A Helm chart for Kubernetes
     digest: 2710fbbd4e6ac3cd93ad2abb262eb90b7eea112aa4a9fe8fd124025e98b2f41c
     name: minecraft-ftb
@@ -164,7 +164,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-05-31T16:13:03.212464557Z"
+    created: "2019-06-10T23:36:05.289923997Z"
     description: A Helm chart for Kubernetes
     digest: 326ba93db51628920b275f12d7e8e38dcc3d37100251186a7828efbe9beac274
     name: minecraft-ftb
@@ -173,8 +173,26 @@ entries:
     version: 0.1.0
   nzbhydra2:
   - apiVersion: v1
+    appVersion: 2.6.10-1-01
+    created: "2019-06-10T23:36:05.296879335Z"
+    description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
+      to a number of raw and newznab based indexers. You can search all your indexers
+      from one place and use it as an indexer source for tools like Sonarr, Radarr
+      or CouchPotato.
+    digest: f3e45b3019e656598ed797654356f783456f1a575b18b54f7e19c732ea9caccd
+    home: https://www.nzbhydra2.org/
+    keywords:
+    - nzbhydra2
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: nzbhydra2
+    urls:
+    - nzbhydra2/nzbhydra2-2.6.10.tgz
+    version: 2.6.10
+  - apiVersion: v1
     appVersion: 2.6.2-1-01
-    created: "2019-05-31T16:13:03.218410402Z"
+    created: "2019-06-10T23:36:05.297816205Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -192,7 +210,7 @@ entries:
     version: 2.6.2
   - apiVersion: v1
     appVersion: 2.6.1-1-01
-    created: "2019-05-31T16:13:03.217655524Z"
+    created: "2019-06-10T23:36:05.295962718Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -210,7 +228,7 @@ entries:
     version: 2.6.1
   - apiVersion: v1
     appVersion: 2.5.5-1-01
-    created: "2019-05-31T16:13:03.216867393Z"
+    created: "2019-06-10T23:36:05.295071542Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -228,7 +246,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: 2.5.4-1-01
-    created: "2019-05-31T16:13:03.216141538Z"
+    created: "2019-06-10T23:36:05.294219204Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -246,7 +264,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 2.3.22-1-01
-    created: "2019-05-31T16:13:03.215384803Z"
+    created: "2019-06-10T23:36:05.293336919Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -264,7 +282,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 2.1.6
-    created: "2019-05-31T16:13:03.214644059Z"
+    created: "2019-06-10T23:36:05.292464541Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -283,7 +301,7 @@ entries:
   octobox:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.219838094Z"
+    created: "2019-06-10T23:36:05.29945788Z"
     description: Untangle your GitHub Notifications
     digest: 368c1f2e439e64ab43513d3d04b97130fa439c4882c38c2a509223a93db18a5f
     icon: https://octobox.io/assets/infinitacle-round-3332cf1ee4ec7508f5be2cee8fba05407360b0e937cd84acb2dbdd9c8a1ad5e2.svg
@@ -298,7 +316,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.219143094Z"
+    created: "2019-06-10T23:36:05.29860148Z"
     description: Untangle your GitHub Notifications
     digest: 6af4d9c8f51ad2e37d4b632232727181f9b7fb2ce90e9d399061b8187b73c441
     icon: https://octobox.io/assets/infinitacle-round-3332cf1ee4ec7508f5be2cee8fba05407360b0e937cd84acb2dbdd9c8a1ad5e2.svg
@@ -314,7 +332,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "4.6"
-    created: "2019-05-31T16:13:03.222201591Z"
+    created: "2019-06-10T23:36:05.302097018Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -332,7 +350,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "3.6"
-    created: "2019-05-31T16:13:03.22136237Z"
+    created: "2019-06-10T23:36:05.301204692Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -350,7 +368,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: "2019-05-31T16:13:03.220597898Z"
+    created: "2019-06-10T23:36:05.300329458Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -369,7 +387,7 @@ entries:
   pocketmine:
   - apiVersion: v1
     appVersion: 3.6.1
-    created: "2019-05-31T16:13:03.22278258Z"
+    created: "2019-06-10T23:36:05.302716546Z"
     description: A Helm chart for Kubernetes
     digest: e842d4479c66666ace9046ca743bf5645eaf11d66ccb6d0d2dd6a4609d0eb777
     name: pocketmine
@@ -379,7 +397,7 @@ entries:
   postfix:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.223381521Z"
+    created: "2019-06-10T23:36:05.303289645Z"
     description: A SMTP relay host for transactional based emails from within a cluster.
     digest: 44d5b416678a290a3d56fc89cd9044b1eec9faa9a799eb83e9412b5fc8f63230
     name: postfix
@@ -389,7 +407,7 @@ entries:
   tautulli:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.22407119Z"
+    created: "2019-06-10T23:36:05.304822757Z"
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -401,7 +419,7 @@ entries:
   terraria:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.225476427Z"
+    created: "2019-06-10T23:36:05.305950662Z"
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: 8b83f04552caa5fa75333356861b9b58d59c02e4c7c283542674f011417a255a
@@ -412,7 +430,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 3.0.1
-    created: "2019-05-31T16:13:03.229838346Z"
+    created: "2019-06-10T23:36:05.309651888Z"
     description: Modern web IRC client designed for self-hosting
     digest: 1a81c41239a0cd34420af1cc984b67471ef1908df8e3db80a09a85a71aeef80a
     home: https://thelounge.chat/
@@ -428,7 +446,7 @@ entries:
     version: 3.0.2
   - apiVersion: v1
     appVersion: 3.0.1
-    created: "2019-05-31T16:13:03.229134412Z"
+    created: "2019-06-10T23:36:05.308932212Z"
     description: Modern web IRC client designed for self-hosting
     digest: 192ca80184708317d9f203140dbda4055acb71f4922b3a8aa78910e6c3052652
     home: https://thelounge.chat/
@@ -444,7 +462,7 @@ entries:
     version: 3.0.1
   - apiVersion: v1
     appVersion: 3.0.0
-    created: "2019-05-31T16:13:03.228402715Z"
+    created: "2019-06-10T23:36:05.308204368Z"
     description: Modern web IRC client designed for self-hosting
     digest: 68230b6725235470d90684ce0420ccc48f67eedd913c3f6b7a9f177734495c4b
     home: https://thelounge.chat/
@@ -460,7 +478,7 @@ entries:
     version: 3.0.0
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: "2019-05-31T16:13:03.22766216Z"
+    created: "2019-06-10T23:36:05.307459041Z"
     description: Modern web IRC client designed for self-hosting
     digest: 01c0f1e2c721689057f01e41e65d05e65f82156b32824e28f36e47235e3fb137
     home: https://thelounge.chat/
@@ -476,7 +494,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: "2019-05-31T16:13:03.226814034Z"
+    created: "2019-06-10T23:36:05.30670659Z"
     description: Modern web IRC client designed for self-hosting
     digest: fc930ccf2ee9fa907f9404c386817e87f4b5ff827e1cb2b5bce421f086761889
     home: https://thelounge.chat/
@@ -493,7 +511,7 @@ entries:
   traefik-forward-auth:
   - apiVersion: v1
     appVersion: latest
-    created: "2019-05-31T16:13:03.230711053Z"
+    created: "2019-06-10T23:36:05.310490804Z"
     description: Minimal forward authentication service that provides Google oauth
       based login and authentication for the traefik reverse proxy
     digest: 2e0a1874e8369384216940cd9298c89f57382d378532fd11dc603c0d5a576bb6
@@ -512,7 +530,7 @@ entries:
   turtl:
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2019-05-31T16:13:03.234879265Z"
+    created: "2019-06-10T23:36:05.314784522Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3784c490e7fed29f3627fd6efcbfc19414b8e5046f0d65b864841ca45bcfe720
@@ -529,7 +547,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2019-05-31T16:13:03.234086112Z"
+    created: "2019-06-10T23:36:05.313957652Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 32c80776f77bbd2a1d63a9b589d4d25cd545ab6847055b892cc03ff9621d7650
@@ -546,7 +564,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2019-05-31T16:13:03.233251838Z"
+    created: "2019-06-10T23:36:05.313086458Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: ac08e4483681624abd0b2a7c7c8dae40da4f5e8f280a15c31a5d68fee3ddcba9
@@ -563,7 +581,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2019-05-31T16:13:03.232403407Z"
+    created: "2019-06-10T23:36:05.312189126Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3a560ad398b913d622b31dcfdfd1471ec08910524111aea4c9f46dbc3611d771
@@ -580,7 +598,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2019-05-31T16:13:03.231561222Z"
+    created: "2019-06-10T23:36:05.311324692Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: cc4ffe23aaa87b67a4685fa98653d3f843d4126b7fe13eba1e5d5982548e7a95
@@ -598,7 +616,7 @@ entries:
   vouch:
   - apiVersion: v1
     appVersion: 0.5.16
-    created: "2019-05-31T16:13:03.23699917Z"
+    created: "2019-06-10T23:36:05.316938485Z"
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: ecb67e7e776d8c538136551f8d701a3fa620294480bf4b6adc4cc9d6639b3ea6
@@ -614,7 +632,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 0.5.12
-    created: "2019-05-31T16:13:03.236263552Z"
+    created: "2019-06-10T23:36:05.316198307Z"
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: 67c151449337870988db45545ef56c005100179e7a597d7a6adb24162cce338a
@@ -630,7 +648,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.5.12
-    created: "2019-05-31T16:13:03.235537019Z"
+    created: "2019-06-10T23:36:05.315470507Z"
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: 6c8e419de51092e1c5965306beed73b75e2aaa64432c1941ed67ba52f56af6d8
@@ -641,11 +659,11 @@ entries:
   whoami-helm-chart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-05-31T16:13:03.237619565Z"
+    created: "2019-06-10T23:36:05.317633486Z"
     description: A Helm chart for Kubernetes
     digest: 8ca28aa79a144c2a3bc022c5d7425500c4be00eb54fb8a9b9b9333c75a84b586
     name: whoami-helm-chart
     urls:
     - whoami-helm-chart/whoami-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2019-05-31T16:13:03.202695372Z"
+generated: "2019-06-10T23:36:05.279364268Z"
