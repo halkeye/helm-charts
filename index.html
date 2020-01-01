@@ -10,7 +10,6 @@
       .markdown-body {
         box-sizing: border-box;
         min-width: 200px;
-        max-width: 980px;
         margin: 0 auto;
         padding: 45px;
       }
@@ -28,40 +27,84 @@
 
       .snippet { position: relative; }
       .snippet:hover .btn, .snippet .btn:focus {
-    opacity: 1;
-}
-.snippet .btn {
-    -webkit-transition: opacity .3s ease-in-out;
-    -o-transition: opacity .3s ease-in-out;
-    transition: opacity .3s ease-in-out;
-    opacity: 0;
-    padding: 2px 6px;
-    position: absolute;
-    right: 4px;
-    top: 4px;
-}
-.btn {
-    position: relative;
-    display: inline-block;
-    padding: 6px 12px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 20px;
-    color: #333;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    background-color: #eee;
-    background-image: linear-gradient(#fcfcfc,#eee);
-    border: 1px solid #d5d5d5;
-    border-radius: 3px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-appearance: none;
-}
+        opacity: 1;
+      }
+      .snippet .btn {
+        -webkit-transition: opacity .3s ease-in-out;
+        -o-transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+        opacity: 0;
+        padding: 2px 6px;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+      }
+      .btn {
+        position: relative;
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #333;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #eee;
+        background-image: linear-gradient(#fcfcfc,#eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-appearance: none;
+      }
 
+      .charts {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .chart {
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #d7d9dd;
+        transition: transform .2s ease;
+        background-color: #eaedef;
+        width: 300px;
+        margin: 0.5em;
+      }
+      
+      .chart .icon {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 110px;
+        background-color: #fff;
+        align-items: center;
+      }
+      .chart .icon img { 
+        max-height: 80%;
+      }
+      .chart .body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        border-top: 1px solid #d7d9dd;
+        padding: 0 1em;
+        flex-direction: column;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .chart .body .info {
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .chart .body .description {
+        text-align: left;
+      }
     </style>
     
   </head>
@@ -84,401 +127,561 @@
 
       <h2>Charts</h2>
 
-      <ul>
+      <div class="charts">
 			
-				<li>
-					<p>
-						bazarr
-						(<a href="bazarr/bazarr-0.1.2.tgz" title="bazarr/bazarr-0.1.2.tgz">
-						0.1.2
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/bazarr">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="bazarr/bazarr-0.1.2.tgz" title="bazarr/bazarr-0.1.2.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="bazarr's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                bazarr
+                (
+                  0.1.2
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/bazarr">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						cops
-						(<a href="cops/cops-0.1.0.tgz" title="cops/cops-0.1.0.tgz">
-						0.1.0
-						@
-						1.1.2
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/cops">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Calibre OPDS (and HTML) PHP Server - web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
-					</p>
-				</li>
+				<div class="chart">
+          <a href="cops/cops-0.1.0.tgz" title="cops/cops-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="cops's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                cops
+                (
+                  0.1.0
+                  @
+                  1.1.2
+                )
+                <a href="https://github.com/halkeye-helm-charts/cops">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Calibre OPDS (and HTML) PHP Server - web-based light alternative to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						discord-streamers
-						(<a href="discord-streamers/discord-streamers-0.1.0.tgz" title="discord-streamers/discord-streamers-0.1.0.tgz">
-						0.1.0
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/discord-streamers">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						A Helm chart for Kubernetes
-					</p>
-				</li>
+				<div class="chart">
+          <a href="discord-streamers/discord-streamers-0.1.0.tgz" title="discord-streamers/discord-streamers-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="discord-streamers's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                discord-streamers
+                (
+                  0.1.0
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/discord-streamers">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                A Helm chart for Kubernetes
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						discourse
-						(<a href="discourse/discourse-0.2.1.tgz" title="discourse/discourse-0.2.1.tgz">
-						0.2.1
-						@
-						v2.2.1
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/discourse">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						A platform for community discussion. Free, open, simple.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="discourse/discourse-0.2.1.tgz" title="discourse/discourse-0.2.1.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="discourse's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                discourse
+                (
+                  0.2.1
+                  @
+                  v2.2.1
+                )
+                <a href="https://github.com/halkeye-helm-charts/discourse">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                A platform for community discussion. Free, open, simple.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						freshrss
-						(<a href="freshrss/freshrss-1.15.3-1.tgz" title="freshrss/freshrss-1.15.3-1.tgz">
-						1.15.3-1
-						@
-						1.15.3
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/freshrss">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						FreshRSS is a self-hosted RSS feed aggregator.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="freshrss/freshrss-1.15.3-1.tgz" title="freshrss/freshrss-1.15.3-1.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="freshrss's logo" src="https://raw.githubusercontent.com/FreshRSS/FreshRSS/master/docs/img/FreshRSS-logo.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                freshrss
+                (
+                  1.15.3-1
+                  @
+                  1.15.3
+                )
+                <a href="https://github.com/halkeye-helm-charts/freshrss">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                FreshRSS is a self-hosted RSS feed aggregator.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						goplaxt
-						(<a href="goplaxt/goplaxt-0.1.1.tgz" title="goplaxt/goplaxt-0.1.1.tgz">
-						0.1.1
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/goplaxt">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Scrobble Plex plays to Trakt with ease!
-					</p>
-				</li>
+				<div class="chart">
+          <a href="goplaxt/goplaxt-0.1.1.tgz" title="goplaxt/goplaxt-0.1.1.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="goplaxt's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                goplaxt
+                (
+                  0.1.1
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/goplaxt">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Scrobble Plex plays to Trakt with ease!
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						hubot
-						(<a href="hubot/hubot-0.0.1.tgz" title="hubot/hubot-0.0.1.tgz">
-						0.0.1
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/hubot">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						A customizable life embetterment robot.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="hubot/hubot-0.0.1.tgz" title="hubot/hubot-0.0.1.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="hubot's logo" src="https://hubot.github.com/assets/images/layout/hubot-avatar@2x.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                hubot
+                (
+                  0.0.1
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/hubot">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                A customizable life embetterment robot.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						irc-slack
-						(<a href="irc-slack/irc-slack-0.1.0.tgz" title="irc-slack/irc-slack-0.1.0.tgz">
-						0.1.0
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/irc-slack">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						IRC-to-Slack gateway
-					</p>
-				</li>
+				<div class="chart">
+          <a href="irc-slack/irc-slack-0.1.0.tgz" title="irc-slack/irc-slack-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="irc-slack's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                irc-slack
+                (
+                  0.1.0
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/irc-slack">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                IRC-to-Slack gateway
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						jackett
-						(<a href="jackett/jackett-0.1.0.tgz" title="jackett/jackett-0.1.0.tgz">
-						0.1.0
-						@
-						0.10.554.0
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/jackett">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						API Support for your favorite torrent trackers.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="jackett/jackett-0.1.0.tgz" title="jackett/jackett-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="jackett's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                jackett
+                (
+                  0.1.0
+                  @
+                  0.10.554.0
+                )
+                <a href="https://github.com/halkeye-helm-charts/jackett">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                API Support for your favorite torrent trackers.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						minecraft-ftb
-						(<a href="minecraft-ftb/minecraft-ftb-0.1.2.tgz" title="minecraft-ftb/minecraft-ftb-0.1.2.tgz">
-						0.1.2
-						@
-						1.7.1_1.12.2
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/minecraft-ftb">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Minecraft FTB chart. Defaults to the Ultimate Reloaded image
-					</p>
-				</li>
+				<div class="chart">
+          <a href="minecraft-ftb/minecraft-ftb-0.1.2.tgz" title="minecraft-ftb/minecraft-ftb-0.1.2.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="minecraft-ftb's logo" src="https://www.feed-the-beast.com/Content/2-0-7081-28093/Skins/FTB/images/ftb-logo.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                minecraft-ftb
+                (
+                  0.1.2
+                  @
+                  1.7.1_1.12.2
+                )
+                <a href="https://github.com/halkeye-helm-charts/minecraft-ftb">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Minecraft FTB chart. Defaults to the Ultimate Reloaded image
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						nzbhydra2
-						(<a href="nzbhydra2/nzbhydra2-2.10.6.tgz" title="nzbhydra2/nzbhydra2-2.10.6.tgz">
-						2.10.6
-						@
-						2.10.6-1-01
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/nzbhydra2">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						NZBHydra 2 is a meta search for NZB indexers. It provides easy access to a number of raw and newznab based indexers. You can search all your indexers from one place and use it as an indexer source for tools like Sonarr, Radarr or CouchPotato.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="nzbhydra2/nzbhydra2-2.10.6.tgz" title="nzbhydra2/nzbhydra2-2.10.6.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="nzbhydra2's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                nzbhydra2
+                (
+                  2.10.6
+                  @
+                  2.10.6-1-01
+                )
+                <a href="https://github.com/halkeye-helm-charts/nzbhydra2">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                NZBHydra 2 is a meta search for NZB indexers. It provides easy access to a number of raw and newznab based indexers. You can search all your indexers from one place and use it as an indexer source for tools like Sonarr, Radarr or CouchPotato.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						octobox
-						(<a href="octobox/octobox-0.1.1.tgz" title="octobox/octobox-0.1.1.tgz">
-						0.1.1
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/octobox">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Untangle your GitHub Notifications
-					</p>
-				</li>
+				<div class="chart">
+          <a href="octobox/octobox-0.1.1.tgz" title="octobox/octobox-0.1.1.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="octobox's logo" src="https://octobox.io/assets/infinitacle-round-3332cf1ee4ec7508f5be2cee8fba05407360b0e937cd84acb2dbdd9c8a1ad5e2.svg">
+            </div>
+            <div class="body">
+              <p class="info">
+                octobox
+                (
+                  0.1.1
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/octobox">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Untangle your GitHub Notifications
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						pgadmin
-						(<a href="pgadmin/pgadmin-0.1.3.tgz" title="pgadmin/pgadmin-0.1.3.tgz">
-						0.1.3
-						@
-						4.10
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/pgadmin">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="pgadmin/pgadmin-0.1.3.tgz" title="pgadmin/pgadmin-0.1.3.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="pgadmin's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                pgadmin
+                (
+                  0.1.3
+                  @
+                  4.10
+                )
+                <a href="https://github.com/halkeye-helm-charts/pgadmin">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						pocketmine
-						(<a href="pocketmine/pocketmine-0.1.0.tgz" title="pocketmine/pocketmine-0.1.0.tgz">
-						0.1.0
-						@
-						3.6.1
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/pocketmine">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						A Helm chart for Kubernetes
-					</p>
-				</li>
+				<div class="chart">
+          <a href="pocketmine/pocketmine-0.1.0.tgz" title="pocketmine/pocketmine-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="pocketmine's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                pocketmine
+                (
+                  0.1.0
+                  @
+                  3.6.1
+                )
+                <a href="https://github.com/halkeye-helm-charts/pocketmine">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                A Helm chart for Kubernetes
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						postfix
-						(<a href="postfix/postfix-0.1.0.tgz" title="postfix/postfix-0.1.0.tgz">
-						0.1.0
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/postfix">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						A SMTP relay host for transactional based emails from within a cluster.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="postfix/postfix-0.1.0.tgz" title="postfix/postfix-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="postfix's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                postfix
+                (
+                  0.1.0
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/postfix">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                A SMTP relay host for transactional based emails from within a cluster.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						resurrectbot
-						(<a href="resurrectbot/resurrectbot-0.1.4-1.tgz" title="resurrectbot/resurrectbot-0.1.4-1.tgz">
-						0.1.4-1
-						@
-						v0.1.4
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/resurrectbot">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						A slack bot that can ressurect the past
-					</p>
-				</li>
+				<div class="chart">
+          <a href="resurrectbot/resurrectbot-0.1.4-1.tgz" title="resurrectbot/resurrectbot-0.1.4-1.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="resurrectbot's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                resurrectbot
+                (
+                  0.1.4-1
+                  @
+                  v0.1.4
+                )
+                <a href="https://github.com/halkeye-helm-charts/resurrectbot">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                A slack bot that can ressurect the past
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						tautulli
-						(<a href="tautulli/tautulli-0.1.0.tgz" title="tautulli/tautulli-0.1.0.tgz">
-						0.1.0
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/tautulli">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Tautulli integrates with Plex to provide you a feature-rich dashboard of statistics from user activity to a graphical history of streams, play count, along with configurable notifications, and more.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="tautulli/tautulli-0.1.0.tgz" title="tautulli/tautulli-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="tautulli's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                tautulli
+                (
+                  0.1.0
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/tautulli">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Tautulli integrates with Plex to provide you a feature-rich dashboard of statistics from user activity to a graphical history of streams, play count, along with configurable notifications, and more.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						terraria
-						(<a href="terraria/terraria-0.1.0.tgz" title="terraria/terraria-0.1.0.tgz">
-						0.1.0
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/terraria">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Terraria is a 2D sandbox game with gameplay that revolves around exploration, building, combat, and mining.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="terraria/terraria-0.1.0.tgz" title="terraria/terraria-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="terraria's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                terraria
+                (
+                  0.1.0
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/terraria">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Terraria is a 2D sandbox game with gameplay that revolves around exploration, building, combat, and mining.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						thelounge
-						(<a href="thelounge/thelounge-4.0.0.tgz" title="thelounge/thelounge-4.0.0.tgz">
-						4.0.0
-						@
-						4.0.0-alpine
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/thelounge">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Modern web IRC client designed for self-hosting
-					</p>
-				</li>
+				<div class="chart">
+          <a href="thelounge/thelounge-4.0.0.tgz" title="thelounge/thelounge-4.0.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="thelounge's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                thelounge
+                (
+                  4.0.0
+                  @
+                  4.0.0-alpine
+                )
+                <a href="https://github.com/halkeye-helm-charts/thelounge">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Modern web IRC client designed for self-hosting
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						traefik-forward-auth
-						(<a href="traefik-forward-auth/traefik-forward-auth-0.1.0.tgz" title="traefik-forward-auth/traefik-forward-auth-0.1.0.tgz">
-						0.1.0
-						@
-						latest
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/traefik-forward-auth">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						Minimal forward authentication service that provides Google oauth based login and authentication for the traefik reverse proxy
-					</p>
-				</li>
+				<div class="chart">
+          <a href="traefik-forward-auth/traefik-forward-auth-0.1.0.tgz" title="traefik-forward-auth/traefik-forward-auth-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="traefik-forward-auth's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                traefik-forward-auth
+                (
+                  0.1.0
+                  @
+                  latest
+                )
+                <a href="https://github.com/halkeye-helm-charts/traefik-forward-auth">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                Minimal forward authentication service that provides Google oauth based login and authentication for the traefik reverse proxy
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						turtl
-						(<a href="turtl/turtl-0.1.6.tgz" title="turtl/turtl-0.1.6.tgz">
-						0.1.6
-						@
-						0.7
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/turtl">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						The secure, collaborative notebook - Totally private personal database and note taking app.
-					</p>
-				</li>
+				<div class="chart">
+          <a href="turtl/turtl-0.1.6.tgz" title="turtl/turtl-0.1.6.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="turtl's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                turtl
+                (
+                  0.1.6
+                  @
+                  0.7
+                )
+                <a href="https://github.com/halkeye-helm-charts/turtl">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                The secure, collaborative notebook - Totally private personal database and note taking app.
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						vouch
-						(<a href="vouch/vouch-0.1.3.tgz" title="vouch/vouch-0.1.3.tgz">
-						0.1.3
-						@
-						0.5.16
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/vouch">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						An SSO and OAuth login solution for nginx using the auth_request module
-					</p>
-				</li>
+				<div class="chart">
+          <a href="vouch/vouch-0.1.3.tgz" title="vouch/vouch-0.1.3.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="vouch's logo" src="https://avatars0.githubusercontent.com/u/45102943?s=200&amp;v=4">
+            </div>
+            <div class="body">
+              <p class="info">
+                vouch
+                (
+                  0.1.3
+                  @
+                  0.5.16
+                )
+                <a href="https://github.com/halkeye-helm-charts/vouch">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                An SSO and OAuth login solution for nginx using the auth_request module
+              </p>
+            </div>
+          </a>
+        </div>
 			
-				<li>
-					<p>
-						whoami-helm-chart
-						(<a href="whoami-helm-chart/whoami-helm-chart-0.1.0.tgz" title="whoami-helm-chart/whoami-helm-chart-0.1.0.tgz">
-						0.1.0
-						@
-						1.0
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/whoami-helm-chart">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						A Helm chart for Kubernetes
-					</p>
-				</li>
+				<div class="chart">
+          <a href="whoami-helm-chart/whoami-helm-chart-0.1.0.tgz" title="whoami-helm-chart/whoami-helm-chart-0.1.0.tgz">
+            <div class="icon">
+              <img class="chart-item-logo" alt="whoami-helm-chart's logo" src="_images/placeholder.png">
+            </div>
+            <div class="body">
+              <p class="info">
+                whoami-helm-chart
+                (
+                  0.1.0
+                  @
+                  1.0
+                )
+                <a href="https://github.com/halkeye-helm-charts/whoami-helm-chart">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                A Helm chart for Kubernetes
+              </p>
+            </div>
+          </a>
+        </div>
 			
-      </ul>
-
+      </div>
     </section>
 		<time datetime="2019-12-31T21:49:36" pubdate id="generated">Tue Dec 31 2019 09:49:36PM UTC&#43;00:00</time>
 

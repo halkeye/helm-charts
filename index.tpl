@@ -10,7 +10,6 @@
       .markdown-body {
         box-sizing: border-box;
         min-width: 200px;
-        max-width: 980px;
         margin: 0 auto;
         padding: 45px;
       }
@@ -28,40 +27,84 @@
 
       .snippet { position: relative; }
       .snippet:hover .btn, .snippet .btn:focus {
-    opacity: 1;
-}
-.snippet .btn {
-    -webkit-transition: opacity .3s ease-in-out;
-    -o-transition: opacity .3s ease-in-out;
-    transition: opacity .3s ease-in-out;
-    opacity: 0;
-    padding: 2px 6px;
-    position: absolute;
-    right: 4px;
-    top: 4px;
-}
-.btn {
-    position: relative;
-    display: inline-block;
-    padding: 6px 12px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 20px;
-    color: #333;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    background-color: #eee;
-    background-image: linear-gradient(#fcfcfc,#eee);
-    border: 1px solid #d5d5d5;
-    border-radius: 3px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-appearance: none;
-}
+        opacity: 1;
+      }
+      .snippet .btn {
+        -webkit-transition: opacity .3s ease-in-out;
+        -o-transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+        opacity: 0;
+        padding: 2px 6px;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+      }
+      .btn {
+        position: relative;
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #333;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #eee;
+        background-image: linear-gradient(#fcfcfc,#eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-appearance: none;
+      }
 
+      .charts {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .chart {
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #d7d9dd;
+        transition: transform .2s ease;
+        background-color: #eaedef;
+        width: 300px;
+        margin: 0.5em;
+      }
+      
+      .chart .icon {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 110px;
+        background-color: #fff;
+        align-items: center;
+      }
+      .chart .icon img { 
+        max-height: 80%;
+      }
+      .chart .body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        border-top: 1px solid #d7d9dd;
+        padding: 0 1em;
+        flex-direction: column;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .chart .body .info {
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .chart .body .description {
+        text-align: left;
+      }
     </style>
     
   </head>
@@ -84,27 +127,33 @@
 
       <h2>Charts</h2>
 
-      <ul>
+      <div class="charts">
 			{{range $key, $chartEntry := .Entries }}
-				<li>
-					<p>
-						{{ (index $chartEntry 0).Name }}
-						(<a href="{{ (index (index $chartEntry 0).Urls 0) }}" title="{{ (index (index $chartEntry 0).Urls 0) }}">
-						{{ (index $chartEntry 0).Version }}
-						@
-						{{ (index $chartEntry 0).AppVersion }}
-						</a>)
-            <a href="https://github.com/halkeye-helm-charts/{{ $key }}">
-              <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-            </a>
-					</p>
-					<p>
-						{{ (index $chartEntry 0).Description }}
-					</p>
-				</li>
+				<div class="chart">
+          <a href="{{ (index (index $chartEntry 0).Urls 0) }}" title="{{ (index (index $chartEntry 0).Urls 0) }}">
+            <div class="icon">
+              <img class="chart-item-logo" alt="{{ $key }}'s logo" src="{{ if (index $chartEntry 0).Icon }}{{ (index $chartEntry 0).Icon }}{{ else }}_images/placeholder.png{{end}}">
+            </div>
+            <div class="body">
+              <p class="info">
+                {{ (index $chartEntry 0).Name }}
+                (
+                  {{ (index $chartEntry 0).Version }}
+                  @
+                  {{ (index $chartEntry 0).AppVersion }}
+                )
+                <a href="https://github.com/halkeye-helm-charts/{{ $key }}">
+                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                </a>
+              </p>
+              <p class="description">
+                {{ (index $chartEntry 0).Description }}
+              </p>
+            </div>
+          </a>
+        </div>
 			{{end}}
-      </ul>
-
+      </div>
     </section>
 		<time datetime="{{ .Generated.Format "2006-01-02T15:04:05" }}" pubdate id="generated">{{ .Generated.Format "Mon Jan 2 2006 03:04:05PM MST-07:00" }}</time>
 
