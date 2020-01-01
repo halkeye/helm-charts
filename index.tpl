@@ -129,29 +129,27 @@
 
       <div class="charts">
 			{{range $key, $chartEntry := .Entries }}
-				<div class="chart">
-          <a href="{{ (index (index $chartEntry 0).Urls 0) }}" title="{{ (index (index $chartEntry 0).Urls 0) }}">
-            <div class="icon">
-              <img class="chart-item-logo" alt="{{ $key }}'s logo" src="{{ if (index $chartEntry 0).Icon }}{{ (index $chartEntry 0).Icon }}{{ else }}_images/placeholder.png{{end}}">
-            </div>
-            <div class="body">
-              <p class="info">
-                {{ (index $chartEntry 0).Name }}
-                (
-                  {{ (index $chartEntry 0).Version }}
-                  @
-                  {{ (index $chartEntry 0).AppVersion }}
-                )
-                <a href="https://github.com/halkeye-helm-charts/{{ $key }}">
-                  <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
-                </a>
-              </p>
-              <p class="description">
-                {{ (index $chartEntry 0).Description }}
-              </p>
-            </div>
-          </a>
-        </div>
+        {{ if not (index $chartEntry 0).Deprecated }}
+          <div class="chart">
+            <a href="{{ (index (index $chartEntry 0).Urls 0) }}" title="{{ (index (index $chartEntry 0).Urls 0) }}">
+              <div class="icon">
+                <img class="chart-item-logo" alt="{{ $key }}'s logo" src="{{ if (index $chartEntry 0).Icon }}{{ (index $chartEntry 0).Icon }}{{ else }}_images/placeholder.png{{end}}">
+              </div>
+              <div class="body">
+                <p class="info">
+                  {{ (index $chartEntry 0).Name }}
+                  ({{ (index $chartEntry 0).Version }}@{{ (index $chartEntry 0).AppVersion }})
+                  <a href="https://github.com/halkeye-helm-charts/{{ $key }}">
+                    <img src="_images/GitHub-Mark-32px.png" alt="github link" style="height: 16px; width: 16px; vertical-align: middle;" />
+                  </a>
+                </p>
+                <p class="description">
+                  {{ (index $chartEntry 0).Description }}
+                </p>
+              </div>
+            </a>
+          </div>
+        {{end}}
 			{{end}}
       </div>
     </section>
