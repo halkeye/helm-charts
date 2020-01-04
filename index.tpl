@@ -125,6 +125,14 @@
 
       <p>These are presented as is. Anyone is free to use them, and make suggestions, but they were created for my own use. At some point I want to submit them to the actual helm charts repo.</p>
 
+      <h2>How they are built</h2>
+      <p>
+        <ul>
+          <li><a href="https://github.com/halkeye/jenkins-shared-library/blob/master/vars/buildHelmChart.groovy">Jenkins Pipeline</a></li>
+          <li><a href="https://github.com/halkeye-helm-charts/">Github repos</a></li>
+        </ul>
+      </p>
+
       <h2>Charts</h2>
 
       <div class="charts">
