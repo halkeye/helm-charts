@@ -2072,14 +2072,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-  whoami-helm-chart:
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: "2020-02-29T01:33:30.528319685Z"
-    description: A Helm chart for Kubernetes
-    digest: 8ca28aa79a144c2a3bc022c5d7425500c4be00eb54fb8a9b9b9333c75a84b586
-    name: whoami-helm-chart
-    urls:
-    - whoami-helm-chart/whoami-helm-chart-0.1.0.tgz
-    version: 0.1.0
 generated: "2020-02-29T01:33:30.475480074Z"
