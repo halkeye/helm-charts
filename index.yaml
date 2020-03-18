@@ -3,7 +3,7 @@ entries:
   bazarr:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.151441237Z"
+    created: "2020-03-18T05:10:23.674711167Z"
     description: Bazarr is a companion application to Sonarr and Radarr. It can manage
       and download subtitles based on your requirements. You define your preferences
       by TV show or movie and Bazarr takes care of everything for you.
@@ -20,7 +20,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.151052342Z"
+    created: "2020-03-18T05:10:23.674340213Z"
     description: Bazarr is a companion application to Sonarr and Radarr. It can manage
       and download subtitles based on your requirements. You define your preferences
       by TV show or movie and Bazarr takes care of everything for you.
@@ -34,7 +34,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.150684349Z"
+    created: "2020-03-18T05:10:23.673984435Z"
     description: Bazarr is a companion application to Sonarr and Radarr. It can manage
       and download subtitles based on your requirements. You define your preferences
       by TV show or movie and Bazarr takes care of everything for you.
@@ -48,7 +48,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.150335806Z"
+    created: "2020-03-18T05:10:23.673617343Z"
     description: Bazarr is a companion application to Sonarr and Radarr. It can manage
       and download subtitles based on your requirements. You define your preferences
       by TV show or movie and Bazarr takes care of everything for you.
@@ -60,7 +60,7 @@ entries:
   cops:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2020-03-17T20:26:22.152112957Z"
+    created: "2020-03-18T05:10:23.675508434Z"
     description: Calibre OPDS (and HTML) PHP Server - web-based light alternative
       to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
     digest: cb50b0826ca9cb8dbb46e6569135411f0f23808e4155924d4b540968a6df2bce
@@ -77,7 +77,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2020-03-17T20:26:22.151755571Z"
+    created: "2020-03-18T05:10:23.675141475Z"
     description: Calibre OPDS (and HTML) PHP Server - web-based light alternative
       to Calibre content server / Calibre2OPDS to serve ebooks (epub, mobi, pdf, ...)
     digest: f028940d696cb0d4d5d2b112fbcf486ca8f223ac57c6ff39dc06f1ca0c1cb7db
@@ -92,7 +92,7 @@ entries:
   discord-streamers:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.152746911Z"
+    created: "2020-03-18T05:10:23.676153571Z"
     deprecated: true
     description: Helm chart for a project I was creating
     digest: 10c7a03e85ba69dd90b523affe3e4fb7ff1faa469c8dae90f48a4e5524094483
@@ -102,7 +102,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.152413411Z"
+    created: "2020-03-18T05:10:23.67581976Z"
     description: A Helm chart for Kubernetes
     digest: 2fc218f879e27e646046aa4e15de04a4ee5a84bb5e8f044d3fa7cda169c3aa5a
     name: discord-streamers
@@ -112,7 +112,7 @@ entries:
   discourse:
   - apiVersion: v1
     appVersion: v2.2.1
-    created: "2020-03-17T20:26:22.154699762Z"
+    created: "2020-03-18T05:10:23.677921488Z"
     description: A platform for community discussion. Free, open, simple.
     digest: eb54133263dadb754b93820e92a98096efbe7861282a5a103582928810f4b5ed
     home: https://www.discourse.org
@@ -125,7 +125,7 @@ entries:
     version: 0.2.1
   - apiVersion: v1
     appVersion: v2.2.0.beta10
-    created: "2020-03-17T20:26:22.154339143Z"
+    created: "2020-03-18T05:10:23.677572859Z"
     description: A platform for community discussion. Free, open, simple.
     digest: 1d54e0918da53074b9dcd29e766ce0846795cbe91104e499a0ba53093bc3a076
     home: https://www.discourse.org
@@ -138,7 +138,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-17T20:26:22.153538947Z"
+    created: "2020-03-18T05:10:23.677027991Z"
     description: A Helm chart for Kubernetes
     digest: 183693737790a932de2580ccf515b8a926f8534cb676fd1a35e90890be5348e2
     name: discourse
@@ -148,7 +148,7 @@ entries:
   docker-gc:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.155062517Z"
+    created: "2020-03-18T05:10:23.678215017Z"
     description: A simple Docker container and image garbage collection script.
     digest: ac15d7d2622504f24b46c33065386d64eff4b606d5b971965ec774d8bb4b3c3c
     home: https://github.com/spotify/docker-gc
@@ -164,7 +164,7 @@ entries:
   firefly-iii:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2020-03-17T20:26:22.156848968Z"
+    created: "2020-03-18T05:10:23.680055716Z"
     description: 'Firefly III: a personal finances manager'
     digest: 9fe1b659abdc9637c22b1cbbc4255599869d2f37bf6d1d178ebddaf39030b65c
     home: https://www.firefly-iii.org/
@@ -185,7 +185,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2020-03-17T20:26:22.156377667Z"
+    created: "2020-03-18T05:10:23.679592031Z"
     description: 'Firefly III: a personal finances manager'
     digest: 645f0f0997679f5fa385e0802e47f79c89efc129a370a6a3b3299b8f090b7a0b
     icon: https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/public/android-chrome-512x512.png
@@ -200,7 +200,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 5.0.4
-    created: "2020-03-17T20:26:22.1559502Z"
+    created: "2020-03-18T05:10:23.679145863Z"
     description: 'Firefly III: a personal finances manager'
     digest: d6f5fe207e2085b1a53fcc06679cefed8473ffa57a9ec5841ee3200add9ce7a9
     icon: https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/public/android-chrome-512x512.png
@@ -215,7 +215,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 5.0.3
-    created: "2020-03-17T20:26:22.155512463Z"
+    created: "2020-03-18T05:10:23.678649912Z"
     description: 'Firefly III: a personal finances manager'
     digest: 07e76e8a601908472bd1ff68a159e11dedf04340fcaf5b0cb0ff997288ddae4d
     icon: https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/public/android-chrome-512x512.png
@@ -231,7 +231,7 @@ entries:
   freshrss:
   - apiVersion: v1
     appVersion: 1.15.3
-    created: "2020-03-17T20:26:22.159151626Z"
+    created: "2020-03-18T05:10:23.682313506Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 40efa4d51ce2e36b56eed591fb1c94e9daab1019a16375c904b7f00d0f23008c
     icon: https://raw.githubusercontent.com/FreshRSS/FreshRSS/master/docs/img/FreshRSS-logo.png
@@ -246,7 +246,7 @@ entries:
     version: 1.15.3-1
   - apiVersion: v1
     appVersion: 1.15.2
-    created: "2020-03-17T20:26:22.158808912Z"
+    created: "2020-03-18T05:10:23.682010159Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 8406baf921254f55cd22e54081fee7b5999f21dcf555d39f5a66cc3c03e723a0
     icon: https://raw.githubusercontent.com/FreshRSS/FreshRSS/master/docs/img/FreshRSS-logo.png
@@ -261,7 +261,7 @@ entries:
     version: 1.15.2-1
   - apiVersion: v1
     appVersion: 1.15.1
-    created: "2020-03-17T20:26:22.158476843Z"
+    created: "2020-03-18T05:10:23.681651714Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: ac3320bd7f0c97bd988d5d50387c08c9ad65316a7be69ebbfab88098fce10d5a
     icon: https://raw.githubusercontent.com/FreshRSS/FreshRSS/master/docs/img/FreshRSS-logo.png
@@ -276,7 +276,7 @@ entries:
     version: 1.15.1-1
   - apiVersion: v1
     appVersion: 1.14.3
-    created: "2020-03-17T20:26:22.1581588Z"
+    created: "2020-03-18T05:10:23.681322259Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 8e1cf08a9abf5843894f818f6430bb0b2c990d290d89124dce17862b48b0ef8d
     icon: https://raw.githubusercontent.com/FreshRSS/FreshRSS/master/docs/img/FreshRSS-logo.png
@@ -291,7 +291,7 @@ entries:
     version: 1.14.3
   - apiVersion: v1
     appVersion: 1.14.3
-    created: "2020-03-17T20:26:22.15783148Z"
+    created: "2020-03-18T05:10:23.68100036Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 04be6ca0c94f55922d7ce0b2ede2a6f7939877396f326f8e873fc546babbdd85
     icon: https://raw.githubusercontent.com/FreshRSS/FreshRSS/master/docs/img/FreshRSS-logo.png
@@ -306,7 +306,7 @@ entries:
     version: 1.14.3-1
   - apiVersion: v1
     appVersion: 1.14.2
-    created: "2020-03-17T20:26:22.157496957Z"
+    created: "2020-03-18T05:10:23.680664824Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 8561e8b0fd40dc9ed58fd9586c09689fed86e2c8889a84ae39f2a026de58c4bb
     name: freshrss
@@ -315,7 +315,7 @@ entries:
     version: 1.13.1
   - apiVersion: v1
     appVersion: 1.13.0
-    created: "2020-03-17T20:26:22.157189743Z"
+    created: "2020-03-18T05:10:23.680372386Z"
     description: FreshRSS is a self-hosted RSS feed aggregator.
     digest: 28fb04675ea53ce97a775d1d38ebc8580764ee6eae7ac083d3a58632ab866082
     name: freshrss
@@ -325,7 +325,7 @@ entries:
   gitter-irc-bridge:
   - apiVersion: v1
     appVersion: v2.0.1
-    created: "2020-03-17T20:26:22.159488024Z"
+    created: "2020-03-18T05:10:23.682636164Z"
     description: Connect to Gitter using the IRC protocol. (halkeye fork/patches)
     digest: 466bd97eae87da80f205e5eeda897d697f984b7ba6b3e339c201556054ef8eea
     icon: https://gitlab.com/gitlab-org/gitter/webapp/-/raw/develop/public/images/logo/logo-64.png
@@ -338,7 +338,7 @@ entries:
   goplaxt:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.160413647Z"
+    created: "2020-03-18T05:10:23.683547494Z"
     description: Scrobble Plex plays to Trakt with ease!
     digest: c2bc258d052657ae74af28289225985c5fcf5fc01ae7f550be2fa5a7032d2c25
     maintainers:
@@ -352,7 +352,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.160076134Z"
+    created: "2020-03-18T05:10:23.68322563Z"
     description: Scrobble Plex plays to Trakt with ease!
     digest: ca8b7b99ca85ee9051d698432f29356f9b8f120534660fb141e7bd4e224fa21e
     maintainers:
@@ -364,7 +364,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.159764841Z"
+    created: "2020-03-18T05:10:23.682914445Z"
     description: Scrobble Plex plays to Trakt with ease!
     digest: 0f66f6b1c3158bf6c396f6080172386022316fa82ea59726ee1340cb8380fd44
     name: goplaxt
@@ -374,7 +374,7 @@ entries:
   guacamole:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2020-03-17T20:26:22.160834289Z"
+    created: "2020-03-18T05:10:23.683945861Z"
     description: Apache Guacamole is a clientless remote desktop gateway. It supports
       standard protocols like VNC, RDP, and SSH.
     digest: b0ac933ad49bf87b561c94bfc35ad139170eeec2725aad60df5f82a35cc988fe
@@ -391,7 +391,7 @@ entries:
   hubot:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.161168839Z"
+    created: "2020-03-18T05:10:23.684260153Z"
     description: A customizable life embetterment robot.
     digest: 281ad0436af6daf073a9be4ee2a571e83e1321098585bfaf0e3b2cdbddf04332
     icon: https://hubot.github.com/assets/images/layout/hubot-avatar@2x.png
@@ -408,7 +408,7 @@ entries:
   irc-slack:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.161847261Z"
+    created: "2020-03-18T05:10:23.685139092Z"
     deprecated: true
     description: IRC-to-Slack gateway
     digest: 3776e42aa01b3826dcb2a9a7134ca5f58e870e8a76025364142f855cb9811c62
@@ -425,7 +425,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.161504199Z"
+    created: "2020-03-18T05:10:23.684584686Z"
     description: IRC-to-Slack gateway
     digest: 50bbebd5848e552275f6fe25fd18612c4f240936a3bbe6b3f77d1c3b236478fc
     home: https://github.com/insomniacslk/irc-slack
@@ -442,7 +442,7 @@ entries:
   irslackd:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-17T20:26:22.16261109Z"
+    created: "2020-03-18T05:10:23.685914794Z"
     description: Self-hosted IRC gateway to Slack
     digest: add0809baf909066da24f6a3dad7a5671e9d313d90e9abb35b19a01706013efa
     keywords:
@@ -458,7 +458,7 @@ entries:
   jackett:
   - apiVersion: v1
     appVersion: 0.10.554.0
-    created: "2020-03-17T20:26:22.163786821Z"
+    created: "2020-03-18T05:10:23.686692655Z"
     description: API Support for your favorite torrent trackers.
     digest: c836cd705774be20ec7197449e29077756236cd39f5e5232412bc8ef0217e4e2
     home: https://github.com/Jackett/Jackett
@@ -474,7 +474,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.10.554.0
-    created: "2020-03-17T20:26:22.163391005Z"
+    created: "2020-03-18T05:10:23.686307342Z"
     description: API Support for your favorite torrent trackers.
     digest: 0c2c7b5615762f7b77227f20fbc6f28d57dd4f1fe2aa184da732ad341413aabf
     home: https://github.com/Jackett/Jackett
@@ -490,7 +490,7 @@ entries:
   ldap-self-service:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-17T20:26:22.164155064Z"
+    created: "2020-03-18T05:10:23.687120383Z"
     description: Web interface to change and reset password in an LDAP directory
     digest: 954208d970447f37a324ad70ac6b349487534abeb8b185648654eeb0aa7b941f
     icon: https://raw.githubusercontent.com/ltb-project/self-service-password/master/images/ltb-logo.png
@@ -505,7 +505,7 @@ entries:
   mastodon-twitter-poster:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.164585863Z"
+    created: "2020-03-18T05:10:23.687556661Z"
     description: Mastodon Twitter Crossposter
     digest: 28b32b3111c31b043298ea077a28e7b896cf63106d1101ce35eb9764cceab977
     home: https://github.com/renatolond/mastodon-twitter-poster
@@ -525,7 +525,7 @@ entries:
   matrix-ircd:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-17T20:26:22.164917067Z"
+    created: "2020-03-18T05:10:23.687898751Z"
     description: An IRCd implementation backed by Matrix.
     digest: 99663357e78ea6b1e89b28d43992bfc75c98e36d6d476b847f545e407c6d138a
     home: https://github.com/matrix-org/matrix-ircd
@@ -546,7 +546,7 @@ entries:
   matrix-media-repo:
   - apiVersion: v1
     appVersion: 1.0.2
-    created: "2020-03-17T20:26:22.165348012Z"
+    created: "2020-03-18T05:10:23.68831105Z"
     description: Matrix media repository with multi-domain in mind.
     digest: 9fb7f0ea8fa78db709188424b090c179b4e7033da7633eaaa031b2cf44852fb7
     home: https://github.com/matrix-org/synapse
@@ -564,10 +564,33 @@ entries:
     urls:
     - matrix-media-repo/matrix-media-repo-0.1.0.tgz
     version: 0.1.0
+  mautrix-telegram:
+  - apiVersion: v1
+    appVersion: latest
+    created: "2020-03-18T05:10:23.688918166Z"
+    description: A Matrix-Telegram hybrid puppeting/relaybot bridge - https://matrix.to/#/#telegram:maunium
+    digest: 74adf90d18201f4fd3f03c4aac492656e506bc5a636af431412b837145ba9daf
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - bridge
+    - telegram
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: mautrix-telegram
+    sources:
+    - https://github.com/tulir/mautrix-telegram
+    - https://hub.docker.com/r/halkeye/mautrix-telegram
+    urls:
+    - mautrix-telegram/mautrix-telegram-0.1.0.tgz
+    version: 0.1.0
   minecraft-ftb:
   - apiVersion: v1
     appVersion: 1.7.1_1.12.2
-    created: "2020-03-17T20:26:22.166709912Z"
+    created: "2020-03-18T05:10:23.690245545Z"
     deprecated: true
     description: Minecraft FTB chart. Defaults to the Ultimate Reloaded image
     digest: 1010a3d6ebd5f5ee0766b0c51ed8cc468caa0a8364e7b4b504ba8e400f0fc3a1
@@ -585,7 +608,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 1.7.1_1.12.2
-    created: "2020-03-17T20:26:22.166326628Z"
+    created: "2020-03-18T05:10:23.689889985Z"
     description: Minecraft FTB chart. Defaults to the Ultimate Reloaded image
     digest: 3ffcfb777619be08f5d3fe5b638187ece819a5650029ff0f718d44e723419d1b
     icon: https://www.feed-the-beast.com/Content/2-0-7081-28093/Skins/FTB/images/ftb-logo.png
@@ -602,7 +625,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-17T20:26:22.165978014Z"
+    created: "2020-03-18T05:10:23.689514714Z"
     description: A Helm chart for Kubernetes
     digest: 2710fbbd4e6ac3cd93ad2abb262eb90b7eea112aa4a9fe8fd124025e98b2f41c
     name: minecraft-ftb
@@ -611,7 +634,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-17T20:26:22.165655355Z"
+    created: "2020-03-18T05:10:23.689213059Z"
     description: A Helm chart for Kubernetes
     digest: 326ba93db51628920b275f12d7e8e38dcc3d37100251186a7828efbe9beac274
     name: minecraft-ftb
@@ -621,7 +644,7 @@ entries:
   mosquitto:
   - apiVersion: v1
     appVersion: 1.6.8
-    created: "2020-03-17T20:26:22.16758729Z"
+    created: "2020-03-18T05:10:23.691059006Z"
     description: Eclipse Mosquitto - An open source MQTT broker
     digest: 21294ac308ee4561e1f30af8703452ae83a317c0a6a9f70c27c8985647a295a3
     home: https://mosquitto.org/
@@ -643,7 +666,7 @@ entries:
   nzbhydra2:
   - apiVersion: v1
     appVersion: 2.14.1-1-01
-    created: "2020-03-17T20:26:22.173460984Z"
+    created: "2020-03-18T05:10:23.696729252Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -664,7 +687,7 @@ entries:
     version: 2.14.1
   - apiVersion: v1
     appVersion: 2.13.2-1-01
-    created: "2020-03-17T20:26:22.173021543Z"
+    created: "2020-03-18T05:10:23.696296224Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -685,7 +708,7 @@ entries:
     version: 2.13.3
   - apiVersion: v1
     appVersion: 2.13.2-1-01
-    created: "2020-03-17T20:26:22.172214448Z"
+    created: "2020-03-18T05:10:23.695802586Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -706,7 +729,7 @@ entries:
     version: 2.13.2
   - apiVersion: v1
     appVersion: 2.12.4-1-01
-    created: "2020-03-17T20:26:22.171587263Z"
+    created: "2020-03-18T05:10:23.695400312Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -727,7 +750,7 @@ entries:
     version: 2.12.4
   - apiVersion: v1
     appVersion: 2.10.6-1-01
-    created: "2020-03-17T20:26:22.171153728Z"
+    created: "2020-03-18T05:10:23.694889936Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -748,7 +771,7 @@ entries:
     version: 2.10.7
   - apiVersion: v1
     appVersion: 2.10.6-1-01
-    created: "2020-03-17T20:26:22.170681554Z"
+    created: "2020-03-18T05:10:23.694449981Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -766,7 +789,7 @@ entries:
     version: 2.10.6
   - apiVersion: v1
     appVersion: 2.10.2-1-01
-    created: "2020-03-17T20:26:22.170292414Z"
+    created: "2020-03-18T05:10:23.69390924Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -784,7 +807,7 @@ entries:
     version: 2.10.2
   - apiVersion: v1
     appVersion: 2.10.1-1-01
-    created: "2020-03-17T20:26:22.169852785Z"
+    created: "2020-03-18T05:10:23.692879108Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -802,7 +825,7 @@ entries:
     version: 2.10.1
   - apiVersion: v1
     appVersion: 2.9.3-1-01
-    created: "2020-03-17T20:26:22.181573817Z"
+    created: "2020-03-18T05:10:23.705366603Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -820,7 +843,7 @@ entries:
     version: 2.9.5
   - apiVersion: v1
     appVersion: 2.9.3-1-01
-    created: "2020-03-17T20:26:22.180832038Z"
+    created: "2020-03-18T05:10:23.704962697Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -838,7 +861,7 @@ entries:
     version: 2.9.4
   - apiVersion: v1
     appVersion: 2.9.3-1-01
-    created: "2020-03-17T20:26:22.180413099Z"
+    created: "2020-03-18T05:10:23.70456837Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -856,7 +879,7 @@ entries:
     version: 2.9.3
   - apiVersion: v1
     appVersion: 2.8.4-1-01
-    created: "2020-03-17T20:26:22.180014912Z"
+    created: "2020-03-18T05:10:23.70416326Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -874,7 +897,7 @@ entries:
     version: 2.8.4
   - apiVersion: v1
     appVersion: 2.8.2-1-01
-    created: "2020-03-17T20:26:22.179640641Z"
+    created: "2020-03-18T05:10:23.703717338Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -892,7 +915,7 @@ entries:
     version: 2.8.2
   - apiVersion: v1
     appVersion: 2.8.1-1-01
-    created: "2020-03-17T20:26:22.179267056Z"
+    created: "2020-03-18T05:10:23.703218244Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -910,7 +933,7 @@ entries:
     version: 2.8.1
   - apiVersion: v1
     appVersion: 2.7.7-1-01
-    created: "2020-03-17T20:26:22.178882792Z"
+    created: "2020-03-18T05:10:23.702318597Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -928,7 +951,7 @@ entries:
     version: 2.7.7
   - apiVersion: v1
     appVersion: 2.7.5-1-01
-    created: "2020-03-17T20:26:22.178498871Z"
+    created: "2020-03-18T05:10:23.701941524Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -946,7 +969,7 @@ entries:
     version: 2.7.5
   - apiVersion: v1
     appVersion: 2.7.4-1-01
-    created: "2020-03-17T20:26:22.178089596Z"
+    created: "2020-03-18T05:10:23.701562182Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -964,7 +987,7 @@ entries:
     version: 2.7.4
   - apiVersion: v1
     appVersion: 2.7.2-1-01
-    created: "2020-03-17T20:26:22.177701065Z"
+    created: "2020-03-18T05:10:23.701183911Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -982,7 +1005,7 @@ entries:
     version: 2.7.2
   - apiVersion: v1
     appVersion: 2.7.1-1-01
-    created: "2020-03-17T20:26:22.177312689Z"
+    created: "2020-03-18T05:10:23.700778861Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1000,7 +1023,7 @@ entries:
     version: 2.7.1
   - apiVersion: v1
     appVersion: 2.6.18-1-01
-    created: "2020-03-17T20:26:22.176552642Z"
+    created: "2020-03-18T05:10:23.700015041Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1018,7 +1041,7 @@ entries:
     version: 2.6.18
   - apiVersion: v1
     appVersion: 2.6.17-1-01
-    created: "2020-03-17T20:26:22.176166143Z"
+    created: "2020-03-18T05:10:23.699615512Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1036,7 +1059,7 @@ entries:
     version: 2.6.17
   - apiVersion: v1
     appVersion: 2.6.15-1-01
-    created: "2020-03-17T20:26:22.175784542Z"
+    created: "2020-03-18T05:10:23.699200697Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1054,7 +1077,7 @@ entries:
     version: 2.6.15
   - apiVersion: v1
     appVersion: 2.6.14-1-01
-    created: "2020-03-17T20:26:22.17542046Z"
+    created: "2020-03-18T05:10:23.698709489Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1072,7 +1095,7 @@ entries:
     version: 2.6.14
   - apiVersion: v1
     appVersion: 2.6.12-1-01
-    created: "2020-03-17T20:26:22.175065602Z"
+    created: "2020-03-18T05:10:23.698309087Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1090,7 +1113,7 @@ entries:
     version: 2.6.12
   - apiVersion: v1
     appVersion: 2.6.11-1-01
-    created: "2020-03-17T20:26:22.174606014Z"
+    created: "2020-03-18T05:10:23.697901623Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1108,7 +1131,7 @@ entries:
     version: 2.6.11
   - apiVersion: v1
     appVersion: 2.6.10-1-01
-    created: "2020-03-17T20:26:22.174225793Z"
+    created: "2020-03-18T05:10:23.697519092Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1126,7 +1149,7 @@ entries:
     version: 2.6.10
   - apiVersion: v1
     appVersion: 2.6.2-1-01
-    created: "2020-03-17T20:26:22.176916046Z"
+    created: "2020-03-18T05:10:23.700393867Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1144,7 +1167,7 @@ entries:
     version: 2.6.2
   - apiVersion: v1
     appVersion: 2.6.1-1-01
-    created: "2020-03-17T20:26:22.173856227Z"
+    created: "2020-03-18T05:10:23.697122432Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1162,7 +1185,7 @@ entries:
     version: 2.6.1
   - apiVersion: v1
     appVersion: 2.5.5-1-01
-    created: "2020-03-17T20:26:22.169281507Z"
+    created: "2020-03-18T05:10:23.692498493Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1180,7 +1203,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: 2.5.4-1-01
-    created: "2020-03-17T20:26:22.168756854Z"
+    created: "2020-03-18T05:10:23.692136048Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1198,7 +1221,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 2.3.22-1-01
-    created: "2020-03-17T20:26:22.168363226Z"
+    created: "2020-03-18T05:10:23.691767649Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1216,7 +1239,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 2.1.6
-    created: "2020-03-17T20:26:22.167976967Z"
+    created: "2020-03-18T05:10:23.691410373Z"
     description: NZBHydra 2 is a meta search for NZB indexers. It provides easy access
       to a number of raw and newznab based indexers. You can search all your indexers
       from one place and use it as an indexer source for tools like Sonarr, Radarr
@@ -1235,7 +1258,7 @@ entries:
   octobox:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.182640151Z"
+    created: "2020-03-18T05:10:23.706095405Z"
     description: Untangle your GitHub Notifications
     digest: 368c1f2e439e64ab43513d3d04b97130fa439c4882c38c2a509223a93db18a5f
     icon: https://octobox.io/assets/infinitacle-round-3332cf1ee4ec7508f5be2cee8fba05407360b0e937cd84acb2dbdd9c8a1ad5e2.svg
@@ -1250,7 +1273,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.182260619Z"
+    created: "2020-03-18T05:10:23.70572126Z"
     description: Untangle your GitHub Notifications
     digest: 6af4d9c8f51ad2e37d4b632232727181f9b7fb2ce90e9d399061b8187b73c441
     icon: https://octobox.io/assets/infinitacle-round-3332cf1ee4ec7508f5be2cee8fba05407360b0e937cd84acb2dbdd9c8a1ad5e2.svg
@@ -1266,7 +1289,7 @@ entries:
   pgadmin:
   - apiVersion: v1
     appVersion: "4.11"
-    created: "2020-03-17T20:26:22.185056763Z"
+    created: "2020-03-18T05:10:23.708676828Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -1285,7 +1308,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: "4.10"
-    created: "2020-03-17T20:26:22.184622069Z"
+    created: "2020-03-18T05:10:23.708246533Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -1304,7 +1327,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "4.10"
-    created: "2020-03-17T20:26:22.184166615Z"
+    created: "2020-03-18T05:10:23.707792122Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -1322,7 +1345,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "4.6"
-    created: "2020-03-17T20:26:22.183785077Z"
+    created: "2020-03-18T05:10:23.707380193Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -1340,7 +1363,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "3.6"
-    created: "2020-03-17T20:26:22.183423853Z"
+    created: "2020-03-18T05:10:23.706887679Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -1358,7 +1381,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "3.6"
-    created: "2020-03-17T20:26:22.183035158Z"
+    created: "2020-03-18T05:10:23.706490618Z"
     description: pgAdmin is the most popular and feature rich Open Source administration
       and development platform for PostgreSQL, the most advanced Open Source database
       in the world.
@@ -1377,7 +1400,7 @@ entries:
   pihole:
   - apiVersion: v1
     appVersion: 4.3.2-1
-    created: "2020-03-17T20:26:22.186250548Z"
+    created: "2020-03-18T05:10:23.70992835Z"
     description: Pi-hole® - Network-wide Ad Blocking - A black hole for Internet advertisements
     digest: 3bc7bd945badaf03536ab7134dcc9def244b90878c901b41da3514ab20a54006
     icon: https://piholenet.b-cdn.net/wp-content/uploads/2016/12/Vortex-R.png
@@ -1390,7 +1413,7 @@ entries:
     version: 0.2.2
   - apiVersion: v1
     appVersion: 4.3.2-1
-    created: "2020-03-17T20:26:22.185842804Z"
+    created: "2020-03-18T05:10:23.709516628Z"
     description: Pi-hole® - Network-wide Ad Blocking - A black hole for Internet advertisements
     digest: bbe6bad9ddc66c42700839e2440ce127dbd5f3162804c2854af76b0e3488f114
     icon: https://piholenet.b-cdn.net/wp-content/uploads/2016/12/Vortex-R.png
@@ -1403,7 +1426,7 @@ entries:
     version: 0.2.1
   - apiVersion: v1
     appVersion: 4.3.2-1
-    created: "2020-03-17T20:26:22.185437294Z"
+    created: "2020-03-18T05:10:23.709084033Z"
     description: Pi-hole® - Network-wide Ad Blocking - A black hole for Internet advertisements
     digest: 72f8222c0b31e7ee1b1e85312ae0a1d8859ee4721703673870705dc15e366bf0
     icon: https://piholenet.b-cdn.net/wp-content/uploads/2016/12/Vortex-R.png
@@ -1417,7 +1440,7 @@ entries:
   pocketmine:
   - apiVersion: v1
     appVersion: 3.6.1
-    created: "2020-03-17T20:26:22.186823741Z"
+    created: "2020-03-18T05:10:23.710550322Z"
     deprecated: true
     description: A Helm chart for Kubernetes
     digest: 3f3fefdcc54f1b892791fc83116ba9e4bf23475421095228a8f12afeac13532d
@@ -1430,7 +1453,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 3.6.1
-    created: "2020-03-17T20:26:22.186525638Z"
+    created: "2020-03-18T05:10:23.710229Z"
     description: A Helm chart for Kubernetes
     digest: e842d4479c66666ace9046ca743bf5645eaf11d66ccb6d0d2dd6a4609d0eb777
     name: pocketmine
@@ -1440,7 +1463,7 @@ entries:
   postfix:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.187858036Z"
+    created: "2020-03-18T05:10:23.711618289Z"
     description: A SMTP relay host for transactional based emails from within a cluster.
     digest: 22cd128184a0461e1a2b1a4b76084f28b05ecb7b244a18a4187528f52fedc90b
     icon: https://raw.githubusercontent.com/halkeye-helm-charts/postfix/master/logo.gif
@@ -1453,7 +1476,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.187449982Z"
+    created: "2020-03-18T05:10:23.711160695Z"
     description: A SMTP relay host for transactional based emails from within a cluster.
     digest: b7a568263950b47709742821b97588bbd705f6456be0a3d86397214f0905b6a6
     icon: http://www.postfix.org/mysza.gif
@@ -1466,7 +1489,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.187148802Z"
+    created: "2020-03-18T05:10:23.71082608Z"
     description: A SMTP relay host for transactional based emails from within a cluster.
     digest: 44d5b416678a290a3d56fc89cd9044b1eec9faa9a799eb83e9412b5fc8f63230
     name: postfix
@@ -1476,7 +1499,7 @@ entries:
   powerdns:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.188249383Z"
+    created: "2020-03-18T05:10:23.712760047Z"
     description: PowerDNS is a DNS server, written in C++ and licensed under the GPL.
       It runs on most Unix derivatives. PowerDNS features a large number of different
       backends ranging from simple BIND style zonefiles to relational databases and
@@ -1493,7 +1516,7 @@ entries:
   powerdnsadmin:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.188612083Z"
+    created: "2020-03-18T05:10:23.713168703Z"
     description: A PowerDNS web interface with advanced features.
     digest: e417f5f37c8532d93b6b3c013c1bb983714acb5e46c3b350b5612ddb0903615e
     maintainers:
@@ -1508,7 +1531,7 @@ entries:
   requestbin:
   - apiVersion: v1
     appVersion: 0.2.0
-    created: "2020-03-17T20:26:22.188951663Z"
+    created: "2020-03-18T05:10:23.713512497Z"
     description: Inspect HTTP requests. Debug webhooks
     digest: 70ee24aa416d314cec3c6042b4187e880f74afd40581001571802797ad4d6e57
     name: requestbin
@@ -1520,7 +1543,7 @@ entries:
   resurrectbot:
   - apiVersion: v1
     appVersion: v0.1.4
-    created: "2020-03-17T20:26:22.190073295Z"
+    created: "2020-03-18T05:10:23.714472929Z"
     description: A slack bot that can ressurect the past
     digest: 3894c7420924eb821e9becbca0f7cac0886945f6caed8395db82af8614242f37
     home: https://resurrectbot.g4v.dev/
@@ -1539,7 +1562,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: v0.1.4
-    created: "2020-03-17T20:26:22.189532923Z"
+    created: "2020-03-18T05:10:23.714094173Z"
     description: A slack bot that can ressurect the past
     digest: 0cd9871dda1d82be56a7042bb9803f9e275b03a4b4752ca7c17badb6202c260a
     name: resurrectbot
@@ -1548,7 +1571,7 @@ entries:
     version: 0.1.4-1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.189239958Z"
+    created: "2020-03-18T05:10:23.713804363Z"
     description: A slack bot that can ressurect the past
     digest: e87e68d57878367a4fc42c62eea6cc7896457c71c19e4c877fdc064c28425ba7
     name: resurrectbot
@@ -1558,7 +1581,7 @@ entries:
   riot-im:
   - apiVersion: v1
     appVersion: v1.5.13
-    created: "2020-03-17T20:26:22.192354122Z"
+    created: "2020-03-18T05:10:23.716285689Z"
     description: Communicate the way you want with Riot - a universal secure chat
       app entirely under your control.
     digest: d6b7b450d85ccbd7b444fd7f1f79ca4aa3b113d262c336aef23086168ae208ad
@@ -1580,7 +1603,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: v1.5.12
-    created: "2020-03-17T20:26:22.19191223Z"
+    created: "2020-03-18T05:10:23.715868575Z"
     description: Communicate the way you want with Riot - a universal secure chat
       app entirely under your control.
     digest: 2468788c8c3781974045ee2eba57435e77efaa62bc9e82e70a1fec042e427f9c
@@ -1602,7 +1625,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: v1.5.12
-    created: "2020-03-17T20:26:22.191481322Z"
+    created: "2020-03-18T05:10:23.715433612Z"
     description: Communicate the way you want with Riot - a universal secure chat
       app entirely under your control.
     digest: a013efb69883745a8798377c4807658622ad9600b4ecfbbf2f55ceaa27a340af
@@ -1623,7 +1646,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: v1.5.9
-    created: "2020-03-17T20:26:22.191033991Z"
+    created: "2020-03-18T05:10:23.715004517Z"
     description: Communicate the way you want with Riot - a universal secure chat
       app entirely under your control.
     digest: 5e6ccdf04da0004e26662422249687b8f0c733ab27d50fcd7be4c55726b6ece1
@@ -1645,7 +1668,7 @@ entries:
   room-assistant:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-17T20:26:22.19269561Z"
+    created: "2020-03-18T05:10:23.716624708Z"
     description: A companion client for Home Assistant to handle sensors in multiple
       rooms.
     digest: 02803ba262c5715d757c149c1a6930d3c714b1195a0755c982e85556d3886860
@@ -1670,7 +1693,7 @@ entries:
   sevendaysdie:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.194830154Z"
+    created: "2020-03-18T05:10:23.718792033Z"
     description: 7 Days to Die is an open world, voxel-based, sandbox game that is
       a unique mash up of First Person Shooter, Survival Horror, Tower Defense and
       Role Playing Games combining combat, crafting, looting, mining, exploration,
@@ -1686,7 +1709,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.194116281Z"
+    created: "2020-03-18T05:10:23.718089312Z"
     description: 7 Days to Die is an open world, voxel-based, sandbox game that is
       a unique mash up of First Person Shooter, Survival Horror, Tower Defense and
       Role Playing Games combining combat, crafting, looting, mining, exploration,
@@ -1702,7 +1725,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.193405776Z"
+    created: "2020-03-18T05:10:23.717366495Z"
     description: 7 Days to Die is an open world, voxel-based, sandbox game that is
       a unique mash up of First Person Shooter, Survival Horror, Tower Defense and
       Role Playing Games combining combat, crafting, looting, mining, exploration,
@@ -1719,7 +1742,7 @@ entries:
   synapse:
   - apiVersion: v1
     appVersion: 1.11.1
-    created: "2020-03-17T20:26:22.202324099Z"
+    created: "2020-03-18T05:10:23.726366899Z"
     description: The reference implementation for a Matrix.org chat server
     digest: c34a2d78ae3e1f21a90916628c3e6a3d12a08be29e5346d9ba78f71a09e3ef96
     home: https://github.com/matrix-org/synapse
@@ -1741,7 +1764,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: 1.11.1
-    created: "2020-03-17T20:26:22.201070324Z"
+    created: "2020-03-18T05:10:23.724982366Z"
     description: The reference implementation for a Matrix.org chat server
     digest: 7446d048886e1d2aadb616ff484f5d1d0ce8031964f120a08fde2a1e6156f3e2
     home: https://github.com/matrix-org/synapse
@@ -1763,7 +1786,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 1.11.1
-    created: "2020-03-17T20:26:22.198788161Z"
+    created: "2020-03-18T05:10:23.723627496Z"
     description: The reference implementation for a Matrix.org chat server
     digest: e2c81ea7c376d22f1fb3dcd9e006b582677470715b0b94926b7aef92a939e62f
     home: https://github.com/matrix-org/synapse
@@ -1785,7 +1808,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 1.11.1
-    created: "2020-03-17T20:26:22.197430065Z"
+    created: "2020-03-18T05:10:23.722044725Z"
     description: The reference implementation for a Matrix.org chat server
     digest: aef35cd1500751cac87907d8b96345722143d1635b0d526c707d3ed655db4ec6
     home: https://github.com/matrix-org/synapse
@@ -1807,7 +1830,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 1.11.1
-    created: "2020-03-17T20:26:22.196119005Z"
+    created: "2020-03-18T05:10:23.720078608Z"
     description: The reference implementation for a Matrix.org chat server
     digest: 0d8f3f781893fc714e5f1f65e6774d84f3a4ae5f2cb5e8a689245f898a836932
     home: https://github.com/matrix-org/synapse
@@ -1830,7 +1853,7 @@ entries:
   tautulli:
   - apiVersion: v1
     appVersion: v2.2.0
-    created: "2020-03-17T20:26:22.203859966Z"
+    created: "2020-03-18T05:10:23.728108863Z"
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -1845,7 +1868,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.203454624Z"
+    created: "2020-03-18T05:10:23.727680305Z"
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -1860,7 +1883,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.203073464Z"
+    created: "2020-03-18T05:10:23.727252478Z"
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -1875,7 +1898,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.202647435Z"
+    created: "2020-03-18T05:10:23.726748763Z"
     description: Tautulli integrates with Plex to provide you a feature-rich dashboard
       of statistics from user activity to a graphical history of streams, play count,
       along with configurable notifications, and more.
@@ -1887,7 +1910,7 @@ entries:
   terraria:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.205867546Z"
+    created: "2020-03-18T05:10:23.730321167Z"
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: 3f3da93ed681568000b9ea29d27a770277ae76404663a2a67384d11dc732e907
@@ -1901,7 +1924,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.205441215Z"
+    created: "2020-03-18T05:10:23.72983186Z"
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: cdaa50cdd77930cf5ec792b9fd335e2832c32076d6a9ac4036e32783701f20d0
@@ -1915,7 +1938,7 @@ entries:
     version: 0.2.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.205017097Z"
+    created: "2020-03-18T05:10:23.729344474Z"
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: 8cc2e407131569e5f5b64d45869642d4bb101d983588d17513abb03a42a40f36
@@ -1929,7 +1952,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.204604148Z"
+    created: "2020-03-18T05:10:23.728881815Z"
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: 3380cb304f38d21c7675feba8d806b1da46b34cbb7578206a5d2b98ad41a1060
@@ -1943,7 +1966,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.204198521Z"
+    created: "2020-03-18T05:10:23.72845263Z"
     description: Terraria is a 2D sandbox game with gameplay that revolves around
       exploration, building, combat, and mining.
     digest: 8b83f04552caa5fa75333356861b9b58d59c02e4c7c283542674f011417a255a
@@ -1954,7 +1977,7 @@ entries:
   thelounge:
   - apiVersion: v1
     appVersion: 4.0.0-alpine
-    created: "2020-03-17T20:26:22.210601089Z"
+    created: "2020-03-18T05:10:23.735666387Z"
     description: Modern web IRC client designed for self-hosting
     digest: ffbda4ca91333dbcb00649ddc7866f107434115939230c34d300aa508a13b0df
     home: https://thelounge.chat/
@@ -1971,7 +1994,7 @@ entries:
     version: 4.0.2
   - apiVersion: v1
     appVersion: 4.0.0-alpine
-    created: "2020-03-17T20:26:22.209988025Z"
+    created: "2020-03-18T05:10:23.734695235Z"
     description: Modern web IRC client designed for self-hosting
     digest: fff10fa21d93b44539d17245bc3d70680963cb75ebb678b18045a83447db700f
     home: https://thelounge.chat/
@@ -1988,7 +2011,7 @@ entries:
     version: 4.0.1
   - apiVersion: v1
     appVersion: 4.0.0-alpine
-    created: "2020-03-17T20:26:22.209623601Z"
+    created: "2020-03-18T05:10:23.734168264Z"
     description: Modern web IRC client designed for self-hosting
     digest: cd54320295d3fcf58a98f56a41412b838db831b8be23d86dfa58d5faa5ee7cff
     home: https://thelounge.chat/
@@ -2004,7 +2027,7 @@ entries:
     version: 4.0.0
   - apiVersion: v1
     appVersion: 3.3.0-alpine
-    created: "2020-03-17T20:26:22.209187192Z"
+    created: "2020-03-18T05:10:23.733690072Z"
     description: Modern web IRC client designed for self-hosting
     digest: be19b0628d380ead6d1a3f7ce6fb94c2044b6fd32e8e3003fae66e75b21fd47e
     home: https://thelounge.chat/
@@ -2020,7 +2043,7 @@ entries:
     version: 3.3.0
   - apiVersion: v1
     appVersion: 3.2.0-alpine
-    created: "2020-03-17T20:26:22.208319194Z"
+    created: "2020-03-18T05:10:23.732629823Z"
     description: Modern web IRC client designed for self-hosting
     digest: bfeb6a41663be53e4df728608fe85aff02b26e0147efa7eabe1ce878f10166dc
     home: https://thelounge.chat/
@@ -2036,7 +2059,7 @@ entries:
     version: 3.2.0
   - apiVersion: v1
     appVersion: 3.0.1
-    created: "2020-03-17T20:26:22.207546742Z"
+    created: "2020-03-18T05:10:23.732140912Z"
     description: Modern web IRC client designed for self-hosting
     digest: 1a81c41239a0cd34420af1cc984b67471ef1908df8e3db80a09a85a71aeef80a
     home: https://thelounge.chat/
@@ -2052,7 +2075,7 @@ entries:
     version: 3.0.2
   - apiVersion: v1
     appVersion: 3.0.1
-    created: "2020-03-17T20:26:22.207225898Z"
+    created: "2020-03-18T05:10:23.731798453Z"
     description: Modern web IRC client designed for self-hosting
     digest: 192ca80184708317d9f203140dbda4055acb71f4922b3a8aa78910e6c3052652
     home: https://thelounge.chat/
@@ -2068,7 +2091,7 @@ entries:
     version: 3.0.1
   - apiVersion: v1
     appVersion: 3.0.0
-    created: "2020-03-17T20:26:22.20687813Z"
+    created: "2020-03-18T05:10:23.731437956Z"
     description: Modern web IRC client designed for self-hosting
     digest: 68230b6725235470d90684ce0420ccc48f67eedd913c3f6b7a9f177734495c4b
     home: https://thelounge.chat/
@@ -2084,7 +2107,7 @@ entries:
     version: 3.0.0
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: "2020-03-17T20:26:22.206546759Z"
+    created: "2020-03-18T05:10:23.73108383Z"
     description: Modern web IRC client designed for self-hosting
     digest: 01c0f1e2c721689057f01e41e65d05e65f82156b32824e28f36e47235e3fb137
     home: https://thelounge.chat/
@@ -2100,7 +2123,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 3.0.0-rc.5
-    created: "2020-03-17T20:26:22.206199107Z"
+    created: "2020-03-18T05:10:23.730687317Z"
     description: Modern web IRC client designed for self-hosting
     digest: fc930ccf2ee9fa907f9404c386817e87f4b5ff827e1cb2b5bce421f086761889
     home: https://thelounge.chat/
@@ -2117,7 +2140,7 @@ entries:
   traefik-forward-auth:
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.211458705Z"
+    created: "2020-03-18T05:10:23.73681256Z"
     deprecated: true
     description: Minimal forward authentication service that provides Google oauth
       based login and authentication for the traefik reverse proxy
@@ -2136,7 +2159,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: latest
-    created: "2020-03-17T20:26:22.21102986Z"
+    created: "2020-03-18T05:10:23.736210804Z"
     description: Minimal forward authentication service that provides Google oauth
       based login and authentication for the traefik reverse proxy
     digest: 2e0a1874e8369384216940cd9298c89f57382d378532fd11dc603c0d5a576bb6
@@ -2155,7 +2178,7 @@ entries:
   turtl:
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.214589014Z"
+    created: "2020-03-18T05:10:23.74404232Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3309467d6e7276fdcabe478636c57ad290a08f62cf697084d8b13d23f206a06a
@@ -2173,7 +2196,7 @@ entries:
     version: 0.1.7
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.21420992Z"
+    created: "2020-03-18T05:10:23.743406044Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: c4f55275ea514e24f594e0eddb818bd5e62963f7d38c0159a5b1aa0bdef91a71
@@ -2190,7 +2213,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.213847653Z"
+    created: "2020-03-18T05:10:23.742803812Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 1eb8c4cf0f9d8bdee74cb2917554e8e10f617e0399d78810605b1cce1785c434
@@ -2207,7 +2230,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.213493738Z"
+    created: "2020-03-18T05:10:23.74240102Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3784c490e7fed29f3627fd6efcbfc19414b8e5046f0d65b864841ca45bcfe720
@@ -2224,7 +2247,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.213137659Z"
+    created: "2020-03-18T05:10:23.741982056Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 32c80776f77bbd2a1d63a9b589d4d25cd545ab6847055b892cc03ff9621d7650
@@ -2241,7 +2264,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.212766051Z"
+    created: "2020-03-18T05:10:23.741543233Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: ac08e4483681624abd0b2a7c7c8dae40da4f5e8f280a15c31a5d68fee3ddcba9
@@ -2258,7 +2281,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.212358506Z"
+    created: "2020-03-18T05:10:23.740918025Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: 3a560ad398b913d622b31dcfdfd1471ec08910524111aea4c9f46dbc3611d771
@@ -2275,7 +2298,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "0.7"
-    created: "2020-03-17T20:26:22.211980493Z"
+    created: "2020-03-18T05:10:23.739866642Z"
     description: The secure, collaborative notebook - Totally private personal database
       and note taking app.
     digest: cc4ffe23aaa87b67a4685fa98653d3f843d4126b7fe13eba1e5d5982548e7a95
@@ -2293,7 +2316,7 @@ entries:
   vouch:
   - apiVersion: v1
     appVersion: 0.6.19
-    created: "2020-03-17T20:26:22.215856119Z"
+    created: "2020-03-18T05:10:23.745426968Z"
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: fd6ce165fe493566da7d2393cb275565e15092c278f191d309c3278b3e2a930f
@@ -2309,7 +2332,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: 0.5.16
-    created: "2020-03-17T20:26:22.215513251Z"
+    created: "2020-03-18T05:10:23.745064273Z"
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: ecb67e7e776d8c538136551f8d701a3fa620294480bf4b6adc4cc9d6639b3ea6
@@ -2325,7 +2348,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 0.5.12
-    created: "2020-03-17T20:26:22.215205332Z"
+    created: "2020-03-18T05:10:23.744712339Z"
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: 67c151449337870988db45545ef56c005100179e7a597d7a6adb24162cce338a
@@ -2341,7 +2364,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.5.12
-    created: "2020-03-17T20:26:22.214870248Z"
+    created: "2020-03-18T05:10:23.744350189Z"
     description: An SSO and OAuth login solution for nginx using the auth_request
       module
     digest: 6c8e419de51092e1c5965306beed73b75e2aaa64432c1941ed67ba52f56af6d8
@@ -2352,7 +2375,7 @@ entries:
   wallabag:
   - apiVersion: v1
     appVersion: 2.3.8
-    created: "2020-03-17T20:26:22.216315772Z"
+    created: "2020-03-18T05:10:23.745927532Z"
     description: 'wallabag is a self hostable application for saving web pages: Save
       and classify articles. Read them later. Freely. https://wallabag.org'
     digest: 1edbf18f7f2387696fee0a7a0802ea0ddf90a89bf28ea9b3a42c3d66d0e5863d
@@ -2373,7 +2396,7 @@ entries:
   whoami:
   - apiVersion: v1
     appVersion: v1.4.0
-    created: "2020-03-17T20:26:22.216934191Z"
+    created: "2020-03-18T05:10:23.746585083Z"
     description: Tiny Go webserver that prints os information and HTTP request to
       output
     digest: 591560e58cb7484f55d0dc7433da85aea4f0082129b90c0b3b1ff4637d52e530
@@ -2393,7 +2416,7 @@ entries:
     version: 0.3.2
   - apiVersion: v1
     appVersion: v1.4.0
-    created: "2020-03-17T20:26:22.216622725Z"
+    created: "2020-03-18T05:10:23.746265021Z"
     description: Tiny Go webserver that prints os information and HTTP request to
       output
     digest: b5e8dff076a35b9300cb44400dc2e801e077b30728a8c4613744fcdb69abee33
@@ -2411,4 +2434,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2020-03-17T20:26:22.1499056Z"
+generated: "2020-03-18T05:10:23.673154722Z"
