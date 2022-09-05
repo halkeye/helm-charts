@@ -3259,36 +3259,6 @@ entries:
     version: 0.0.10
   - annotations:
       artifacthub.io/changes: |
-        - "Latest signald (which should fix log4shell)"
-      artifacthub.io/containsSecurityUpdates: "true"
-      artifacthub.io/images: |
-        - name: mautrix-signal
-          image: dock.mau.dev/mautrix/signal:latest
-        - name: signald
-          image: signald/signald:amd64-7354fec1d4233224e6827869f64d95ea06981205
-    apiVersion: v2
-    appVersion: latest
-    created: "2022-09-03T21:27:09.186185934Z"
-    description: A Matrix-Signal puppeting bridge.
-    digest: aed0fec3eaad2324d59a3deb441cbc6d84d358b03b646e91c4c8e331954b37a2
-    home: https://github.com/tulir/mautrix-signal
-    keywords:
-    - synapse
-    - chat
-    - matrix
-    - signal
-    maintainers:
-    - email: helm@gavinmogan.com
-      name: Gavin Mogan
-    name: mautrix-signal
-    sources:
-    - https://github.com/matrix-org/synapse
-    type: application
-    urls:
-    - mautrix-signal/mautrix-signal-0.0.8.tgz
-    version: 0.0.8
-  - annotations:
-      artifacthub.io/changes: |
         - Store uploaded files in a directory both services can access it
       artifacthub.io/containsSecurityUpdates: "false"
       artifacthub.io/images: |
