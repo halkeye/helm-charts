@@ -39,8 +39,9 @@ pipeline {
       }
       steps {
         sh '''
+          git checkout $BRANCH_NAME
           git add index.yaml index.html
-          git commit -m "Adding package [skip-ci]"
+          git commit -m "Update index.yaml and index.html [ci skip]"
         '''
         script {
           withCredentials([usernamePassword(credentialsId: 'github-app-halkeye', usernameVariable: 'GITHUB_APP', passwordVariable: 'GITHUB_TOKEN')]) {
