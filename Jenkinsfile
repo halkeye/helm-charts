@@ -39,7 +39,7 @@ pipeline {
       }
       steps {
         sh '''
-          git add index.yaml index.html"
+          git add index.yaml index.html
           git commit -m "Adding package [skip-ci]"
         '''
         script {
