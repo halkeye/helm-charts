@@ -58,8 +58,8 @@ pipeline {
       emailext(
         attachLog: true,
         recipientProviders: [developers()],
-        body: "Build failed (see ${env.BUILD_URL}): ${err}",
-        subject: "[JENKINS] ${env.JOB_NAME} failed",
+        body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}',
+        subject: '[JENKINS] ${JOB_NAME} failed',
         to: 'jenkins@gavinmogan.com'
       )
     }
