@@ -47,7 +47,7 @@ pipeline {
             sh '''
               git remote remove ghpages || true
               git remote add ghpages "https://x-access-token:${GITHUB_TOKEN}@github.com/halkeye/helm-charts.git"
-              git push ghpages gh-pages
+              git push ghpages
             '''
           }
         }
