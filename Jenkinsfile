@@ -45,6 +45,7 @@ pipeline {
         script {
           withCredentials([usernamePassword(credentialsId: 'github-app-halkeye', usernameVariable: 'GITHUB_APP', passwordVariable: 'GITHUB_TOKEN')]) {
             sh '''
+              git remote remove ghpages || true
               git remote add ghpages "https://x-access-token:${GITHUB_TOKEN}@github.com/halkeye/helm-charts.git"
               git push ghpages gh-pages
             '''
@@ -62,6 +63,9 @@ pipeline {
         subject: '[JENKINS] ${JOB_NAME} failed',
         to: 'jenkins@gavinmogan.com'
       )
+    }
+    always {
+      cleanWs()
     }
   }
 }
