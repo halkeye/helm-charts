@@ -4,6 +4,17 @@ pipeline {
     disableConcurrentBuilds abortPrevious: true
   }
   stages {
+    stage('Fix Dates') {
+      steps {
+        sh '''
+          git ls-tree -r --name-only HEAD | while read filename; do
+            unixtime=$(git log -1 --format="%at" -- "${filename}")
+            touchtime=$(date -d @$unixtime +'%Y%m%d%H%M.%S')
+            touch -t ${touchtime} "${filename}"
+          done
+        '''
+      }
+    }
     stage('Build Index') {
       agent {
         docker {
