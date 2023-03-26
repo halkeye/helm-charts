@@ -9,7 +9,7 @@ pipeline {
         docker {
           reuseNode true
           image 'alpine/helm:3.3.4'
-          entrypoint ""
+          args '--entrypoint=""'
         }
       }
       steps {
@@ -38,7 +38,6 @@ pipeline {
         }
       }
       steps {
-        github-app-halkeye
         sh '''
           git add index.yaml index.html"
           git commit -m "Adding package [skip-ci]"
@@ -53,3 +52,5 @@ pipeline {
         }
       }
     }
+  }
+}
