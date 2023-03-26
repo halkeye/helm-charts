@@ -26,7 +26,7 @@ pipeline {
         sh '''
           git config --global user.email "jenkins@gavinmogan.com"
           git config --global user.name "Jenkins"
-          git config --global push.default simple'
+          git config --global push.default simple
         '''
       }
     }
