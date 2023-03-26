@@ -45,7 +45,7 @@ pipeline {
         script {
           withCredentials([usernamePassword(credentialsId: 'github-app-halkeye', usernameVariable: 'GITHUB_APP', passwordVariable: 'GITHUB_TOKEN')]) {
             sh '''
-              git remote add ghpages --repositoryUrl "https://x-access-token:${GITHUB_TOKEN}@github.com/halkeye/helm-charts.git"
+              git remote add ghpages "https://x-access-token:${GITHUB_TOKEN}@github.com/halkeye/helm-charts.git"
               git push ghpages gh-page
             '''
           }
