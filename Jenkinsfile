@@ -24,8 +24,8 @@ pipeline {
     stage('Setup Git') {
       steps {
         sh '''
-          git config --global user.email "jenkins@gavinmogan.com"'
-          git config --global user.name "Jenkins"'
+          git config --global user.email "jenkins@gavinmogan.com"
+          git config --global user.name "Jenkins"
           git config --global push.default simple'
         '''
       }
@@ -51,6 +51,17 @@ pipeline {
           }
         }
       }
+    }
+  }
+  post {
+    failure {
+      emailext(
+        attachLog: true,
+        recipientProviders: [developers()],
+        body: "Build failed (see ${env.BUILD_URL}): ${err}",
+        subject: "[JENKINS] ${env.JOB_NAME} failed",
+        to: 'jenkins@gavinmogan.com'
+      )
     }
   }
 }
