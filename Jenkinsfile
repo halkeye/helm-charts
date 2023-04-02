@@ -55,13 +55,17 @@ pipeline {
           lock('helm-charts-push') {
             withCredentials([usernamePassword(credentialsId: 'github-app-halkeye', usernameVariable: 'GITHUB_APP', passwordVariable: 'GITHUB_TOKEN')]) {
               sh '''
+                # replace gh-pages each time
+                git branch -D gh-pages || true
+                git checkout -b gh-pages
+
                 git checkout $BRANCH_NAME
                 git add index.yaml index.html
                 git commit -m "Update index.yaml and index.html [ci skip]"
 
                 git remote remove ghpages || true
                 git remote add ghpages "https://x-access-token:${GITHUB_TOKEN}@github.com/halkeye/helm-charts.git"
-                git push ghpages gh-pages -f
+                git push ghpages -f
               '''
             }
           }
