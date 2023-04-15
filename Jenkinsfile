@@ -7,15 +7,9 @@ pipeline {
     buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '5', numToKeepStr: '5')
   }
   stages {
-    stage('Fix Dates') {
+    stage('Switch to branch') {
       steps {
-        sh '''
-          git ls-tree -r --name-only HEAD | while read filename; do
-            unixtime=$(git log -1 --format="%at" -- "${filename}")
-            touchtime=$(date -d @$unixtime +'%Y%m%d%H%M.%S')
-            touch -t ${touchtime} "${filename}"
-          done
-        '''
+        sh '''git checkout $BRANCH_NAME'''
       }
     }
     stage('Build Index') {
@@ -55,17 +49,12 @@ pipeline {
           lock('helm-charts-push') {
             withCredentials([usernamePassword(credentialsId: 'github-app-halkeye', usernameVariable: 'GITHUB_APP', passwordVariable: 'GITHUB_TOKEN')]) {
               sh '''
-                # replace gh-pages each time
-                git branch -D gh-pages || true
-                git checkout -b gh-pages
-
-                git checkout $BRANCH_NAME
                 git add index.yaml index.html
                 git commit -m "Update index.yaml and index.html [ci skip]"
 
                 git remote remove ghpages || true
                 git remote add ghpages "https://x-access-token:${GITHUB_TOKEN}@github.com/halkeye/helm-charts.git"
-                git push ghpages gh-pages -f
+                git push ghpages $BRANCH_NAME:gh-pages -f
               '''
             }
           }
@@ -83,7 +72,7 @@ pipeline {
         to: 'jenkins@gavinmogan.com'
       )
     }
-    always {
+    cleanup{
       cleanWs()
     }
   }
