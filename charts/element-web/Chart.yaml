@@ -3,7 +3,7 @@ appVersion: v1.11.41
 description: Communicate the way you want with Riot - a universal secure chat app entirely under your control.
 icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
 name: element-web
-version: 1.11.2
+version: 1.11.3
 type: application
 keywords:
   - synapse
