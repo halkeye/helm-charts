@@ -5,6 +5,9 @@
     ":semanticCommitTypeAll(feat)"
   ],
   "bumpVersion": "patch",
+  "ignoreDeps": [
+    "postgresql"
+  ],
   "regexManagers": [
     {
       "fileMatch": [
