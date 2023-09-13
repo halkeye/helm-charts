@@ -11,7 +11,7 @@
   "regexManagers": [
     {
       "fileMatch": [
-        "^charts/*/Chart.yaml$"
+        "^charts/.*/Chart.yaml$"
       ],
       "matchStrings": [
         "image:\\s+\"(?<depName>[a-z/.-]+):(?<currentValue>[a-z0-9.-]+)\""
@@ -21,7 +21,7 @@
     },
     {
       "fileMatch": [
-        "^charts/*/Chart.yaml$"
+        "^charts/.*/Chart.yaml$"
       ],
       "matchStrings": [
         "# image: \"(?<depName>[a-z/.-]+)\"\nappVersion:\\s+(?<currentValue>v[a-z0-9.-]+)"
