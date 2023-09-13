@@ -43,7 +43,7 @@ module.exports = {
     [
       "@semantic-release/exec",
       {
-        "publishCmd": "git add -u .; git commit -m 'chore(release): ${nextRelease.version}'"
+        "publishCmd": "git add -u .; git commit -m 'chore(release): ${nextRelease.version} [skip ci]'"
       }
     ]
   ]
