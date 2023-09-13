@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.80.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.22.0
+version: 0.22.1
 type: application
 keywords:
   - synapse
@@ -22,7 +22,7 @@ dependencies:
     condition: postgresql.enabled
   - name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: ~17.10.0
+    version: ~18.0.0
     condition: redis.enabled
 maintainers:
   - name: Gavin Mogan
