@@ -16,8 +16,6 @@ if (!chartPath) {
 module.exports = {
   "branches": [
     "main",
-    "main2",
-    "master"
   ],
   "tagFormat": process.env.CHART_NAME + "-v${version}",
   "plugins": [
@@ -43,12 +41,9 @@ module.exports = {
       }
     ],
     [
-      "@semantic-release/git",
+      "@semantic-release/exec",
       {
-        "assets": [
-          "Chart.yaml"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "publishCmd": "git add -u .; git commit -m 'chore(release): ${nextRelease.version}'"
       }
     ]
   ]
