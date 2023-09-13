@@ -1,0 +1,22 @@
+apiVersion: v2
+type: application
+# image: "dock.mau.dev/mautrix/syncproxy"
+appVersion: latest
+version: 1.0.2
+name: mautrix-syncproxy
+description: A simple HTTP push -> websocket proxy for Matrix appservices
+keywords:
+  - mautrix-syncproxy
+home: https://mau.dev/mautrix/syncproxy/
+sources:
+  - https://mau.dev/mautrix/syncproxy/
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+annotations:
+  artifacthub.io/changes: |2
+     - "fix helm ignore, ignore node_modules from semantic release ([8890504](https://github.com/halkeye-helm-charts/mautrix-syncproxy/commit/8890504a235dc0b575aa56a3a30f3b6a0ee5e412))"
+  artifacthub.io/containsSecurityUpdates: 'false'
+  artifacthub.io/images: |
+    - name: syncproxy
+      image: dock.mau.dev/mautrix/syncproxy:latest

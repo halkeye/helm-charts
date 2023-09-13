@@ -1,0 +1,26 @@
+{{- if .Capabilities.APIVersions.Has "cert-manager.io/v1" }}
+apiVersion: cert-manager.io/v1
+{{- else if .Capabilities.APIVersions.Has "cert-manager.io/v1alpha2" }}
+apiVersion: cert-manager.io/v1alpha2
+{{- end }}
+kind: Certificate
+metadata:
+  labels:
+{{ include "certificate.labels" . | indent 4 }}
+  name: {{ include "certificate.fullname" . }}
+spec:
+{{- with .Values.dnsNames  }}
+  dnsNames:
+{{ . | toYaml | indent 4 }}
+{{- end }}
+{{- with .Values.acme }}
+  acme:
+{{ . | toYaml | indent 4 }}
+{{- end }}
+  {{- with .Values.commonName  }}
+  commonName: {{ . | quote }}
+  {{- end }}
+  issuerRef:
+    name: {{ .Values.issuerRef.name }}
+    kind: {{ .Values.issuerRef.kind }}
+  secretName: {{ .Values.secretName }}

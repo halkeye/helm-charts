@@ -1,0 +1,22 @@
+apiVersion: v2
+type: application
+# image: "dock.mau.dev/mautrix/wsproxy"
+appVersion: latest
+version: 1.0.2
+name: mautrix-wsproxy
+description: A simple HTTP push -> websocket proxy for Matrix appservices
+keywords:
+  - mautrix-wsproxy
+home: https://mau.dev/mautrix/wsproxy/
+sources:
+  - https://mau.dev/mautrix/wsproxy/
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+annotations:
+  artifacthub.io/changes: |2
+     - "fix helm ignore, ignore node_modules from semantic release ([6940d7b](https://github.com/halkeye-helm-charts/mautrix-wsproxy/commit/6940d7b512f82ee2301dd2ce929cd24a6de20501))"
+  artifacthub.io/containsSecurityUpdates: 'false'
+  artifacthub.io/images: |
+    - name: wsproxy
+      image: dock.mau.dev/mautrix/wsproxy:latest

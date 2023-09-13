@@ -1,0 +1,204 @@
+{{- if eq (required .Values.homeserver.macaroon_secret_key "need to set homeserver.macaroon_secret_key") "hA3r4nhUccExt2J0*V0tWilKXLy.hVfb8Uc:D5M-zsXoT=S#*@" }}
+{{- fail "Your still using the original default macaroon_secret_key" }}
+{{- end }}
+{{- if eq (required .Values.homeserver.form_secret "need to set homeserver.form_secret") "f7wd*VF;OXBLY:-A#Fw@p#yT1Kd#WkVK#GMp;Kd;b7l=*u&^vu" }}
+{{- fail "Your still using the original default form_secret" }}
+{{- end }}
+{{- if eq (required .Values.homeserver.registration_shared_secret "need to set homeserver.registration_shared_secret") ".fnhLGB&_xY:&k=kEnGpPJ6l=3eyc2zsf8D^_,jsZ1J++sGkDG" }}
+{{- fail "Your still using the original default registration_shared_secret" }}
+{{- end }}
+apiVersion: apps/v1
+{{- $podAnnotations := .Values.podAnnotations }}
+{{- $secretAnnotation := dict "checksum/secret" (include (print $.Template.BasePath "/secret.yaml") . | sha256sum) }}
+{{- $podAnnotations := merge $podAnnotations $secretAnnotation }}
+kind: Deployment
+metadata:
+  name: {{ include "synapse.fullname" . }}
+  {{- if .Values.deploymentAnnotations }}
+  annotations:
+    {{- range $key, $value := .Values.deploymentAnnotations }}
+    {{ $key }}: {{ $value | quote }}
+    {{- end }}
+  {{- end }}
+  labels:
+{{ include "synapse.labels" . | indent 4 }}
+spec:
+  replicas: {{ .Values.replicaCounts.master }}
+{{- if .Values.strategy }}
+  strategy:
+{{ toYaml .Values.strategy | indent 4 }}
+{{ if eq .Values.strategy.type "Recreate" }}
+    rollingUpdate: null
+{{- end }}
+{{- end }}
+  selector:
+    matchLabels:
+      {{- include "synapse.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "synapse.selectorLabels" . | nindent 8 }}
+      {{- if $podAnnotations }}
+      annotations:
+        {{- range $key, $value := $podAnnotations }}
+        {{ $key }}: {{ $value | quote }}
+        {{- end }}
+      {{- end }}
+    spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ template "synapse.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      {{- if .Values.dnsConfig }}
+      dnsConfig:
+        {{- toYaml .Values.dnsConfig | nindent 8 }}
+      {{- end }}
+      initContainers:
+        - name: generate-config
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command:
+            - sh
+            - -c
+            - |
+              set -ex
+              cp /config/* /data/
+              {{ include "synapse.installPip" . | nindent 14 }}
+              exec python3 /start.py generate
+          volumeMounts:
+            - name: data
+              mountPath: /data
+            - name: config
+              mountPath: /config
+          env:
+            - { name: SYNAPSE_CONFIG_DIR, value: "/data" }
+            - { name: SYNAPSE_DATA_DIR, value: "/data" }
+            - { name: SYNAPSE_CONFIG_PATH, value: "/config/homeserver.yaml" }
+            - { name: UID, value: {{ .Values.settings.uid | quote }} }
+            - { name: GID, value: {{ .Values.settings.gid | quote }} }
+            - { name: SYNAPSE_SERVER_NAME, value: {{ .Values.homeserver.server_name | quote }} }
+            - { name: SYNAPSE_REPORT_STATS, value: {{ .Values.settings.report_stats | toString | quote }} }
+            - { name: SYNAPSE_CACHE_FACTOR, value: {{ .Values.cacheFactor | toString | quote }} }
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+        - name: chdir
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["/bin/sh"]
+          args: ["-c", "chown {{.Values.settings.uid}}:{{.Values.settings.gid}} -R /data"]
+          volumeMounts:
+            - name: data
+              mountPath: /data
+            - name: config
+              mountPath: /config
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          #command: ["/bin/sh"]
+          #args: ["-c", "sleep 10000"]
+          command:
+            - sh
+            - -c
+            - |
+              set -ex
+              cp /config/* /data/
+              {{ include "synapse.installPip" . | nindent 14 }}
+              exec python3 /start.py
+          ports:
+            - name: http
+              containerPort: 8008
+              protocol: TCP
+            - name: worker-tcp
+              containerPort: 9092
+              protocol: TCP
+            - name: worker-web
+              containerPort: 9093
+              protocol: TCP
+            {{- if .Values.homeserver.enable_metrics }}
+            - name: metrics
+              containerPort: 9000
+              protocol: TCP
+            {{- end }}
+          env:
+            - { name: SYNAPSE_CONFIG_DIR, value: "/data" }
+            - { name: SYNAPSE_DATA_DIR, value: "/data" }
+            - { name: SYNAPSE_CONFIG_PATH, value: "/config/homeserver.yaml" }
+            - { name: UID, value: {{ .Values.settings.uid | quote }} }
+            - { name: GID, value: {{ .Values.settings.gid | quote }} }
+            - { name: SYNAPSE_SERVER_NAME, value: {{ .Values.homeserver.server_name | quote }} }
+            - { name: SYNAPSE_REPORT_STATS, value: {{ .Values.settings.report_stats | toString | quote }} }
+            - { name: SYNAPSE_CACHE_FACTOR, value: {{ .Values.cacheFactor | toString | quote }} }
+          volumeMounts:
+            - name: data
+              mountPath: /data
+            - name: media
+              mountPath: /media
+            - name: config
+              mountPath: /config
+          readinessProbe:
+            httpGet:
+              path: /_matrix/client/versions
+              port: http
+            initialDelaySeconds: {{ .Values.probes.readiness.initialDelaySeconds }}
+            failureThreshold: {{ .Values.probes.readiness.failureThreshold }}
+            periodSeconds: {{ .Values.probes.readiness.periodSeconds }}
+          livenessProbe:
+            httpGet:
+              path: /_matrix/client/versions
+              port: http
+            initialDelaySeconds: {{ .Values.probes.liveness.initialDelaySeconds }}
+            failureThreshold: {{ .Values.probes.liveness.failureThreshold }}
+            periodSeconds: {{ .Values.probes.liveness.periodSeconds }}
+{{- if semverCompare ">=1.16-0" .Capabilities.KubeVersion.GitVersion }}
+          startupProbe:
+            httpGet:
+              path: /_matrix/client/versions
+              port: http
+            initialDelaySeconds: {{ .Values.probes.startup.initialDelaySeconds }}
+            failureThreshold: {{ .Values.probes.startup.failureThreshold }}
+            periodSeconds: {{ .Values.probes.startup.periodSeconds }}
+{{- end }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      volumes:
+        - name: data
+          {{- if .Values.persistence.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.persistence.existingClaim | default (include "synapse.fullname" .) }}
+          {{- else }}
+          emptyDir: {}
+          {{- end }}
+        - name: media
+          {{- if .Values.existingMediaClaim }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.existingMediaClaim }}
+          {{- else }}
+          emptyDir: {}
+          {{- end }}
+        - name: config
+          secret:
+            secretName: {{ include "synapse.fullname" . }}

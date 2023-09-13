@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "synapse.fullname" . }}
+  labels:
+{{ include "synapse.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  externalTrafficPolicy: {{ .Values.service.externalTrafficPolicy }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: 9092
+      targetPort: worker-tcp
+      protocol: TCP
+      name: worker-tcp
+    - port: 9093
+      targetPort: worker-web
+      protocol: TCP
+      name: worker-web
+    {{- if .Values.homeserver.enable_metrics }}
+    - port: 9000
+      targetPort: metrics
+      protocol: TCP
+      name: metrics
+    {{- end }}
+  selector:
+    {{- include "synapse.selectorLabels" . | nindent 4 }}

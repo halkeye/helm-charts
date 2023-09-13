@@ -1,0 +1,26 @@
+apiVersion: v2
+type: application
+# image: "dock.mau.dev/mautrix/whatsapp"
+appVersion: v0.8.3
+description: A Matrix-WhatsApp puppeting bridge https://maunium.net/go/mautrix-whatsapp
+name: mautrix-whatsapp
+version: 1.5.0
+keywords:
+  - synapse
+  - chat
+  - matrix
+  - bridge
+  - whatsapp
+home: https://maunium.net/go/mautrix-whatsapp
+sources:
+  - https://github.com/mautrix/whatsapp
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+annotations:
+  artifacthub.io/changes: |2
+     - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.0 ([e402f8f](https://github.com/halkeye-helm-charts/mautrix-whatsapp/commit/e402f8fcc930309d3547a52b30e66747eb041b87))"
+  artifacthub.io/containsSecurityUpdates: 'false'
+  artifacthub.io/images: |
+    - name: whatsapp
+      image: "dock.mau.dev/mautrix/whatsapp:v0.10.0"

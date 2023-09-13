@@ -1,0 +1,138 @@
+# Default values for element-web.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: vectorim/element-web
+  tag: "{{ .Chart.AppVersion }}"
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name:
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # privileged: true
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  externalTrafficPolicy:
+  type: ClusterIP
+  port: 80
+
+probes:
+  liveness:
+    failureThreshold: 5
+    periodSeconds: 10
+  readiness:
+    failureThreshold: 5
+    periodSeconds: 10
+  startup:
+    initialDelaySeconds: 5
+    failureThreshold: 30
+    periodSeconds: 10
+
+ingress:
+  enabled: false
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: chart-example.local
+      paths: []
+
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+podAnnotations: {}
+
+deploymentAnnotations: {}
+
+configjson:
+  # either default_server_config or default_server_name (https://matrix.org/.well-known/matrix/client)
+  #default_server_config:
+  #  m.homeserver:
+  #    base_url: "https://matrix-client.matrix.org"
+  #    server_name: "matrix.org"
+  #  m.identity_server:
+  #    base_url: "https://vector.im"
+  #default_server_name: "matrix.org"
+  disable_custom_urls: false
+  disable_guests: false
+  disable_login_language_selector: false
+  disable_3pid_login: false
+  brand: element
+  integrations_ui_url: https://scalar.vector.im/
+  integrations_rest_url: https://scalar.vector.im/api
+  integrations_widgets_urls:
+    - https://scalar.vector.im/_matrix/integrations/v1
+    - https://scalar.vector.im/api
+    - https://scalar-staging.vector.im/_matrix/integrations/v1
+    - https://scalar-staging.vector.im/api
+  integrations_jitsi_widget_url: https://scalar.vector.im/api/widgets/jitsi.html
+  bug_report_endpoint_url: https://element.io/bugreports/submit
+  defaultCountryCode: GB
+  showLabsSettings: false
+  features:
+    feature_pinning: labs
+    feature_custom_status: labs
+    feature_custom_tags: labs
+    feature_state_counters: labs
+  default_federate: true
+  default_theme: light
+  roomDirectory:
+    servers:
+      - matrix.org
+  welcomeUserId: "@element-bot:matrix.org"
+  piwik:
+    url: https://piwik.element.io/
+    whitelistedHSUrls:
+      - https://matrix.org
+    whitelistedISUrls:
+      - https://vector.im
+      - https://matrix.org
+    siteId: 1
+  enable_presence_by_hs_url:
+    https://matrix.org: false
+    https://matrix-client.matrix.org: false
+  settingDefaults:
+    breadcrumbs: true

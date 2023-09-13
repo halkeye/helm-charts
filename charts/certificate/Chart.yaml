@@ -1,0 +1,30 @@
+apiVersion: v2
+
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application.
+appVersion: "latest"
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+version: 0.0.4
+name: certificate
+description: Create a certificate for cert-manager
+keywords:
+  - "cert-bot"
+home: "https://github.com/halkeye/helm-charts/tree/main/charts/certificate"
+sources:
+  - "https://github.com/halkeye/helm-charts/tree/main/charts/certificate"
+engine: gotpl
+## This must be SVG or PNG
+#icon: "__LOGO_URL__"
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com

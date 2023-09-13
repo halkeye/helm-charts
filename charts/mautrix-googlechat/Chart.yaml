@@ -1,0 +1,27 @@
+apiVersion: v2
+type: application
+# image: "dock.mau.dev/mautrix/googlechat"
+appVersion: v0.4.0
+version: 1.0.5
+name: mautrix-googlechat
+description: A Matrix-Hangouts puppeting bridge (Now externally called mautrix-googlechat)
+keywords:
+  - synapse
+  - chat
+  - matrix
+  - bridge
+  - hangouts
+  - googlechat
+home: https://github.com/mautrix/googlechat
+sources:
+  - https://github.com/mautrix/googlechat
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+annotations:
+  artifacthub.io/changes: |2
+     - "force release ([0b21a4f](https://github.com/halkeye-helm-charts/mautrix-googlechat/commit/0b21a4f990e1885ff7ab3a0761fc478db3a8d042))"
+  artifacthub.io/containsSecurityUpdates: 'false'
+  artifacthub.io/images: |
+    - name: mautrix-googlechat
+      image: "dock.mau.dev/mautrix/googlechat:v0.4.0"

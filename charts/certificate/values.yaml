@@ -1,0 +1,13 @@
+nameOverride: ""
+fullnameOverride: ""
+## dnsNames - list of domains for this certificate
+dnsNames: []
+issuerRef:
+  ## issuerRef.kind -- ClusterIssuer or Issuer
+  kind: ClusterIssuer
+  ## issuerRef.name -- ClusterIssuer or Issuer to use
+  name:
+## secretName -- secret to save
+secretName:
+## commonName -- Optional common name
+commonName:

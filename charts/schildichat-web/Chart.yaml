@@ -1,0 +1,28 @@
+apiVersion: v2
+# image: "ghcr.io/schildichat/schildichat-web"
+appVersion: latest
+description: Matrix client / Element Web/Desktop fork
+icon: https://raw.githubusercontent.com/SchildiChat/matrix-react-sdk/9cd11b2f428cb472197c61992c24b741c39055ff/res/img/element-desktop-logo.svg
+name: schildichat-web
+version: 1.2.0
+type: application
+keywords:
+  - synapse
+  - chat
+  - matrix
+  - riot
+  - element
+  - schildi
+home: https://schildi.chat/
+sources:
+  - https://github.com/SchildiChat/element-web/pkgs/container/schildichat-web
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+annotations:
+  artifacthub.io/changes: |2
+     - "**deps:** update ghcr.io/schildichat/schildichat-web:latest docker digest to a87f572 ([18c94ff](https://github.com/halkeye-helm-charts/schildichat-web/commit/18c94ff6a9ec5bc7731006c375b9ea38f00fddcc))"
+  artifacthub.io/containsSecurityUpdates: 'false'
+  artifacthub.io/images: |
+    - name: element-web
+      image: "ghcr.io/schildichat/schildichat-web:latest"

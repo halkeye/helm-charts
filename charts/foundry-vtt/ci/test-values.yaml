@@ -1,0 +1,10 @@
+foundryvtt:
+  adminPassword: "admin"
+  username: "test"
+  password: "password"
+persistence:
+  enabled: false
+dnsConfig:
+  options:
+    - name: ndots
+      value: "1"

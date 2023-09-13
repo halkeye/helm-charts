@@ -1,0 +1,26 @@
+apiVersion: v2
+type: application
+# image: "dock.mau.dev/mautrix/telegram"
+appVersion: "latest"
+description: A Matrix-Telegram hybrid puppeting/relaybot bridge - https://matrix.to/#/#telegram:maunium
+name: mautrix-telegram
+version: 1.0.1
+keywords:
+  - synapse
+  - chat
+  - matrix
+  - bridge
+  - telegram
+home: https://github.com/mautrix/telegram
+sources:
+  - https://github.com/mautrix/telegram
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+annotations:
+  artifacthub.io/changes: |
+    - Fix startup probe path (was bad copy and paste)
+  artifacthub.io/containsSecurityUpdates: "false"
+  artifacthub.io/images: |
+    - name: telegram
+      image: "dock.mau.dev/mautrix/telegram:latest"

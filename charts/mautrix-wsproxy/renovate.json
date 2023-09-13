@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "config:base",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(feat)"
+  ],
+  "bumpVersion": "patch",
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^Chart.yaml$"
+      ],
+      "matchStrings": [
+        "image:\\s+\"(?<depName>[a-z/.-]+):(?<currentValue>[a-z0-9.-]+)\""
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "^Chart.yaml$"
+      ],
+      "matchStrings": [
+        "appVersion:\\s+\"(?<currentValue>v[a-z0-9.-]+)\""
+      ],
+      "depNameTemplate": "matrixdotorg/synapse",
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
+  ],
+  "helmv3": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,165 @@
+apiVersion: apps/v1
+{{- $podAnnotations := .Values.podAnnotations }}
+{{- $secretAnnotation := dict "checksum/secret" (include (print $.Template.BasePath "/secrets.yaml") . | sha256sum) }}
+{{- $podAnnotations := merge $podAnnotations $secretAnnotation }}
+kind: Deployment
+metadata:
+  name: {{ include "mautrix-signal.fullname" . }}
+  {{- if .Values.deploymentAnnotations }}
+  annotations:
+    {{- range $key, $value := .Values.deploymentAnnotations }}
+    {{ $key }}: {{ $value | quote }}
+    {{- end }}
+  {{- end }}
+  labels:
+{{ include "mautrix-signal.labels" . | indent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+{{- if .Values.strategy }}
+  strategy:
+{{ toYaml .Values.strategy | indent 4 }}
+{{ if eq .Values.strategy.type "Recreate" }}
+    rollingUpdate: null
+{{- end }}
+{{- end }}
+  selector:
+    matchLabels:
+      {{- include "mautrix-signal.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "mautrix-signal.selectorLabels" . | nindent 8 }}
+      {{- if $podAnnotations }}
+      annotations:
+        {{- range $key, $value := $podAnnotations }}
+        {{ $key }}: {{ $value | quote }}
+        {{- end }}
+      {{- end }}
+    spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ template "mautrix-signal.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      {{- if .Values.dnsConfig }}
+      dnsConfig:
+        {{- toYaml .Values.dnsConfig | nindent 8 }}
+      {{- end }}
+      initContainers:
+        - name: init
+          image: "{{ .Values.image.mautrixSignal.repository }}:{{ tpl .Values.image.mautrixSignal.tag . }}"
+          imagePullPolicy: {{ .Values.image.mautrixSignal.pullPolicy }}
+          command: ["/bin/sh"]
+          args:
+            - "-c"
+            - |-
+              set -ex
+              cp /config/*.yaml /data/
+              mkdir -p "{{.Values.config.signal.outgoing_attachment_dir }}"
+              chown -R 1337:1337 /signald
+              chown -R 1337:1337 /data
+          volumeMounts:
+            - name: config
+              mountPath: /config
+            - name: data
+              mountPath: /data
+            - name: signald
+              mountPath: /signald
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      containers:
+        - name: mautrix-signal
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.mautrixSignal.repository }}:{{ tpl .Values.image.mautrixSignal.tag . }}"
+          imagePullPolicy: {{ .Values.image.mautrixSignal.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ required "need config.appservice.port" .Values.config.appservice.port }}
+              protocol: TCP
+          env:
+            []
+          livenessProbe:
+            httpGet:
+              path: /_matrix/mau/live
+              port: http
+            failureThreshold: {{ .Values.probes.liveness.failureThreshold }}
+            periodSeconds: {{ .Values.probes.liveness.periodSeconds }}
+          readinessProbe:
+            httpGet:
+              path: /_matrix/mau/live
+              port: http
+            failureThreshold: {{ .Values.probes.readiness.failureThreshold }}
+            periodSeconds: {{ .Values.probes.readiness.periodSeconds }}
+{{- if semverCompare ">=1.16-0" .Capabilities.KubeVersion.GitVersion }}
+          startupProbe:
+            httpGet:
+              path: /_matrix/mau/live
+              port: http
+            initialDelaySeconds: {{ .Values.probes.startup.initialDelaySeconds }}
+            failureThreshold: {{ .Values.probes.startup.failureThreshold }}
+            periodSeconds: {{ .Values.probes.startup.periodSeconds }}
+{{- end }}
+          volumeMounts:
+            - name: config
+              mountPath: /config
+            - name: signald
+              mountPath: /signald
+            - name: data
+              mountPath: /data
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+        - name: signald
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.signald.repository }}:{{ tpl .Values.image.signald.tag . }}"
+          imagePullPolicy: {{ .Values.image.signald.pullPolicy }}
+          args:
+            # user socket
+            - -s
+            - "/signald/signald.sock"
+            # where data is stored
+            - -d
+            - "/signald"
+            # enable metrics
+            - -m
+            # metrics port
+            - --metrics-http-port=9595
+          ports:
+            - name: http
+              containerPort: {{ required "need config.appservice.port" .Values.config.appservice.port }}
+              protocol: TCP
+          volumeMounts:
+            - name: config
+              mountPath: /config
+            - name: signald
+              mountPath: /signald
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: config
+          secret:
+            secretName: {{ include "mautrix-signal.fullname" . }}
+        - name: data
+          emptyDir: {}
+        - name: signald
+          {{- if .Values.persistence.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ if .Values.persistence.existingClaim }}{{ .Values.persistence.existingClaim }}{{- else }}{{ template "mautrix-signal.fullname" . }}{{- end }}
+          {{- else }}
+          emptyDir: {}
+          {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}

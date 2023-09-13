@@ -1,0 +1,30 @@
+apiVersion: v2
+# image: "felddy/foundryvtt"
+appVersion: '10.291'
+description: Foundry Virtual Tabletop
+name: foundry-vtt
+version: 1.1.0
+type: application
+keywords:
+  - game
+  - server
+  - vtt
+  - virtualtabletop
+  - foundryvtt
+  - foundry
+home: https://foundryvtt.com/
+sources:
+  - https://github.com/halkeye-helm-charts/foundry-vtt/tree/main
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+  - name: MaHaHe DevOps
+    email: devops@mahahe.it
+    url: https://www.mahahe.it/
+icon: https://foundryvtt.com/static/assets/icons/fvtt.png
+annotations:
+  artifacthub.io/images: |
+    - name: foundryvtt
+      image: "felddy/foundryvtt:10.291"
+  artifacthub.io/changes: |2
+     - "**deps:** update felddy/foundryvtt docker tag to v10.291 ([3a1f575](https://github.com/halkeye-helm-charts/foundry-vtt/commit/3a1f575d9404f44d6e5dfb796042399d885dbb5a))"

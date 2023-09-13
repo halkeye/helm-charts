@@ -1,0 +1,27 @@
+apiVersion: v2
+# image: "dock.mau.dev/mautrix/signal"
+appVersion: latest
+description: A Matrix-Signal puppeting bridge.
+name: mautrix-signal
+version: 0.2.0
+type: application
+keywords:
+  - synapse
+  - chat
+  - matrix
+  - signal
+home: https://github.com/tulir/mautrix-signal
+sources:
+  - https://github.com/matrix-org/synapse
+maintainers:
+  - name: Gavin Mogan
+    email: helm@gavinmogan.com
+annotations:
+  artifacthub.io/changes: |2
+     - "**deps:** update signald/signald docker tag to v0.23.2 ([d8dc7a2](https://github.com/halkeye-helm-charts/mautrix-signal/commit/d8dc7a2b057ce118ac5751c26646b9d56552d741))"
+  artifacthub.io/containsSecurityUpdates: 'false'
+  artifacthub.io/images: |
+    - name: mautrix-signal
+      image: "dock.mau.dev/mautrix/signal:latest"
+    - name: signald
+      image: "signald/signald:0.23.2"
