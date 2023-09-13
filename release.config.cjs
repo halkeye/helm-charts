@@ -19,7 +19,7 @@ module.exports = {
     "main2",
     "master"
   ],
-  "tagFormat": "v${version}",
+  "tagFormat": process.env.CHART_NAME + "-v${version}",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
