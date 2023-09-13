@@ -25,6 +25,6 @@ icon: https://foundryvtt.com/static/assets/icons/fvtt.png
 annotations:
   artifacthub.io/images: |
     - name: foundryvtt
-      image: "felddy/foundryvtt:10.291"
+      image: "felddy/foundryvtt:10.303"
   artifacthub.io/changes: |2
      - "**deps:** update felddy/foundryvtt docker tag to v10.291 ([3a1f575](https://github.com/halkeye-helm-charts/foundry-vtt/commit/3a1f575d9404f44d6e5dfb796042399d885dbb5a))"
