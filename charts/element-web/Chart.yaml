@@ -3,7 +3,7 @@ appVersion: v1.11.41
 description: Communicate the way you want with Riot - a universal secure chat app entirely under your control.
 icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
 name: element-web
-version: 1.11.0
+version: 1.11.1
 type: application
 keywords:
   - synapse
@@ -19,11 +19,7 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "bump element chart version ([f9d1b18](https://github.com/halkeye/helm-charts/commit/f9d1b188c59d99652fecfbb7f1afbcaff2b2f8c3))"
-     - "bump element chart version ([1ae30f7](https://github.com/halkeye/helm-charts/commit/1ae30f7fe08d005f81ce4448fcc8c1d2796dfb20))"
-     - "**deps:** update actions/checkout action to v4 ([5698db4](https://github.com/halkeye/helm-charts/commit/5698db492259a455879c1c7e453addc0df0bcdc6))"
-     - "**deps:** update dock.mau.dev/mautrix/instagram:latest docker digest to 5b3be3b ([7c49db9](https://github.com/halkeye/helm-charts/commit/7c49db9666d794b93d4e9423ff80adbcc5cd3282))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.41 ([cd9f84e](https://github.com/halkeye/helm-charts/commit/cd9f84ee9800b0db5c908bb6796f54d3c546aea9))"
+     - "bump element chart version ([d6f02e8](https://github.com/halkeye/helm-charts/commit/d6f02e88e087ac555ea8560784ad3fb54f8f54bb))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: element-web
