@@ -29,13 +29,13 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v3
 
-      - uses: engineerd/configurator@v0.0.1
+      - uses: engineerd/configurator@v0.0.10
         with:
           name: "helm-docs"
           url: "https://github.com/norwoodj/helm-docs/releases/download/v1.11.0/helm-docs_1.11.0_Linux_x86_64.tar.gz"
           pathInArchive: "helm-docs"
 
-      - uses: engineerd/configurator@v0.0.1
+      - uses: engineerd/configurator@v0.0.10
         with:
           name: "cr"
           url: "https://github.com/helm/chart-releaser/releases/download/v1.6.0/chart-releaser_1.6.0_linux_amd64.tar.gz"
