@@ -41,9 +41,12 @@ module.exports = {
       }
     ],
     [
-      "@semantic-release/exec",
+      "@semantic-release/git",
       {
-        "publishCmd": "git add -u .; git commit -m 'chore(release): ${nextRelease.version} [skip ci]'"
+        "assets": [
+          "Chart.yaml"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ]
   ]
