@@ -1,6 +1,6 @@
 apiVersion: v2
 # image: "matrixdotorg/synapse"
-appVersion: v1.80.0
+appVersion: v1.92.2
 description: The reference implementation for a Matrix.org chat server
 name: synapse
 version: 0.22.0
@@ -32,4 +32,4 @@ annotations:
      - "**deps:** update matrixdotorg/synapse docker tag to v1.90.0 ([7c2116c](https://github.com/halkeye-helm-charts/synapse/commit/7c2116ce69f0d17c047f7eee409e95b7c9a697dd))"
   artifacthub.io/images: |
     - name: synapse
-      image: "matrixdotorg/synapse:v1.90.0"
+      image: "matrixdotorg/synapse:v1.92.2"
