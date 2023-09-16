@@ -70,7 +70,7 @@ jobs:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
           npm install semantic-release@20.1.3 @halkeye/helm-semantic-release-config @semantic-release/changelog
-          for dir in "${ALL_CHANGED_FILES}"; do
+          for dir in ${ALL_CHANGED_FILES}; do
             pushd "$dir";
             cp -f ../../release.config.cjs ./
             export CHART_NAME=$(basename $(pwd))
@@ -83,7 +83,7 @@ jobs:
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
-          for dir in "${ALL_CHANGED_FILES}"; do
+          for dir in ${ALL_CHANGED_FILES}; do
             pushd "$dir";
             helm-docs
             popd;
@@ -97,7 +97,7 @@ jobs:
         run: |
           set -x
           mkdir .cr-release-packages
-          for dir in "${ALL_CHANGED_FILES}"; do
+          for dir in ${ALL_CHANGED_FILES}; do
             echo "Chart: $dir"
             pushd "$dir";
             rm -f ./release.config.cjs
