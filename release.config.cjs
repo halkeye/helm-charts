@@ -26,10 +26,15 @@ module.exports = {
     [
       "@semantic-release/release-notes-generator",
       {
-        "changelogFile": "CHANGELOG.md",
         "writerOpts": {
           "mainTemplate": "{{#each commitGroups}}{{#each commits}} - {{#yamlString}}{{> commit root=@root}}{{/yamlString}}{{/each}}{{/each}}",
         }
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
       }
     ],
     [
