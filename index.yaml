@@ -7418,6 +7418,44 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.0 ([3fa69ee](https://github.com/halkeye/helm-charts/commit/3fa69eed0442721c6d50de960152d73e823441d6))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.92.2"
+    apiVersion: v2
+    appVersion: v1.92.2
+    created: "2023-09-16T20:11:30.263348353Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: 9c7fb63bd52b35892c202595f159653bf1b815d8c35a169b8776b55b51857429
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.24.0.tgz
+    version: 0.24.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "bump element chart version ([d6f02e8](https://github.com/halkeye/helm-charts/commit/d6f02e88e087ac555ea8560784ad3fb54f8f54bb))"
          - "bump element-web chart version ([8f9ac0d](https://github.com/halkeye/helm-charts/commit/8f9ac0df572f201e41333b0f02b405c446c1decb))"
          - "bump element-web chart version ([3b292b4](https://github.com/halkeye/helm-charts/commit/3b292b4ecbcb7b9b07aa524376ca8a11b48b4935))"
@@ -11903,4 +11941,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-09-16T05:37:13.341516937Z"
+generated: "2023-09-16T20:11:30.264237968Z"
