@@ -98,6 +98,7 @@ jobs:
           for dir in "${ALL_CHANGED_FILES}"; do
             pushd "$dir";
             rm -f ./release.config.cjs
+            cp -f ../../cr.yaml ./
             cr package .
             cr upload -o "$owner" -r "$repo" -c "$(git rev-parse HEAD)" --config ../../cr.yaml
             cr index -o "$owner" -r "$repo" --config ../../cr.yaml --push
