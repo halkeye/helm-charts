@@ -105,8 +105,8 @@ jobs:
             echo "CR Package: $dir"
             cr package .
             echo "CR Upload: $dir"
-            cr upload -o "halkeye" -r "helm-charts" -c "$(git rev-parse HEAD)" --config cr.yaml
+            cr upload -o "halkeye" -r "helm-charts" -c "$(git rev-parse HEAD)" --config cr.yaml --push --packages-with-index --skip-existing
             popd;
           done
           echo "CR Index"
-          cr index -o "halkeye" -r "helm-charts" --config cr.yaml --push
+          cr index -o "halkeye" -r "helm-charts" --config cr.yaml --push --packages-with-index
