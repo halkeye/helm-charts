@@ -19,7 +19,7 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "bump version ([2644a3b](https://github.com/halkeye/helm-charts/commit/2644a3b7198904a8a5aaf5dc71a7930cdc86bad5))"
+     - "bump version ([2268617](https://github.com/halkeye/helm-charts/commit/2268617ea74a672b94d89b97c8fb946f8253dc54))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: element-web
