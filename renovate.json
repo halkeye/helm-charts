@@ -15,7 +15,7 @@
         "^charts/.*/Chart.yaml$"
       ],
       "matchStrings": [
-        "image:\\s+\"(?<depName>[a-z/.-]+):(?<currentValue>[a-z0-9.-]+)\""
+        "image:\\s+\"(?<depName>[a-z/.-]+):(?<currentValue>[a-z0-9.-@]+)\""
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
@@ -25,7 +25,7 @@
         "^charts/.*/values.yaml$"
       ],
       "matchStrings": [
-        "\\s+repository:\\s+\"?(?<depName>[a-z/.-]+)\"?\\n\\s+tag:\\s+\"?(?<currentValue>[a-z0-9.-]+)\"?"
+        "\\s+repository:\\s+\"?(?<depName>[a-z/.-]+)\"?\\n\\s+tag:\\s+\"?(?<currentValue>[a-z0-9.-@]+)\"?"
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
