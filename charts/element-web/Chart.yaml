@@ -3,7 +3,7 @@ appVersion: v1.11.41
 description: Communicate the way you want with Riot - a universal secure chat app entirely under your control.
 icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
 name: element-web
-version: 1.11.7
+version: 1.12.0
 type: application
 keywords:
   - synapse
@@ -19,7 +19,10 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "bump element chart version ([d6f02e8](https://github.com/halkeye/helm-charts/commit/d6f02e88e087ac555ea8560784ad3fb54f8f54bb))"
+     - "bump element-web chart version ([8f9ac0d](https://github.com/halkeye/helm-charts/commit/8f9ac0df572f201e41333b0f02b405c446c1decb))"
+     - "bump element-web chart version ([3b292b4](https://github.com/halkeye/helm-charts/commit/3b292b4ecbcb7b9b07aa524376ca8a11b48b4935))"
+     - "bump verison ([eb6c2b7](https://github.com/halkeye/helm-charts/commit/eb6c2b738ad75be212ed475e89e0acb52d60578a))"
+     - "**deps:** update engineerd/configurator action to v0.0.10 ([ecc1d36](https://github.com/halkeye/helm-charts/commit/ecc1d364642ea1891a196dd1186c2872573b9d80))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: element-web
