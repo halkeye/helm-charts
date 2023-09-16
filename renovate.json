@@ -6,7 +6,8 @@
   ],
   "bumpVersion": "patch",
   "ignoreDeps": [
-    "postgresql"
+    "postgresql",
+    "redis"
   ],
   "regexManagers": [
     {
