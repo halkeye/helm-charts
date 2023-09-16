@@ -7,11 +7,11 @@ replicaCount: 1
 image:
   mautrixSignal:
     repository: dock.mau.dev/mautrix/signal
-    tag: "{{ .Chart.AppVersion }}"
-    pullPolicy: Always
+    tag: "latest@sha256:6ba2ff1f9a51b1ff6b8f52f124eb42e009280069138e34456042e5e88f2b4569"
+    pullPolicy: IfNotPresent
   signald:
     repository: signald/signald
-    tag: 0.23.0
+    tag: "0.23.0"
     pullPolicy: IfNotPresent
 
 imagePullSecrets: []

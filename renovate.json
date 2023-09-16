@@ -22,6 +22,16 @@
     },
     {
       "fileMatch": [
+        "^charts/.*/values.yaml$"
+      ],
+      "matchStrings": [
+        "\\s+repository:\\s+\"?(?<depName>[a-z/.-]+)\"?\\n\\s+tag:\\s+\"?(?<currentValue>[a-z0-9.-]+)\"?"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
         "^charts/.*/Chart.yaml$"
       ],
       "matchStrings": [
