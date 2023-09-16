@@ -11,7 +11,7 @@ image:
     pullPolicy: IfNotPresent
   signald:
     repository: signald/signald
-    tag: "0.23.0"
+    tag: "0.23.2"
     pullPolicy: IfNotPresent
 
 imagePullSecrets: []
