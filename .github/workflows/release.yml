@@ -100,7 +100,7 @@ jobs:
             rm -f ./release.config.cjs
             cp -f ../../cr.yaml ./
             cr package .
-            cr upload -o "$owner" -r "$repo" -c "$(git rev-parse HEAD)" --config ../../cr.yaml
-            cr index -o "$owner" -r "$repo" --config ../../cr.yaml --push
+            cr upload -o "halkeye" -r "helm-charts" -c "$(git rev-parse HEAD)" --config cr.yaml
+            cr index -o "halkeye" -r "helm-charts" --config cr.yaml --push
             popd;
           done
