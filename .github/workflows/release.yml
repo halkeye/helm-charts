@@ -95,12 +95,18 @@ jobs:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |
+          mkdir .cr-release-packages
           for dir in "${ALL_CHANGED_FILES}"; do
+            echo "Chart: $dir"
             pushd "$dir";
             rm -f ./release.config.cjs
             cp -f ../../cr.yaml ./
+            ln -s ../../.cr-release-packages
+            echo "CR Package: $dir"
             cr package .
+            echo "CR Upload: $dir"
             cr upload -o "halkeye" -r "helm-charts" -c "$(git rev-parse HEAD)" --config cr.yaml
-            cr index -o "halkeye" -r "helm-charts" --config cr.yaml --push
             popd;
           done
+          echo "CR Index"
+          cr index -o "halkeye" -r "helm-charts" --config cr.yaml --push
