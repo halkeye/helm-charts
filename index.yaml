@@ -538,6 +538,37 @@ entries:
   element-web:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update vectorim/element-web docker tag to v1.11.43 ([623f095](https://github.com/halkeye/helm-charts/commit/623f095bb6d4a946b3b6737a25f3e2095261ad9c))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: element-web
+          image: "vectorim/element-web:v1.11.43"
+    apiVersion: v2
+    appVersion: v1.11.41
+    created: "2023-09-16T04:59:42.440842333Z"
+    description: Communicate the way you want with Riot - a universal secure chat
+      app entirely under your control.
+    digest: 4570f85d94d9b4f5bc124f57101fade384256f48f6164da54c2f8ec5db0cb83d
+    home: https://element.io/
+    icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    - element
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: element-web
+    sources:
+    - https://github.com/vector-im/element-web
+    type: application
+    urls:
+    - element-web-1.13.0.tgz
+    version: 1.13.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "bump version ([1e2876a](https://github.com/halkeye/helm-charts/commit/1e2876a4ca66c285ee44a543501e020f9cc26321))"
       artifacthub.io/containsSecurityUpdates: "false"
       artifacthub.io/images: |
@@ -11728,4 +11759,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-09-16T04:55:47.01538984Z"
+generated: "2023-09-16T04:59:42.443192476Z"
