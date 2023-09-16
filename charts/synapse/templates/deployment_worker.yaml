@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "synapse.fullname" . }}-federation-reader
+  name: {{ include "synapse.fullname" . }}-worker
   labels:
 {{ include "synapse.labels" . | indent 4 }}
 spec:
-  replicas: {{ .Values.replicaCounts.federation_reader }}
+  replicas: {{ .Values.replicaCounts.generic_worker }}
 {{- if .Values.strategy }}
   strategy:
 {{ toYaml .Values.strategy | indent 4 }}
@@ -15,16 +15,16 @@ spec:
 {{- end }}
   selector:
     matchLabels:
-      synapse-component: federation-reader
-      app.kubernetes.io/name: {{ include "synapse.name" . }}-federation-reader
+      synapse-component: worker
+      app.kubernetes.io/name: {{ include "synapse.name" . }}-worker
       app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
       annotations:
         checksum/secret: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
       labels:
-        synapse-component: federation-reader
-        app.kubernetes.io/name: {{ include "synapse.name" . }}-federation-reader
+        synapse-component: worker
+        app.kubernetes.io/name: {{ include "synapse.name" . }}-worker
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       # Avoid co-locating workers with the main Synapse pod if possible
@@ -65,10 +65,10 @@ spec:
               cp /config/* /data/
               {{ include "synapse.installPip" . | nindent 14 }}
               chown -R "{{ .Values.settings.uid }}:{{ .Values.settings.gid }}" /data
-              python -m "synapse.app.federation_reader" --config-path "/config/homeserver.yaml" --config-path "/config/federation-reader"
+              python -m "synapse.app.generic_worker" --config-path "/config/homeserver.yaml" --config-path "/config/worker"
           ports:
             - name: http
-              containerPort: {{ (index .Values.federation_reader.worker_listeners 0).port }}
+              containerPort: {{ (index .Values.generic_worker.worker_listeners 0).port }}
               protocol: TCP
           readinessProbe:
             httpGet:

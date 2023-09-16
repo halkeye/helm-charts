@@ -4,7 +4,7 @@
 
 replicaCounts:
   master: 1
-  federation_reader: 1
+  generic_worker: 1
   federation_sender: 1
 
 image:
@@ -164,6 +164,23 @@ homeserver:
     password: 'riches-jarring-acts'
   # Don't send federation from main proc
   send_federation: false
+  outbound_federation_restricted_to:
+    - federation_sender
+  federation_sender_instances:
+    - federation_sender
+
+  instance_map:
+    main:
+      host: localhost
+      port: 8030
+    worker:
+      host: '{{ include "synapse.fullname" . }}-worker'
+      port: 8083
+    federation_sender:
+      host: '{{ include "synapse.fullname" . }}-federation-sender'
+      port: 8083
+
+  worker_replication_secret: ""
 
   # Configuration file for Synapse.
   #
@@ -1960,11 +1977,8 @@ logconfig:
 
   disable_existing_loggers: false
 
-federation_reader:
-  worker_app: synapse.app.federation_reader
-  # The replication listener on the synapse to talk to.
-  worker_replication_host: '{{ include "synapse.fullname" . }}'
-  worker_replication_http_port: 9093
+generic_worker:
+  worker_app: synapse.app.generic_worker
   worker_listeners:
     - type: http
       port: 8083
@@ -1981,9 +1995,8 @@ federation_reader:
 
 federation_sender:
   worker_app: synapse.app.federation_sender
+  worker_name: federation_sender
   # The replication listener on the synapse to talk to.
-  worker_replication_host: '{{ include "synapse.fullname" . }}'
-  worker_replication_http_port: 9093
   worker_listeners:
     - type: http
       port: 8083
