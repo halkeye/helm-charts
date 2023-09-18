@@ -2676,6 +2676,43 @@ entries:
   foundry-vtt:
   - annotations:
       artifacthub.io/changes: |2
+         - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
+         - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.0 ([3fa69ee](https://github.com/halkeye/helm-charts/commit/3fa69eed0442721c6d50de960152d73e823441d6))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.92.2 ([78dfe62](https://github.com/halkeye/helm-charts/commit/78dfe62cc403ecb8a67b404fa81b2dc196946958))"
+         - "**deps:** update signald/signald docker tag to v0.23.2 ([d439dcc](https://github.com/halkeye/helm-charts/commit/d439dcc142c1f5fb983da6ca4dd9c5c8fe4e8228))"
+         - "**matrix-signal:** Update default config file to match master ([ed55458](https://github.com/halkeye/helm-charts/commit/ed55458707b16c1f8af7a125fac051e8e0b55013))"
+      artifacthub.io/images: |
+        - name: foundryvtt
+          image: "felddy/foundryvtt:10.303"
+    apiVersion: v2
+    appVersion: "10.291"
+    created: "2023-09-18T23:43:08.654724812Z"
+    description: Foundry Virtual Tabletop
+    digest: 8f2cda004cfc44099353f737d8802384b3f8daf5c8498b48824ff93147cd7997
+    home: https://foundryvtt.com/
+    icon: https://foundryvtt.com/static/assets/icons/fvtt.png
+    keywords:
+    - game
+    - server
+    - vtt
+    - virtualtabletop
+    - foundryvtt
+    - foundry
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    - email: devops@mahahe.it
+      name: MaHaHe DevOps
+      url: https://www.mahahe.it/
+    name: foundry-vtt
+    sources:
+    - https://github.com/halkeye-helm-charts/foundry-vtt/tree/main
+    type: application
+    urls:
+    - foundry-vtt-1.3.0.tgz
+    version: 1.3.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "bump element chart version ([d6f02e8](https://github.com/halkeye/helm-charts/commit/d6f02e88e087ac555ea8560784ad3fb54f8f54bb))"
          - "bump element-web chart version ([8f9ac0d](https://github.com/halkeye/helm-charts/commit/8f9ac0df572f201e41333b0f02b405c446c1decb))"
          - "bump element-web chart version ([3b292b4](https://github.com/halkeye/helm-charts/commit/3b292b4ecbcb7b9b07aa524376ca8a11b48b4935))"
@@ -11989,4 +12026,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-09-16T21:43:32.120273124Z"
+generated: "2023-09-18T23:43:08.655565108Z"
