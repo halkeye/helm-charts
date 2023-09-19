@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: '10.291'
 description: Foundry Virtual Tabletop
 name: foundry-vtt
-version: 1.3.0
+version: 1.4.0
 type: application
 keywords:
   - game
@@ -26,8 +26,4 @@ annotations:
     - name: foundryvtt
       image: "felddy/foundryvtt:11.308"
   artifacthub.io/changes: |2
-     - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
-     - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.0 ([3fa69ee](https://github.com/halkeye/helm-charts/commit/3fa69eed0442721c6d50de960152d73e823441d6))"
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.92.2 ([78dfe62](https://github.com/halkeye/helm-charts/commit/78dfe62cc403ecb8a67b404fa81b2dc196946958))"
-     - "**deps:** update signald/signald docker tag to v0.23.2 ([d439dcc](https://github.com/halkeye/helm-charts/commit/d439dcc142c1f5fb983da6ca4dd9c5c8fe4e8228))"
-     - "**matrix-signal:** Update default config file to match master ([ed55458](https://github.com/halkeye/helm-charts/commit/ed55458707b16c1f8af7a125fac051e8e0b55013))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11 ([d08fef7](https://github.com/halkeye/helm-charts/commit/d08fef7f9ada55aaab0cd4bd8e409bae2a45eb03))"
