@@ -1,9 +1,8 @@
 apiVersion: v2
-# image: "felddy/foundryvtt"
 appVersion: '11.308'
 description: Foundry Virtual Tabletop
 name: foundry-vtt
-version: 1.4.0
+version: 1.4.1
 type: application
 keywords:
   - game
@@ -27,4 +26,4 @@ annotations:
     - name: foundryvtt
       image: "felddy/foundryvtt:11.308"
   artifacthub.io/changes: |2
-     - "**deps:** update felddy/foundryvtt docker tag to v11 ([d08fef7](https://github.com/halkeye/helm-charts/commit/d08fef7f9ada55aaab0cd4bd8e409bae2a45eb03))"
+     - "**foundry-vtt:** fully upgrade to 11.308 and tell renovate to keep that variable up to date too ([4079f84](https://github.com/halkeye/helm-charts/commit/4079f8442a5117da5be55d202cb0be7a67c562d9))"
