@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.92.2
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.24.0
+version: 0.25.0
 type: application
 keywords:
   - synapse
@@ -29,7 +29,11 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.0 ([3fa69ee](https://github.com/halkeye/helm-charts/commit/3fa69eed0442721c6d50de960152d73e823441d6))"
+     - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
+     - "**foundry-vtt:** fully upgrade to 11.308 and tell renovate to keep that variable up to date too ([4079f84](https://github.com/halkeye/helm-charts/commit/4079f8442a5117da5be55d202cb0be7a67c562d9))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11 ([d08fef7](https://github.com/halkeye/helm-charts/commit/d08fef7f9ada55aaab0cd4bd8e409bae2a45eb03))"
+     - "**deps:** update signald/signald docker tag to v0.23.2 ([d439dcc](https://github.com/halkeye/helm-charts/commit/d439dcc142c1f5fb983da6ca4dd9c5c8fe4e8228))"
+     - "**matrix-signal:** Update default config file to match master ([ed55458](https://github.com/halkeye/helm-charts/commit/ed55458707b16c1f8af7a125fac051e8e0b55013))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.92.2"
