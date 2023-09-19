@@ -1,7 +1,7 @@
 apiVersion: v2
 type: application
 # image: "dock.mau.dev/mautrix/instagram"
-appVersion: v0.1.3
+appVersion: v0.3.1
 description: A Matrix-Instagram puppeting bridge.
 name: mautrix-instagram
 version: 1.1.0
@@ -38,4 +38,4 @@ annotations:
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: instagram
-      image: "dock.mau.dev/mautrix/instagram:v0.3.0"
+      image: "dock.mau.dev/mautrix/instagram:v0.3.1"
