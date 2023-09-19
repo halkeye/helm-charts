@@ -4008,6 +4008,34 @@ entries:
   mautrix-instagram:
   - annotations:
       artifacthub.io/changes: |2
+         - "**mautrix-instagram:** use properly released mautrix instagram docker tag ([0a967dd](https://github.com/halkeye/helm-charts/commit/0a967ddf143b67d767883abad0779c8dbe917208))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: instagram
+          image: "dock.mau.dev/mautrix/instagram:v0.3.1"
+    apiVersion: v2
+    appVersion: v0.3.1
+    created: "2023-09-19T23:35:48.505318296Z"
+    description: A Matrix-Instagram puppeting bridge.
+    digest: f173a2418517f9508c0b558db2743da316658beaaa994ed90cec6cf8fbd98829
+    home: https://matrix.to/#/#instagram:maunium.net
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - instagram
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: mautrix-instagram
+    sources:
+    - https://github.com/mautrix/instagram
+    type: application
+    urls:
+    - mautrix-instagram-1.3.1.tgz
+    version: 1.3.1
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.1 ([542b21c](https://github.com/halkeye/helm-charts/commit/542b21c73d6b4c854e82459d896b25db5be6488f))"
       artifacthub.io/containsSecurityUpdates: "false"
       artifacthub.io/images: |
@@ -12120,4 +12148,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-09-19T23:32:45.238090152Z"
+generated: "2023-09-19T23:35:48.50641759Z"
