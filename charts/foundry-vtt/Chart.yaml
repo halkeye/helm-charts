@@ -24,7 +24,7 @@ icon: https://foundryvtt.com/static/assets/icons/fvtt.png
 annotations:
   artifacthub.io/images: |
     - name: foundryvtt
-      image: "felddy/foundryvtt:10.303"
+      image: "felddy/foundryvtt:11.308"
   artifacthub.io/changes: |2
      - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
      - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.0 ([3fa69ee](https://github.com/halkeye/helm-charts/commit/3fa69eed0442721c6d50de960152d73e823441d6))"
