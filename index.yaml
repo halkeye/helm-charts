@@ -2676,6 +2676,39 @@ entries:
   foundry-vtt:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update felddy/foundryvtt docker tag to v11 ([d08fef7](https://github.com/halkeye/helm-charts/commit/d08fef7f9ada55aaab0cd4bd8e409bae2a45eb03))"
+      artifacthub.io/images: |
+        - name: foundryvtt
+          image: "felddy/foundryvtt:11.308"
+    apiVersion: v2
+    appVersion: "10.291"
+    created: "2023-09-19T00:21:35.23191112Z"
+    description: Foundry Virtual Tabletop
+    digest: 082ca419c1b35b69277acec5ccc5e64649d0d6e876a103e626463bd9b443cf8a
+    home: https://foundryvtt.com/
+    icon: https://foundryvtt.com/static/assets/icons/fvtt.png
+    keywords:
+    - game
+    - server
+    - vtt
+    - virtualtabletop
+    - foundryvtt
+    - foundry
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    - email: devops@mahahe.it
+      name: MaHaHe DevOps
+      url: https://www.mahahe.it/
+    name: foundry-vtt
+    sources:
+    - https://github.com/halkeye-helm-charts/foundry-vtt/tree/main
+    type: application
+    urls:
+    - foundry-vtt-1.4.0.tgz
+    version: 1.4.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
          - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.0 ([3fa69ee](https://github.com/halkeye/helm-charts/commit/3fa69eed0442721c6d50de960152d73e823441d6))"
          - "**deps:** update matrixdotorg/synapse docker tag to v1.92.2 ([78dfe62](https://github.com/halkeye/helm-charts/commit/78dfe62cc403ecb8a67b404fa81b2dc196946958))"
@@ -12026,4 +12059,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-09-18T23:43:08.655565108Z"
+generated: "2023-09-19T00:21:35.232580811Z"
