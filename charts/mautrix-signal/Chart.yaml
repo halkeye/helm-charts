@@ -1,4 +1,5 @@
 apiVersion: v2
+# image: "dock.mau.dev/mautrix/signal"
 appVersion: latest
 description: A Matrix-Signal puppeting bridge.
 name: mautrix-signal

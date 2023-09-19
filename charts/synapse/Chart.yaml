@@ -1,4 +1,5 @@
 apiVersion: v2
+# image: "matrixdotorg/synapse"
 appVersion: v1.92.2
 description: The reference implementation for a Matrix.org chat server
 name: synapse

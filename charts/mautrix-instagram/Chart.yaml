@@ -1,5 +1,6 @@
 apiVersion: v2
 type: application
+# image: "dock.mau.dev/mautrix/instagram"
 appVersion: v0.1.3
 description: A Matrix-Instagram puppeting bridge.
 name: mautrix-instagram
