@@ -19,9 +19,8 @@ jobs:
 
       - name: Run kubeconform
         run: |
-          ITER=0
           for dir in $(ls -1 charts/); do
-            pushd charts/$i;
+            pushd charts/$dir;
             if [ -f kubeconform-values.yaml ]; then
               helm kubeconform -f kubeconform-values.yaml --verbose --summary .;
             else
