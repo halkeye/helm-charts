@@ -38,6 +38,13 @@ module.exports = {
       }
     ],
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "helm-docs",
+        "publishCmd": "cr package . && cr upload -o halkeye -r helm-charts -c $(git rev-parse HEAD) --release-notes-file CHANGELOG.md --push --packages-with-index --skip-existing"
+      }
+    ],
+    [
       "semantic-release-helm3",
       {
         "chartPath": ".",

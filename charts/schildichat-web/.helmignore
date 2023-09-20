@@ -21,3 +21,6 @@
 *.tmproj
 .vscode/
 node_modules/
+release.config.cjs
+cr.yaml
+.cr-release-packages

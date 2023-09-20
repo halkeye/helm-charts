@@ -67,47 +67,23 @@ jobs:
         if: steps.changed-files.outputs.any_changed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
           npm install ci
-          for dir in ${ALL_CHANGED_FILES}; do
-            pushd "$dir";
-            cp -f ../../release.config.cjs ./
-            export CHART_NAME=$(basename $(pwd))
-            npx semantic-release;
-            popd;
-          done
-
-      - name: Generate readme
-        if: steps.changed-files.outputs.any_changed == 'true'
-        env:
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: |
-          for dir in ${ALL_CHANGED_FILES}; do
-            pushd "$dir";
-            helm-docs
-            popd;
-          done
-
-      - name: Release
-        if: steps.changed-files.outputs.any_changed == 'true'
-        env:
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        run: |
-          set -x
           mkdir .cr-release-packages
           for dir in ${ALL_CHANGED_FILES}; do
-            echo "Chart: $dir"
             pushd "$dir";
-            rm -f ./release.config.cjs
+
             cp -f ../../cr.yaml ./
+            cp -f ../../release.config.cjs ./
             ln -s ../../.cr-release-packages
-            echo "CR Package: $dir"
-            cr package .
-            echo "CR Upload: $dir"
-            cr upload -o "halkeye" -r "helm-charts" -c "$(git rev-parse HEAD)" --config cr.yaml --push --packages-with-index --skip-existing
+
+            export CHART_NAME=$(basename $(pwd))
+            npx semantic-release;
+
             popd;
           done
+
           echo "CR Index"
-          cr index -o "halkeye" -r "helm-charts" --push --packages-with-index --index-path .
+          $ [ "$(ls -A .cr-release-packages)" ] && cr index -o "halkeye" -r "helm-charts" --push --packages-with-index --index-path .

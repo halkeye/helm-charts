@@ -24,5 +24,8 @@
     "@semantic-release/release-notes-generator": "^12.0.0",
     "semantic-release": "^22.0.0",
     "semantic-release-helm3": "^2.9.2"
+  },
+  "dependencies": {
+    "@semantic-release/exec": "^6.0.3"
   }
 }

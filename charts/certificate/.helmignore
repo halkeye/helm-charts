@@ -21,3 +21,6 @@
 .idea/
 *.tmproj
 .vscode/
+release.config.cjs
+cr.yaml
+.cr-release-packages
