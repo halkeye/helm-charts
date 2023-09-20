@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: '11.308'
 description: Foundry Virtual Tabletop
 name: foundry-vtt
-version: 1.4.1
+version: 1.5.0
 type: application
 keywords:
   - game
@@ -27,4 +27,6 @@ annotations:
     - name: foundryvtt
       image: "felddy/foundryvtt:11.308"
   artifacthub.io/changes: |2
-     - "**foundry-vtt:** fully upgrade to 11.308 and tell renovate to keep that variable up to date too ([4079f84](https://github.com/halkeye/helm-charts/commit/4079f8442a5117da5be55d202cb0be7a67c562d9))"
+     - "**mautrix-instagram:** use properly released mautrix instagram docker tag ([0a967dd](https://github.com/halkeye/helm-charts/commit/0a967ddf143b67d767883abad0779c8dbe917208))"
+     - "**deps:** update dependency semantic-release to v22 ([fa09bc4](https://github.com/halkeye/helm-charts/commit/fa09bc4e9769c1a5841ff172a747d2885df10031))"
+     - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.1 ([542b21c](https://github.com/halkeye/helm-charts/commit/542b21c73d6b4c854e82459d896b25db5be6488f))"
