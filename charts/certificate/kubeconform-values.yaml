@@ -1,0 +1,4 @@
+secretName: secret-name
+issuerRef:
+  name: issuer-ref
+

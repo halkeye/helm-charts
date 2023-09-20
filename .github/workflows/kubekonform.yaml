@@ -1,0 +1,31 @@
+name: Release Charts
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  kubeconform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Helm
+        uses: azure/setup-helm@v3
+
+      - name: install kubeconform
+        run: helm plugin install https://github.com/jtyr/kubeconform-helm
+
+      - name: Run kubeconform
+        run: |
+          ITER=0
+          for dir in $(ls -1 charts/); do
+            pushd charts/$i;
+            if [ -f kubeconform-values.yaml ]; then
+              helm kubeconform -f kubeconform-values.yaml --verbose --summary .;
+            else
+              helm kubeconform --verbose --summary .;
+            fi;
+            popd;
+          done

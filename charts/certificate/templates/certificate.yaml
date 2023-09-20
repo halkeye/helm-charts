@@ -1,8 +1,4 @@
-{{- if .Capabilities.APIVersions.Has "cert-manager.io/v1" }}
 apiVersion: cert-manager.io/v1
-{{- else if .Capabilities.APIVersions.Has "cert-manager.io/v1alpha2" }}
-apiVersion: cert-manager.io/v1alpha2
-{{- end }}
 kind: Certificate
 metadata:
   labels:
@@ -23,4 +19,4 @@ spec:
   issuerRef:
     name: {{ .Values.issuerRef.name }}
     kind: {{ .Values.issuerRef.kind }}
-  secretName: {{ .Values.secretName }}
+  secretName: {{ required "secretName is required" .Values.secretName }}

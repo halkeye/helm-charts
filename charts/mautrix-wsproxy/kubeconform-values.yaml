@@ -1,0 +1,4 @@
+config:
+  as_token: something
+  hs_token: something
+  sync_proxy_shared_secret: something
