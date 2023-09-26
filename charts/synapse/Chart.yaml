@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.93.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.25.0
+version: 0.26.0
 type: application
 keywords:
   - synapse
@@ -29,11 +29,13 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
-     - "**foundry-vtt:** fully upgrade to 11.308 and tell renovate to keep that variable up to date too ([4079f84](https://github.com/halkeye/helm-charts/commit/4079f8442a5117da5be55d202cb0be7a67c562d9))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11 ([d08fef7](https://github.com/halkeye/helm-charts/commit/d08fef7f9ada55aaab0cd4bd8e409bae2a45eb03))"
-     - "**deps:** update signald/signald docker tag to v0.23.2 ([d439dcc](https://github.com/halkeye/helm-charts/commit/d439dcc142c1f5fb983da6ca4dd9c5c8fe4e8228))"
-     - "**matrix-signal:** Update default config file to match master ([ed55458](https://github.com/halkeye/helm-charts/commit/ed55458707b16c1f8af7a125fac051e8e0b55013))"
+     - "**mautrix-instagram:** use properly released mautrix instagram docker tag ([0a967dd](https://github.com/halkeye/helm-charts/commit/0a967ddf143b67d767883abad0779c8dbe917208))"
+     - "**deps:** update dependency semantic-release to v22 ([fa09bc4](https://github.com/halkeye/helm-charts/commit/fa09bc4e9769c1a5841ff172a747d2885df10031))"
+     - "**deps:** update dependency semantic-release to v22.0.1 ([1101ee5](https://github.com/halkeye/helm-charts/commit/1101ee56a8b6834f7141b2689b0dc5c699517c35))"
+     - "**deps:** update dependency semantic-release-helm3 to v2.9.3 ([4bf6a79](https://github.com/halkeye/helm-charts/commit/4bf6a79cc2c5b18a6614b7cb083bf4a37879fee7))"
+     - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.1 ([542b21c](https://github.com/halkeye/helm-charts/commit/542b21c73d6b4c854e82459d896b25db5be6488f))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.93.0 ([4d09f33](https://github.com/halkeye/helm-charts/commit/4d09f33d75910fa7e1d163186008ac20df6f5c9a))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.44 ([740a64e](https://github.com/halkeye/helm-charts/commit/740a64ed83b9bbd7c098ba6e07aeb47f8ddf1f5d))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.93.0"
