@@ -86,4 +86,4 @@ jobs:
           done
 
           echo "CR Index"
-          $ [ "$(ls -A .cr-release-packages)" ] && cr index -o "halkeye" -r "helm-charts" --push --packages-with-index --index-path .
+          [ "$(ls -A .cr-release-packages)" ] && cr index -o "halkeye" -r "helm-charts" --push --packages-with-index --index-path .
