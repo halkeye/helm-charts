@@ -538,6 +538,40 @@ entries:
   element-web:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update felddy/foundryvtt docker tag to v11.311 ([7cfb5c4](https://github.com/halkeye/helm-charts/commit/7cfb5c4505f8b89316ebbb1741adaff5159fa6f6))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.93.0 ([4d09f33](https://github.com/halkeye/helm-charts/commit/4d09f33d75910fa7e1d163186008ac20df6f5c9a))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.45 ([e5e0768](https://github.com/halkeye/helm-charts/commit/e5e0768f787d02b10e2949834bd34bf320b8bc13))"
+         - "force release ([44bcdc0](https://github.com/halkeye/helm-charts/commit/44bcdc0316567b1574629037e0ac14363b5f379e))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: element-web
+          image: "vectorim/element-web:v1.11.45"
+    apiVersion: v2
+    appVersion: v1.11.45
+    created: "2023-09-30T06:21:11.256844391Z"
+    description: Communicate the way you want with Riot - a universal secure chat
+      app entirely under your control.
+    digest: 095a93c0eb85a2b193480e2d96ba987024e3844e0209a1337c0b8cde54fe8012
+    home: https://element.io/
+    icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    - element
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: element-web
+    sources:
+    - https://github.com/vector-im/element-web
+    type: application
+    urls:
+    - element-web-1.16.0.tgz
+    version: 1.16.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update vectorim/element-web docker tag to v1.11.43 ([623f095](https://github.com/halkeye/helm-charts/commit/623f095bb6d4a946b3b6737a25f3e2095261ad9c))"
       artifacthub.io/containsSecurityUpdates: "false"
       artifacthub.io/images: |
@@ -12186,4 +12220,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-09-29T01:41:21.732153454Z"
+generated: "2023-09-30T06:21:11.257751792Z"
