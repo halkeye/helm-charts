@@ -25,7 +25,7 @@ icon: https://foundryvtt.com/static/assets/icons/fvtt.png
 annotations:
   artifacthub.io/images: |
     - name: foundryvtt
-      image: "felddy/foundryvtt:11.311"
+      image: "felddy/foundryvtt:11.313"
   artifacthub.io/changes: |2
      - "**deps:** update dependency semantic-release to v22.0.1 ([1101ee5](https://github.com/halkeye/helm-charts/commit/1101ee56a8b6834f7141b2689b0dc5c699517c35))"
      - "**deps:** update dependency semantic-release-helm3 to v2.9.3 ([4bf6a79](https://github.com/halkeye/helm-charts/commit/4bf6a79cc2c5b18a6614b7cb083bf4a37879fee7))"
