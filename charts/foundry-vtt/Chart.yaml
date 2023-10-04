@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: '11.308'
 description: Foundry Virtual Tabletop
 name: foundry-vtt
-version: 1.6.0
+version: 1.7.0
 type: application
 keywords:
   - game
@@ -27,9 +27,5 @@ annotations:
     - name: foundryvtt
       image: "felddy/foundryvtt:11.313"
   artifacthub.io/changes: |2
-     - "**deps:** update dependency semantic-release to v22.0.1 ([1101ee5](https://github.com/halkeye/helm-charts/commit/1101ee56a8b6834f7141b2689b0dc5c699517c35))"
-     - "**deps:** update dependency semantic-release-helm3 to v2.9.3 ([4bf6a79](https://github.com/halkeye/helm-charts/commit/4bf6a79cc2c5b18a6614b7cb083bf4a37879fee7))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11.311 ([7cfb5c4](https://github.com/halkeye/helm-charts/commit/7cfb5c4505f8b89316ebbb1741adaff5159fa6f6))"
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.93.0 ([4d09f33](https://github.com/halkeye/helm-charts/commit/4d09f33d75910fa7e1d163186008ac20df6f5c9a))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.44 ([740a64e](https://github.com/halkeye/helm-charts/commit/740a64ed83b9bbd7c098ba6e07aeb47f8ddf1f5d))"
-     - "force release ([44bcdc0](https://github.com/halkeye/helm-charts/commit/44bcdc0316567b1574629037e0ac14363b5f379e))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.313 ([8820393](https://github.com/halkeye/helm-charts/commit/88203937838581740eb4d0ec03cbc386c5d8ea5c))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.45 ([e5e0768](https://github.com/halkeye/helm-charts/commit/e5e0768f787d02b10e2949834bd34bf320b8bc13))"
