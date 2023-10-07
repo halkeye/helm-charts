@@ -159,7 +159,7 @@ homeserver:
     # homeserver.redis.enabled -- If you want workers/distributed processing, you want redis as of 1.67
     # https://matrix-org.github.io/synapse/v1.67/upgrade.html#direct-tcp-replication-is-no-longer-supported-migrate-to-redis
     enabled: true
-    host:  synapse-redis-master.matrix.svc.cluster.local
+    host:  '{{ include "synapse.fullname" . }}-redis-master'
     ## homeserver.redis.password -- Password to connect to redis
     password: 'riches-jarring-acts'
   # Don't send federation from main proc
@@ -171,7 +171,7 @@ homeserver:
 
   instance_map:
     main:
-      host: localhost
+      host: '{{ include "synapse.fullname" . }}'
       port: 8030
     worker:
       host: '{{ include "synapse.fullname" . }}-worker'
