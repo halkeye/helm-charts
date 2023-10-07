@@ -170,6 +170,9 @@ homeserver:
     - federation_sender
 
   instance_map:
+    master:
+      host: '{{ include "synapse.fullname" . }}'
+      port: 8030
     main:
       host: '{{ include "synapse.fullname" . }}'
       port: 8030
