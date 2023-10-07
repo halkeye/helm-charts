@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.93.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.27.0
+version: 0.27.1
 type: application
 keywords:
   - synapse
@@ -29,11 +29,7 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "allow homeserver configs to have variables in them ([6d813f5](https://github.com/halkeye/helm-charts/commit/6d813f5760327ed64d712684bcc0f88f5a4c3552))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11.311 ([7cfb5c4](https://github.com/halkeye/helm-charts/commit/7cfb5c4505f8b89316ebbb1741adaff5159fa6f6))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11.313 ([8820393](https://github.com/halkeye/helm-charts/commit/88203937838581740eb4d0ec03cbc386c5d8ea5c))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.45 ([e5e0768](https://github.com/halkeye/helm-charts/commit/e5e0768f787d02b10e2949834bd34bf320b8bc13))"
-     - "force release ([44bcdc0](https://github.com/halkeye/helm-charts/commit/44bcdc0316567b1574629037e0ac14363b5f379e))"
+     - "workers shouldn't connect to master on localhost ([c98afca](https://github.com/halkeye/helm-charts/commit/c98afca25323accfca385fd4344899d413d68fa7))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.93.0"
