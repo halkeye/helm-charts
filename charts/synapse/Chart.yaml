@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.93.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.27.1
+version: 0.27.2
 type: application
 keywords:
   - synapse
@@ -29,7 +29,7 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "workers shouldn't connect to master on localhost ([c98afca](https://github.com/halkeye/helm-charts/commit/c98afca25323accfca385fd4344899d413d68fa7))"
+     - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.93.0"
