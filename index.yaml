@@ -7731,6 +7731,44 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.93.0"
+    apiVersion: v2
+    appVersion: v1.93.0
+    created: "2023-10-07T20:29:38.461733871Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: cf85474431038e6a620abd73467bc0d6a146ef529b076254afb063de68ea6abd
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.27.2.tgz
+    version: 0.27.2
+  - annotations:
+      artifacthub.io/changes: |2
          - "workers shouldn't connect to master on localhost ([c98afca](https://github.com/halkeye/helm-charts/commit/c98afca25323accfca385fd4344899d413d68fa7))"
       artifacthub.io/images: |
         - name: synapse
@@ -12334,4 +12372,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-10-07T20:09:41.226752905Z"
+generated: "2023-10-07T20:29:38.462520274Z"
