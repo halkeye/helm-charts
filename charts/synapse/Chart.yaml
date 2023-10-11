@@ -1,6 +1,6 @@
 apiVersion: v2
 # image: "matrixdotorg/synapse"
-appVersion: v1.93.0
+appVersion: v1.94.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
 version: 0.27.2
@@ -32,4 +32,4 @@ annotations:
      - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
   artifacthub.io/images: |
     - name: synapse
-      image: "matrixdotorg/synapse:v1.93.0"
+      image: "matrixdotorg/synapse:v1.94.0"
