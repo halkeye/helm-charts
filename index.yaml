@@ -538,6 +538,42 @@ entries:
   element-web:
   - annotations:
       artifacthub.io/changes: |2
+         - "allow homeserver configs to have variables in them ([6d813f5](https://github.com/halkeye/helm-charts/commit/6d813f5760327ed64d712684bcc0f88f5a4c3552))"
+         - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
+         - "workers shouldn't connect to master on localhost ([c98afca](https://github.com/halkeye/helm-charts/commit/c98afca25323accfca385fd4344899d413d68fa7))"
+         - "**deps:** update felddy/foundryvtt docker tag to v11.313 ([8820393](https://github.com/halkeye/helm-charts/commit/88203937838581740eb4d0ec03cbc386c5d8ea5c))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.94.0 ([ff8fecd](https://github.com/halkeye/helm-charts/commit/ff8fecd6862a09b187bc45b771813f22709c438d))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.46 ([80c44ec](https://github.com/halkeye/helm-charts/commit/80c44ecd57846fa8680bf76a35f402d909165585))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: element-web
+          image: "vectorim/element-web:v1.11.46"
+    apiVersion: v2
+    appVersion: v1.11.46
+    created: "2023-10-11T16:08:47.20383501Z"
+    description: Communicate the way you want with Riot - a universal secure chat
+      app entirely under your control.
+    digest: 5a24ecaf9dda89ab8678e7f0d43b7409581faf71e51f6ffb05d1e1100ed349d2
+    home: https://element.io/
+    icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    - element
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: element-web
+    sources:
+    - https://github.com/vector-im/element-web
+    type: application
+    urls:
+    - element-web-1.17.0.tgz
+    version: 1.17.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update felddy/foundryvtt docker tag to v11.311 ([7cfb5c4](https://github.com/halkeye/helm-charts/commit/7cfb5c4505f8b89316ebbb1741adaff5159fa6f6))"
          - "**deps:** update matrixdotorg/synapse docker tag to v1.93.0 ([4d09f33](https://github.com/halkeye/helm-charts/commit/4d09f33d75910fa7e1d163186008ac20df6f5c9a))"
          - "**deps:** update vectorim/element-web docker tag to v1.11.45 ([e5e0768](https://github.com/halkeye/helm-charts/commit/e5e0768f787d02b10e2949834bd34bf320b8bc13))"
@@ -12372,4 +12408,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-10-07T20:29:38.462520274Z"
+generated: "2023-10-11T16:08:47.204721929Z"
