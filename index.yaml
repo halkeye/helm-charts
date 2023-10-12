@@ -7767,6 +7767,47 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.94.0 ([ff8fecd](https://github.com/halkeye/helm-charts/commit/ff8fecd6862a09b187bc45b771813f22709c438d))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.46 ([80c44ec](https://github.com/halkeye/helm-charts/commit/80c44ecd57846fa8680bf76a35f402d909165585))"
+         - "force release ([f89d4ef](https://github.com/halkeye/helm-charts/commit/f89d4efaefef5c284cca74b94b3e84d76dfccf33))"
+         - "force release ([776a440](https://github.com/halkeye/helm-charts/commit/776a4408be58239d3c54584d43f1e28447cb1b98))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.94.0"
+    apiVersion: v2
+    appVersion: v1.94.0
+    created: "2023-10-12T17:56:59.643325028Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: 21b44970fafec71d165d3a1b1018d05fde2494929f5dd3f5453d394ec06d495c
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.28.0.tgz
+    version: 0.28.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
       artifacthub.io/images: |
         - name: synapse
@@ -12408,4 +12449,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-10-11T16:08:47.204721929Z"
+generated: "2023-10-12T17:56:59.644282943Z"
