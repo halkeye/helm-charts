@@ -7871,6 +7871,48 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.3 ([01b7dd5](https://github.com/halkeye/helm-charts/commit/01b7dd5ab4a8820dc2bdf7e8003a8390f5889515))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.95.0 ([ee35ac6](https://github.com/halkeye/helm-charts/commit/ee35ac6d170dc971df9b4240df9254d36d7b210e))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.95.1 ([7526cc9](https://github.com/halkeye/helm-charts/commit/7526cc9f040884690e44a0e9a110cc3011757154))"
+         - "**deps:** update tj-actions/changed-files action to v40 ([ec07b8a](https://github.com/halkeye/helm-charts/commit/ec07b8ae9710e37dcb3a5c23406fb7318093770c))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.47 ([bd19d7e](https://github.com/halkeye/helm-charts/commit/bd19d7e4e29e17eef8e2f469440f5793b7d45106))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.95.1"
+    apiVersion: v2
+    appVersion: v1.95.1
+    created: "2023-11-02T17:10:15.078007294Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: 15c6d9491daecf7c844ddf34bea566acbfbcca839d2181e6f7b2ebab9bbf4875
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.29.0.tgz
+    version: 0.29.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update matrixdotorg/synapse docker tag to v1.94.0 ([ff8fecd](https://github.com/halkeye/helm-charts/commit/ff8fecd6862a09b187bc45b771813f22709c438d))"
          - "**deps:** update vectorim/element-web docker tag to v1.11.46 ([80c44ec](https://github.com/halkeye/helm-charts/commit/80c44ecd57846fa8680bf76a35f402d909165585))"
          - "force release ([f89d4ef](https://github.com/halkeye/helm-charts/commit/f89d4efaefef5c284cca74b94b3e84d76dfccf33))"
@@ -12553,4 +12595,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-10-28T16:56:37.379552261Z"
+generated: "2023-11-02T17:10:15.078695068Z"
