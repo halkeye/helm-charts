@@ -25,7 +25,7 @@ icon: https://foundryvtt.com/static/assets/icons/fvtt.png
 annotations:
   artifacthub.io/images: |
     - name: foundryvtt
-      image: "felddy/foundryvtt:11.313"
+      image: "felddy/foundryvtt:11.314"
   artifacthub.io/changes: |2
      - "**deps:** update felddy/foundryvtt docker tag to v11.313 ([8820393](https://github.com/halkeye/helm-charts/commit/88203937838581740eb4d0ec03cbc386c5d8ea5c))"
      - "**deps:** update vectorim/element-web docker tag to v1.11.45 ([e5e0768](https://github.com/halkeye/helm-charts/commit/e5e0768f787d02b10e2949834bd34bf320b8bc13))"
