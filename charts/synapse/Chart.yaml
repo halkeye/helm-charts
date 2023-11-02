@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.95.1
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.28.0
+version: 0.29.0
 type: application
 keywords:
   - synapse
@@ -29,10 +29,11 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.94.0 ([ff8fecd](https://github.com/halkeye/helm-charts/commit/ff8fecd6862a09b187bc45b771813f22709c438d))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.46 ([80c44ec](https://github.com/halkeye/helm-charts/commit/80c44ecd57846fa8680bf76a35f402d909165585))"
-     - "force release ([f89d4ef](https://github.com/halkeye/helm-charts/commit/f89d4efaefef5c284cca74b94b3e84d76dfccf33))"
-     - "force release ([776a440](https://github.com/halkeye/helm-charts/commit/776a4408be58239d3c54584d43f1e28447cb1b98))"
+     - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.3 ([01b7dd5](https://github.com/halkeye/helm-charts/commit/01b7dd5ab4a8820dc2bdf7e8003a8390f5889515))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.95.0 ([ee35ac6](https://github.com/halkeye/helm-charts/commit/ee35ac6d170dc971df9b4240df9254d36d7b210e))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.95.1 ([7526cc9](https://github.com/halkeye/helm-charts/commit/7526cc9f040884690e44a0e9a110cc3011757154))"
+     - "**deps:** update tj-actions/changed-files action to v40 ([ec07b8a](https://github.com/halkeye/helm-charts/commit/ec07b8ae9710e37dcb3a5c23406fb7318093770c))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.47 ([bd19d7e](https://github.com/halkeye/helm-charts/commit/bd19d7e4e29e17eef8e2f469440f5793b7d45106))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.95.1"
