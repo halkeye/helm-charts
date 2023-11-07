@@ -25,7 +25,7 @@ icon: https://foundryvtt.com/static/assets/icons/fvtt.png
 annotations:
   artifacthub.io/images: |
     - name: foundryvtt
-      image: "felddy/foundryvtt:11.314"
+      image: "felddy/foundryvtt:11.315"
   artifacthub.io/changes: |2
      - "allow homeserver configs to have variables in them ([6d813f5](https://github.com/halkeye/helm-charts/commit/6d813f5760327ed64d712684bcc0f88f5a4c3552))"
      - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
