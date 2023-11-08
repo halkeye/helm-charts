@@ -2815,6 +2815,40 @@ entries:
   foundry-vtt:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update felddy/foundryvtt docker tag to v11.315 ([5e485ef](https://github.com/halkeye/helm-charts/commit/5e485ef186759ce3bdcb111ed1ef670396a15abe))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.48 ([18ab179](https://github.com/halkeye/helm-charts/commit/18ab179610454e402b444821a98466a38a2224d5))"
+      artifacthub.io/images: |
+        - name: foundryvtt
+          image: "felddy/foundryvtt:11.315"
+    apiVersion: v2
+    appVersion: "11.308"
+    created: "2023-11-08T07:26:06.820837332Z"
+    description: Foundry Virtual Tabletop
+    digest: 13f1b9689ea28bd6408a4eb5f6594e2fe0801445429e6bfeef5b6ed9cfc6ab2a
+    home: https://foundryvtt.com/
+    icon: https://foundryvtt.com/static/assets/icons/fvtt.png
+    keywords:
+    - game
+    - server
+    - vtt
+    - virtualtabletop
+    - foundryvtt
+    - foundry
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    - email: devops@mahahe.it
+      name: MaHaHe DevOps
+      url: https://www.mahahe.it/
+    name: foundry-vtt
+    sources:
+    - https://github.com/halkeye-helm-charts/foundry-vtt/tree/main
+    type: application
+    urls:
+    - foundry-vtt-1.9.0.tgz
+    version: 1.9.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "allow homeserver configs to have variables in them ([6d813f5](https://github.com/halkeye/helm-charts/commit/6d813f5760327ed64d712684bcc0f88f5a4c3552))"
          - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
          - "workers shouldn't connect to master on localhost ([c98afca](https://github.com/halkeye/helm-charts/commit/c98afca25323accfca385fd4344899d413d68fa7))"
@@ -12674,4 +12708,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-11-07T16:30:01.892296355Z"
+generated: "2023-11-08T07:26:06.821540559Z"
