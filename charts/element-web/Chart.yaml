@@ -5,7 +5,7 @@ description: Communicate the way you want with Riot - a universal secure chat
   app entirely under your control.
 icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
 name: element-web
-version: 1.19.0
+version: 1.20.0
 type: application
 keywords:
   - synapse
@@ -21,10 +21,8 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**deps:** update felddy/foundryvtt docker tag to v11.314 ([b6009bb](https://github.com/halkeye/helm-charts/commit/b6009bbce9770240c12a3f08f41a4f8310b796e3))"
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.95.1 ([7526cc9](https://github.com/halkeye/helm-charts/commit/7526cc9f040884690e44a0e9a110cc3011757154))"
-     - "**deps:** update tj-actions/changed-files action to v40 ([ec07b8a](https://github.com/halkeye/helm-charts/commit/ec07b8ae9710e37dcb3a5c23406fb7318093770c))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.48 ([18ab179](https://github.com/halkeye/helm-charts/commit/18ab179610454e402b444821a98466a38a2224d5))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.315 ([5e485ef](https://github.com/halkeye/helm-charts/commit/5e485ef186759ce3bdcb111ed1ef670396a15abe))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.49 ([4ca38cd](https://github.com/halkeye/helm-charts/commit/4ca38cd64c42a3fc7c8a672337bc825c5d0f844b))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: element-web
