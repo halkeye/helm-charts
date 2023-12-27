@@ -5266,6 +5266,42 @@ entries:
   mautrix-whatsapp:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update felddy/foundryvtt docker tag to v11.314 ([b6009bb](https://github.com/halkeye/helm-charts/commit/b6009bbce9770240c12a3f08f41a4f8310b796e3))"
+         - "**deps:** update felddy/foundryvtt docker tag to v11.315 ([5e485ef](https://github.com/halkeye/helm-charts/commit/5e485ef186759ce3bdcb111ed1ef670396a15abe))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.95.0 ([ee35ac6](https://github.com/halkeye/helm-charts/commit/ee35ac6d170dc971df9b4240df9254d36d7b210e))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.95.1 ([7526cc9](https://github.com/halkeye/helm-charts/commit/7526cc9f040884690e44a0e9a110cc3011757154))"
+         - "**deps:** update tj-actions/changed-files action to v40 ([ec07b8a](https://github.com/halkeye/helm-charts/commit/ec07b8ae9710e37dcb3a5c23406fb7318093770c))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.47 ([bd19d7e](https://github.com/halkeye/helm-charts/commit/bd19d7e4e29e17eef8e2f469440f5793b7d45106))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.48 ([18ab179](https://github.com/halkeye/helm-charts/commit/18ab179610454e402b444821a98466a38a2224d5))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.49 ([4ca38cd](https://github.com/halkeye/helm-charts/commit/4ca38cd64c42a3fc7c8a672337bc825c5d0f844b))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: whatsapp
+          image: "dock.mau.dev/mautrix/whatsapp:v0.10.3"
+    apiVersion: v2
+    appVersion: v0.10.3
+    created: "2023-12-27T06:55:28.536244248Z"
+    description: A Matrix-WhatsApp puppeting bridge https://maunium.net/go/mautrix-whatsapp
+    digest: 3ebd20c785c8f6ba91c4e00196b7dd02284b576c6dcf8028dc534aa28de76e2f
+    home: https://maunium.net/go/mautrix-whatsapp
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - bridge
+    - whatsapp
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: mautrix-whatsapp
+    sources:
+    - https://github.com/mautrix/whatsapp
+    type: application
+    urls:
+    - mautrix-whatsapp-1.7.0.tgz
+    version: 1.7.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "allow homeserver configs to have variables in them ([6d813f5](https://github.com/halkeye/helm-charts/commit/6d813f5760327ed64d712684bcc0f88f5a4c3552))"
          - "bump element chart version ([d6f02e8](https://github.com/halkeye/helm-charts/commit/d6f02e88e087ac555ea8560784ad3fb54f8f54bb))"
          - "bump element-web chart version ([8f9ac0d](https://github.com/halkeye/helm-charts/commit/8f9ac0df572f201e41333b0f02b405c446c1decb))"
@@ -12740,4 +12776,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2023-11-13T17:32:17.242528159Z"
+generated: "2023-12-27T06:55:28.536883524Z"
