@@ -4,7 +4,7 @@ type: application
 appVersion: v0.10.3
 description: A Matrix-WhatsApp puppeting bridge https://maunium.net/go/mautrix-whatsapp
 name: mautrix-whatsapp
-version: 1.6.0
+version: 1.7.0
 keywords:
   - synapse
   - chat
@@ -19,47 +19,14 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "allow homeserver configs to have variables in them ([6d813f5](https://github.com/halkeye/helm-charts/commit/6d813f5760327ed64d712684bcc0f88f5a4c3552))"
-     - "bump element chart version ([d6f02e8](https://github.com/halkeye/helm-charts/commit/d6f02e88e087ac555ea8560784ad3fb54f8f54bb))"
-     - "bump element-web chart version ([8f9ac0d](https://github.com/halkeye/helm-charts/commit/8f9ac0df572f201e41333b0f02b405c446c1decb))"
-     - "bump element-web chart version ([3b292b4](https://github.com/halkeye/helm-charts/commit/3b292b4ecbcb7b9b07aa524376ca8a11b48b4935))"
-     - "bump verison ([14ee022](https://github.com/halkeye/helm-charts/commit/14ee0224e15ed5d8b0a93584cc57dd59cd6c4aa1))"
-     - "bump verison ([86d6cdb](https://github.com/halkeye/helm-charts/commit/86d6cdb7ba4c3fcd4587c1dfa1be6318324c54df))"
-     - "bump verison ([eb6c2b7](https://github.com/halkeye/helm-charts/commit/eb6c2b738ad75be212ed475e89e0acb52d60578a))"
-     - "bump version ([1e2876a](https://github.com/halkeye/helm-charts/commit/1e2876a4ca66c285ee44a543501e020f9cc26321))"
-     - "bump version ([2268617](https://github.com/halkeye/helm-charts/commit/2268617ea74a672b94d89b97c8fb946f8253dc54))"
-     - "bump version ([2644a3b](https://github.com/halkeye/helm-charts/commit/2644a3b7198904a8a5aaf5dc71a7930cdc86bad5))"
-     - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
-     - "force release ([1bf2cfd](https://github.com/halkeye/helm-charts/commit/1bf2cfd95b4b042e7cd69617604be5f41d49e78a))"
-     - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
-     - "**foundry-vtt:** fully upgrade to 11.308 and tell renovate to keep that variable up to date too ([4079f84](https://github.com/halkeye/helm-charts/commit/4079f8442a5117da5be55d202cb0be7a67c562d9))"
-     - "make sure semantic release exec ([ccb746d](https://github.com/halkeye/helm-charts/commit/ccb746d8584afe47da3bac48e60f4848246f29f7))"
-     - "make sure semantic release exec ([8ef7954](https://github.com/halkeye/helm-charts/commit/8ef79546b0c4bd64cd86760d172e5d4254c88637))"
-     - "**mautrix-instagram:** use properly released mautrix instagram docker tag ([0a967dd](https://github.com/halkeye/helm-charts/commit/0a967ddf143b67d767883abad0779c8dbe917208))"
-     - "workers shouldn't connect to master on localhost ([c98afca](https://github.com/halkeye/helm-charts/commit/c98afca25323accfca385fd4344899d413d68fa7))"
-     - "**deps:** update dependency semantic-release to v22 ([fa09bc4](https://github.com/halkeye/helm-charts/commit/fa09bc4e9769c1a5841ff172a747d2885df10031))"
-     - "**deps:** update dependency semantic-release to v22.0.1 ([1101ee5](https://github.com/halkeye/helm-charts/commit/1101ee56a8b6834f7141b2689b0dc5c699517c35))"
-     - "**deps:** update dependency semantic-release-helm3 to v2.9.3 ([4bf6a79](https://github.com/halkeye/helm-charts/commit/4bf6a79cc2c5b18a6614b7cb083bf4a37879fee7))"
-     - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.0 ([3fa69ee](https://github.com/halkeye/helm-charts/commit/3fa69eed0442721c6d50de960152d73e823441d6))"
-     - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.1 ([542b21c](https://github.com/halkeye/helm-charts/commit/542b21c73d6b4c854e82459d896b25db5be6488f))"
-     - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.3 ([01b7dd5](https://github.com/halkeye/helm-charts/commit/01b7dd5ab4a8820dc2bdf7e8003a8390f5889515))"
-     - "**deps:** update engineerd/configurator action to v0.0.10 ([ecc1d36](https://github.com/halkeye/helm-charts/commit/ecc1d364642ea1891a196dd1186c2872573b9d80))"
-     - "**deps:** update felddy/foundryvtt docker tag to v10.303 ([013c03b](https://github.com/halkeye/helm-charts/commit/013c03b73d0e39fd2627e011ab85fdab90361245))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11 ([d08fef7](https://github.com/halkeye/helm-charts/commit/d08fef7f9ada55aaab0cd4bd8e409bae2a45eb03))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11.311 ([7cfb5c4](https://github.com/halkeye/helm-charts/commit/7cfb5c4505f8b89316ebbb1741adaff5159fa6f6))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11.313 ([8820393](https://github.com/halkeye/helm-charts/commit/88203937838581740eb4d0ec03cbc386c5d8ea5c))"
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.92.2 ([78dfe62](https://github.com/halkeye/helm-charts/commit/78dfe62cc403ecb8a67b404fa81b2dc196946958))"
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.93.0 ([4d09f33](https://github.com/halkeye/helm-charts/commit/4d09f33d75910fa7e1d163186008ac20df6f5c9a))"
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.94.0 ([ff8fecd](https://github.com/halkeye/helm-charts/commit/ff8fecd6862a09b187bc45b771813f22709c438d))"
-     - "**deps:** update signald/signald docker tag to v0.23.2 ([d439dcc](https://github.com/halkeye/helm-charts/commit/d439dcc142c1f5fb983da6ca4dd9c5c8fe4e8228))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.43 ([623f095](https://github.com/halkeye/helm-charts/commit/623f095bb6d4a946b3b6737a25f3e2095261ad9c))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.44 ([740a64e](https://github.com/halkeye/helm-charts/commit/740a64ed83b9bbd7c098ba6e07aeb47f8ddf1f5d))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.45 ([e5e0768](https://github.com/halkeye/helm-charts/commit/e5e0768f787d02b10e2949834bd34bf320b8bc13))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.46 ([80c44ec](https://github.com/halkeye/helm-charts/commit/80c44ecd57846fa8680bf76a35f402d909165585))"
-     - "force release ([f89d4ef](https://github.com/halkeye/helm-charts/commit/f89d4efaefef5c284cca74b94b3e84d76dfccf33))"
-     - "force release ([776a440](https://github.com/halkeye/helm-charts/commit/776a4408be58239d3c54584d43f1e28447cb1b98))"
-     - "force release ([44bcdc0](https://github.com/halkeye/helm-charts/commit/44bcdc0316567b1574629037e0ac14363b5f379e))"
-     - "**matrix-signal:** Update default config file to match master ([ed55458](https://github.com/halkeye/helm-charts/commit/ed55458707b16c1f8af7a125fac051e8e0b55013))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.314 ([b6009bb](https://github.com/halkeye/helm-charts/commit/b6009bbce9770240c12a3f08f41a4f8310b796e3))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.315 ([5e485ef](https://github.com/halkeye/helm-charts/commit/5e485ef186759ce3bdcb111ed1ef670396a15abe))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.95.0 ([ee35ac6](https://github.com/halkeye/helm-charts/commit/ee35ac6d170dc971df9b4240df9254d36d7b210e))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.95.1 ([7526cc9](https://github.com/halkeye/helm-charts/commit/7526cc9f040884690e44a0e9a110cc3011757154))"
+     - "**deps:** update tj-actions/changed-files action to v40 ([ec07b8a](https://github.com/halkeye/helm-charts/commit/ec07b8ae9710e37dcb3a5c23406fb7318093770c))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.47 ([bd19d7e](https://github.com/halkeye/helm-charts/commit/bd19d7e4e29e17eef8e2f469440f5793b7d45106))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.48 ([18ab179](https://github.com/halkeye/helm-charts/commit/18ab179610454e402b444821a98466a38a2224d5))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.49 ([4ca38cd](https://github.com/halkeye/helm-charts/commit/4ca38cd64c42a3fc7c8a672337bc825c5d0f844b))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: whatsapp
