@@ -8052,6 +8052,44 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**synapse:** Switch to element version now that matrix-org isn't releasing any ([42f65ff](https://github.com/halkeye/helm-charts/commit/42f65ff928df796024ea34f0f80a4961b027c8b4))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.100.0"
+    apiVersion: v2
+    appVersion: v1.100.0
+    created: "2024-02-09T05:13:42.993396144Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: cd137dc4536aa586782d3a9bca90a9e9e3200dab0f4cf73bb1b87a1930e50d7b
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.31.0.tgz
+    version: 0.31.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update felddy/foundryvtt docker tag to v11.314 ([b6009bb](https://github.com/halkeye/helm-charts/commit/b6009bbce9770240c12a3f08f41a4f8310b796e3))"
          - "**deps:** update felddy/foundryvtt docker tag to v11.315 ([5e485ef](https://github.com/halkeye/helm-charts/commit/5e485ef186759ce3bdcb111ed1ef670396a15abe))"
          - "**deps:** update matrixdotorg/synapse docker tag to v1.100.0 ([#40](https://github.com/halkeye/helm-charts/issues/40)) ([65e004d](https://github.com/halkeye/helm-charts/commit/65e004d780117b11bec9832da4a2588541316715))"
@@ -12819,4 +12857,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-02-09T05:05:25.170322111Z"
+generated: "2024-02-09T05:13:42.99407793Z"
