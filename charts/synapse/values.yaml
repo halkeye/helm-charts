@@ -8,7 +8,7 @@ replicaCounts:
   federation_sender: 1
 
 image:
-  repository: matrixdotorg/synapse
+  repository: ghcr.io/element-hq/synapse
   tag: "{{ .Chart.AppVersion }}"
   pullPolicy: IfNotPresent
 
