@@ -1,6 +1,6 @@
 apiVersion: v2
 # image: "matrixdotorg/synapse"
-appVersion: v1.100.0
+appVersion: v1.101.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
 version: 0.31.0
@@ -32,4 +32,4 @@ annotations:
      - "**synapse:** Switch to element version now that matrix-org isn't releasing any ([42f65ff](https://github.com/halkeye/helm-charts/commit/42f65ff928df796024ea34f0f80a4961b027c8b4))"
   artifacthub.io/images: |
     - name: synapse
-      image: "matrixdotorg/synapse:v1.100.0"
+      image: "matrixdotorg/synapse:v1.101.0"
