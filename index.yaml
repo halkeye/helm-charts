@@ -8086,6 +8086,45 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.101.0 ([#48](https://github.com/halkeye/helm-charts/issues/48)) ([826fdfe](https://github.com/halkeye/helm-charts/commit/826fdfe8bf38a7041d007e43735b741a693da3d8))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.58 ([#42](https://github.com/halkeye/helm-charts/issues/42)) ([20ad383](https://github.com/halkeye/helm-charts/commit/20ad3835b038ff7f578a4e08bb36808dd2d0f331))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.101.0"
+    apiVersion: v2
+    appVersion: v1.101.0
+    created: "2024-02-18T05:59:11.382743768Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: c1200694ea2fe788220972247b6b1c0f1c29289729cdc94e81106326481e0556
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.32.0.tgz
+    version: 0.32.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**synapse:** Switch to element version now that matrix-org isn't releasing any ([42f65ff](https://github.com/halkeye/helm-charts/commit/42f65ff928df796024ea34f0f80a4961b027c8b4))"
       artifacthub.io/images: |
         - name: synapse
@@ -12891,4 +12930,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-02-15T00:33:45.201428903Z"
+generated: "2024-02-18T05:59:11.383436273Z"
