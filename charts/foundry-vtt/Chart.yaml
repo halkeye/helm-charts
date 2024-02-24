@@ -1,9 +1,9 @@
 apiVersion: v2
 # image: "felddy/foundryvtt"
-appVersion: '11.308'
+appVersion: '11.315'
 description: Foundry Virtual Tabletop
 name: foundry-vtt
-version: 1.9.0
+version: 1.9.1
 type: application
 keywords:
   - game
