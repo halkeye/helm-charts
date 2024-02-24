@@ -1,7 +1,7 @@
 apiVersion: v2
 type: application
 # image: "dock.mau.dev/mautrix/whatsapp"
-appVersion: v0.10.3
+appVersion: v0.10.5
 description: A Matrix-WhatsApp puppeting bridge https://maunium.net/go/mautrix-whatsapp
 name: mautrix-whatsapp
 version: 1.7.0
@@ -30,4 +30,4 @@ annotations:
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: whatsapp
-      image: "dock.mau.dev/mautrix/whatsapp:v0.10.3"
+      image: "dock.mau.dev/mautrix/whatsapp:v0.10.5"
