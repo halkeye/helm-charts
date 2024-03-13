@@ -5,7 +5,7 @@ description: Communicate the way you want with Riot - a universal secure chat
   app entirely under your control.
 icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
 name: element-web
-version: 1.21.0
+version: 1.22.0
 type: application
 keywords:
   - synapse
@@ -21,10 +21,14 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.100.0 ([#40](https://github.com/halkeye/helm-charts/issues/40)) ([65e004d](https://github.com/halkeye/helm-charts/commit/65e004d780117b11bec9832da4a2588541316715))"
-     - "**deps:** update tj-actions/changed-files action to v41 [security] ([#45](https://github.com/halkeye/helm-charts/issues/45)) ([4cd3e12](https://github.com/halkeye/helm-charts/commit/4cd3e1271a2d2e9b7bf7aed22aa6c40fcb1de99d))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.58 ([#42](https://github.com/halkeye/helm-charts/issues/42)) ([20ad383](https://github.com/halkeye/helm-charts/commit/20ad3835b038ff7f578a4e08bb36808dd2d0f331))"
-     - "**synapse:** Switch to element version now that matrix-org isn't releasing any ([42f65ff](https://github.com/halkeye/helm-charts/commit/42f65ff928df796024ea34f0f80a4961b027c8b4))"
+     - "**deps:** update actions/setup-node action to v4 ([#31](https://github.com/halkeye/helm-charts/issues/31)) ([2c6811f](https://github.com/halkeye/helm-charts/commit/2c6811fb7268b87cc85ed18c8283c09c05e6388c))"
+     - "**deps:** update dependency semantic-release to v23 ([#46](https://github.com/halkeye/helm-charts/issues/46)) ([ff6fd10](https://github.com/halkeye/helm-charts/commit/ff6fd10dc2a2999c6e8090a4ea10a8e296c3a172))"
+     - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.5 ([#41](https://github.com/halkeye/helm-charts/issues/41)) ([e2cc82d](https://github.com/halkeye/helm-charts/commit/e2cc82d826494dca4a45a05a96515a24698c412d))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.101.0 ([#48](https://github.com/halkeye/helm-charts/issues/48)) ([826fdfe](https://github.com/halkeye/helm-charts/commit/826fdfe8bf38a7041d007e43735b741a693da3d8))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.102.0 ([#51](https://github.com/halkeye/helm-charts/issues/51)) ([c2a82bc](https://github.com/halkeye/helm-charts/commit/c2a82bcfeaa8fc6df20bcd1b4d7c6eaa9cd9f5cd))"
+     - "**deps:** update tj-actions/changed-files action to v42 ([#47](https://github.com/halkeye/helm-charts/issues/47)) ([c7f88a6](https://github.com/halkeye/helm-charts/commit/c7f88a6cfd422e533ca5f0fcba50a4bb2b6c904f))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.59 ([#49](https://github.com/halkeye/helm-charts/issues/49)) ([a5a8ba8](https://github.com/halkeye/helm-charts/commit/a5a8ba80d4829e699c104544e09b3665d44d361a))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.60 ([#52](https://github.com/halkeye/helm-charts/issues/52)) ([c98fb62](https://github.com/halkeye/helm-charts/commit/c98fb62a1d2bd627599217a50f95c23089b3887d))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: element-web
