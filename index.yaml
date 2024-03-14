@@ -538,6 +538,39 @@ entries:
   element-web:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update azure/setup-helm action to v4 ([#50](https://github.com/halkeye/helm-charts/issues/50)) ([f9c5e72](https://github.com/halkeye/helm-charts/commit/f9c5e720ed2e3057d268fed884d47c5c7aeb1f53))"
+         - "**deps:** update tj-actions/changed-files action to v43 ([#53](https://github.com/halkeye/helm-charts/issues/53)) ([ce0486f](https://github.com/halkeye/helm-charts/commit/ce0486fe4771ddea2be37f452ee021b02655052e))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.61 ([#54](https://github.com/halkeye/helm-charts/issues/54)) ([16156ae](https://github.com/halkeye/helm-charts/commit/16156ae4c34f7d1202920b259f68e27ca9523c65))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: element-web
+          image: "vectorim/element-web:v1.11.61"
+    apiVersion: v2
+    appVersion: v1.11.61
+    created: "2024-03-14T19:34:33.663653655Z"
+    description: Communicate the way you want with Riot - a universal secure chat
+      app entirely under your control.
+    digest: 29452fba0ef8d7070e266c982921f0c08d6b729a66a7169c11a1f085714f1fee
+    home: https://element.io/
+    icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    - element
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: element-web
+    sources:
+    - https://github.com/vector-im/element-web
+    type: application
+    urls:
+    - element-web-1.23.0.tgz
+    version: 1.23.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update actions/setup-node action to v4 ([#31](https://github.com/halkeye/helm-charts/issues/31)) ([2c6811f](https://github.com/halkeye/helm-charts/commit/2c6811fb7268b87cc85ed18c8283c09c05e6388c))"
          - "**deps:** update dependency semantic-release to v23 ([#46](https://github.com/halkeye/helm-charts/issues/46)) ([ff6fd10](https://github.com/halkeye/helm-charts/commit/ff6fd10dc2a2999c6e8090a4ea10a8e296c3a172))"
          - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.5 ([#41](https://github.com/halkeye/helm-charts/issues/41)) ([e2cc82d](https://github.com/halkeye/helm-charts/commit/e2cc82d826494dca4a45a05a96515a24698c412d))"
@@ -12968,4 +13001,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-03-13T04:41:57.813941984Z"
+generated: "2024-03-14T19:34:33.664550578Z"
