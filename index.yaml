@@ -8157,6 +8157,54 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update actions/setup-node action to v4 ([#31](https://github.com/halkeye/helm-charts/issues/31)) ([2c6811f](https://github.com/halkeye/helm-charts/commit/2c6811fb7268b87cc85ed18c8283c09c05e6388c))"
+         - "**deps:** update azure/setup-helm action to v4 ([#50](https://github.com/halkeye/helm-charts/issues/50)) ([f9c5e72](https://github.com/halkeye/helm-charts/commit/f9c5e720ed2e3057d268fed884d47c5c7aeb1f53))"
+         - "**deps:** update dependency semantic-release to v23 ([#46](https://github.com/halkeye/helm-charts/issues/46)) ([ff6fd10](https://github.com/halkeye/helm-charts/commit/ff6fd10dc2a2999c6e8090a4ea10a8e296c3a172))"
+         - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.5 ([#41](https://github.com/halkeye/helm-charts/issues/41)) ([e2cc82d](https://github.com/halkeye/helm-charts/commit/e2cc82d826494dca4a45a05a96515a24698c412d))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.102.0 ([#51](https://github.com/halkeye/helm-charts/issues/51)) ([c2a82bc](https://github.com/halkeye/helm-charts/commit/c2a82bcfeaa8fc6df20bcd1b4d7c6eaa9cd9f5cd))"
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.103.0 ([#57](https://github.com/halkeye/helm-charts/issues/57)) ([4171e9a](https://github.com/halkeye/helm-charts/commit/4171e9abdafa522717a9e87ceea9c1e631f0585a))"
+         - "**deps:** update tj-actions/changed-files action to v42 ([#47](https://github.com/halkeye/helm-charts/issues/47)) ([c7f88a6](https://github.com/halkeye/helm-charts/commit/c7f88a6cfd422e533ca5f0fcba50a4bb2b6c904f))"
+         - "**deps:** update tj-actions/changed-files action to v43 ([#53](https://github.com/halkeye/helm-charts/issues/53)) ([ce0486f](https://github.com/halkeye/helm-charts/commit/ce0486fe4771ddea2be37f452ee021b02655052e))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.59 ([#49](https://github.com/halkeye/helm-charts/issues/49)) ([a5a8ba8](https://github.com/halkeye/helm-charts/commit/a5a8ba80d4829e699c104544e09b3665d44d361a))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.60 ([#52](https://github.com/halkeye/helm-charts/issues/52)) ([c98fb62](https://github.com/halkeye/helm-charts/commit/c98fb62a1d2bd627599217a50f95c23089b3887d))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.61 ([#54](https://github.com/halkeye/helm-charts/issues/54)) ([16156ae](https://github.com/halkeye/helm-charts/commit/16156ae4c34f7d1202920b259f68e27ca9523c65))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.103.0"
+    apiVersion: v2
+    appVersion: v1.103.0
+    created: "2024-03-19T15:38:48.74096227Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: ac8133cd4bea4a6be2adf72d901d952729b7b5fcb2c5b503b0c6d2eafd856904
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.33.0.tgz
+    version: 0.33.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update matrixdotorg/synapse docker tag to v1.101.0 ([#48](https://github.com/halkeye/helm-charts/issues/48)) ([826fdfe](https://github.com/halkeye/helm-charts/commit/826fdfe8bf38a7041d007e43735b741a693da3d8))"
          - "**deps:** update vectorim/element-web docker tag to v1.11.58 ([#42](https://github.com/halkeye/helm-charts/issues/42)) ([20ad383](https://github.com/halkeye/helm-charts/commit/20ad3835b038ff7f578a4e08bb36808dd2d0f331))"
       artifacthub.io/images: |
@@ -13001,4 +13049,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-03-14T19:34:33.664550578Z"
+generated: "2024-03-19T15:38:48.741635873Z"
