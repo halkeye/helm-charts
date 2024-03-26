@@ -538,6 +538,38 @@ entries:
   element-web:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.103.0 ([#57](https://github.com/halkeye/helm-charts/issues/57)) ([4171e9a](https://github.com/halkeye/helm-charts/commit/4171e9abdafa522717a9e87ceea9c1e631f0585a))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.62 ([#58](https://github.com/halkeye/helm-charts/issues/58)) ([7113125](https://github.com/halkeye/helm-charts/commit/7113125fa3259d3c1c80fa25accb8c8563630c23))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: element-web
+          image: "vectorim/element-web:v1.11.62"
+    apiVersion: v2
+    appVersion: v1.11.62
+    created: "2024-03-26T21:36:51.223738591Z"
+    description: Communicate the way you want with Riot - a universal secure chat
+      app entirely under your control.
+    digest: 9c6310dce6aea1914e159744221931d57da9af5e2361ee6df5d66d240d91336a
+    home: https://element.io/
+    icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    - element
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: element-web
+    sources:
+    - https://github.com/vector-im/element-web
+    type: application
+    urls:
+    - element-web-1.24.0.tgz
+    version: 1.24.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update azure/setup-helm action to v4 ([#50](https://github.com/halkeye/helm-charts/issues/50)) ([f9c5e72](https://github.com/halkeye/helm-charts/commit/f9c5e720ed2e3057d268fed884d47c5c7aeb1f53))"
          - "**deps:** update tj-actions/changed-files action to v43 ([#53](https://github.com/halkeye/helm-charts/issues/53)) ([ce0486f](https://github.com/halkeye/helm-charts/commit/ce0486fe4771ddea2be37f452ee021b02655052e))"
          - "**deps:** update vectorim/element-web docker tag to v1.11.61 ([#54](https://github.com/halkeye/helm-charts/issues/54)) ([16156ae](https://github.com/halkeye/helm-charts/commit/16156ae4c34f7d1202920b259f68e27ca9523c65))"
@@ -13049,4 +13081,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-03-19T15:38:48.741635873Z"
+generated: "2024-03-26T21:36:51.224439482Z"
