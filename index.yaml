@@ -538,6 +538,37 @@ entries:
   element-web:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update vectorim/element-web docker tag to v1.11.63 ([#62](https://github.com/halkeye/helm-charts/issues/62)) ([d3a7daa](https://github.com/halkeye/helm-charts/commit/d3a7daad4c1e442073f8a9ea0b8dbe3284bf771c))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: element-web
+          image: "vectorim/element-web:v1.11.63"
+    apiVersion: v2
+    appVersion: v1.11.63
+    created: "2024-03-29T21:40:59.322654977Z"
+    description: Communicate the way you want with Riot - a universal secure chat
+      app entirely under your control.
+    digest: 21659cf4d04973dcedd877e8a1a7b879a892c2213689e9a7c37c4c7601fb7e12
+    home: https://element.io/
+    icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    - element
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: element-web
+    sources:
+    - https://github.com/vector-im/element-web
+    type: application
+    urls:
+    - element-web-1.25.0.tgz
+    version: 1.25.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update matrixdotorg/synapse docker tag to v1.103.0 ([#57](https://github.com/halkeye/helm-charts/issues/57)) ([4171e9a](https://github.com/halkeye/helm-charts/commit/4171e9abdafa522717a9e87ceea9c1e631f0585a))"
          - "**deps:** update vectorim/element-web docker tag to v1.11.62 ([#58](https://github.com/halkeye/helm-charts/issues/58)) ([7113125](https://github.com/halkeye/helm-charts/commit/7113125fa3259d3c1c80fa25accb8c8563630c23))"
       artifacthub.io/containsSecurityUpdates: "false"
@@ -13081,4 +13112,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-03-26T21:36:51.224439482Z"
+generated: "2024-03-29T21:40:59.32342492Z"
