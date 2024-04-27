@@ -1,5 +1,6 @@
 apiVersion: v2
 type: application
+deprecated: true
 # image: "dock.mau.dev/mautrix/instagram"
 appVersion: v0.3.1
 description: A Matrix-Instagram puppeting bridge.
@@ -18,7 +19,7 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**mautrix-instagram:** use properly released mautrix instagram docker tag ([0a967dd](https://github.com/halkeye/helm-charts/commit/0a967ddf143b67d767883abad0779c8dbe917208))"
+     - "No longer running this version, so marking at deprecated"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: instagram

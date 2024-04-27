@@ -1,5 +1,7 @@
 apiVersion: v2
 type: application
+# you can borrow from https://github.com/halkeye/home-k8s/tree/main/charts/mautrix-googlechat but i'm no longer maintaining a public shared one
+deprecated: true
 # image: "dock.mau.dev/mautrix/googlechat"
 appVersion: v0.4.0
 version: 1.0.5
@@ -20,7 +22,7 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "force release ([0b21a4f](https://github.com/halkeye-helm-charts/mautrix-googlechat/commit/0b21a4f990e1885ff7ab3a0761fc478db3a8d042))"
+     - "No longer running this version, so marking at deprecated"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: mautrix-googlechat
