@@ -8285,6 +8285,45 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.107.0 ([#69](https://github.com/halkeye/helm-charts/issues/69)) ([2b2cd61](https://github.com/halkeye/helm-charts/commit/2b2cd61a191a3fe9ad759370994d32c33afa3ed2))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.66 ([#66](https://github.com/halkeye/helm-charts/issues/66)) ([8ad207d](https://github.com/halkeye/helm-charts/commit/8ad207de124dfb4176e72e59f7aa9c548f7007dd))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.107.0"
+    apiVersion: v2
+    appVersion: v1.107.0
+    created: "2024-05-15T05:40:17.062563246Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: 18e22d72b77c589b023c1b53b375cf26ebee494adfcf74b1d00540deea34b36f
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.35.0.tgz
+    version: 0.35.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "mark a bunch of the charts i've moved over to argo or otherwise not using/maintaining as depreciated ([8c8e767](https://github.com/halkeye/helm-charts/commit/8c8e767d8e17e047b29f270e06152e33dcdd465d))"
          - "**deps:** update matrixdotorg/synapse docker tag to v1.106.0 ([#63](https://github.com/halkeye/helm-charts/issues/63)) ([e2bc5a9](https://github.com/halkeye/helm-charts/commit/e2bc5a92e026e75be9b9c2ff24f891cb7ef271bb))"
          - "**deps:** update semantic-release monorepo ([#60](https://github.com/halkeye/helm-charts/issues/60)) ([9fb9019](https://github.com/halkeye/helm-charts/commit/9fb9019f5726ac519af259451c420feda0390235))"
@@ -13220,4 +13259,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-05-11T18:06:27.970333608Z"
+generated: "2024-05-15T05:40:17.063178552Z"
