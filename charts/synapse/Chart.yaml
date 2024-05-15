@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.107.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.34.0
+version: 0.35.0
 type: application
 keywords:
   - synapse
@@ -29,12 +29,8 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "mark a bunch of the charts i've moved over to argo or otherwise not using/maintaining as depreciated ([8c8e767](https://github.com/halkeye/helm-charts/commit/8c8e767d8e17e047b29f270e06152e33dcdd465d))"
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.106.0 ([#63](https://github.com/halkeye/helm-charts/issues/63)) ([e2bc5a9](https://github.com/halkeye/helm-charts/commit/e2bc5a92e026e75be9b9c2ff24f891cb7ef271bb))"
-     - "**deps:** update semantic-release monorepo ([#60](https://github.com/halkeye/helm-charts/issues/60)) ([9fb9019](https://github.com/halkeye/helm-charts/commit/9fb9019f5726ac519af259451c420feda0390235))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.62 ([#58](https://github.com/halkeye/helm-charts/issues/58)) ([7113125](https://github.com/halkeye/helm-charts/commit/7113125fa3259d3c1c80fa25accb8c8563630c23))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.63 ([#62](https://github.com/halkeye/helm-charts/issues/62)) ([d3a7daa](https://github.com/halkeye/helm-charts/commit/d3a7daad4c1e442073f8a9ea0b8dbe3284bf771c))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.64 ([#64](https://github.com/halkeye/helm-charts/issues/64)) ([3ef95ec](https://github.com/halkeye/helm-charts/commit/3ef95ec2414dd5be605168018baf98c2a94c46bd))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.107.0 ([#69](https://github.com/halkeye/helm-charts/issues/69)) ([2b2cd61](https://github.com/halkeye/helm-charts/commit/2b2cd61a191a3fe9ad759370994d32c33afa3ed2))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.66 ([#66](https://github.com/halkeye/helm-charts/issues/66)) ([8ad207d](https://github.com/halkeye/helm-charts/commit/8ad207de124dfb4176e72e59f7aa9c548f7007dd))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.107.0"
