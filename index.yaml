@@ -538,6 +538,38 @@ entries:
   element-web:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.107.0 ([#69](https://github.com/halkeye/helm-charts/issues/69)) ([2b2cd61](https://github.com/halkeye/helm-charts/commit/2b2cd61a191a3fe9ad759370994d32c33afa3ed2))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.67 ([#70](https://github.com/halkeye/helm-charts/issues/70)) ([7cafd3f](https://github.com/halkeye/helm-charts/commit/7cafd3fe9d2f6c29184a770c0dcd9f1b458396ac))"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: element-web
+          image: "vectorim/element-web:v1.11.67"
+    apiVersion: v2
+    appVersion: v1.11.67
+    created: "2024-05-23T15:36:33.640681302Z"
+    description: Communicate the way you want with Riot - a universal secure chat
+      app entirely under your control.
+    digest: 087c058c413e1ecbe28128edca7997b163e98dbc74cad40098aac6b565389ad2
+    home: https://element.io/
+    icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    - element
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: element-web
+    sources:
+    - https://github.com/vector-im/element-web
+    type: application
+    urls:
+    - element-web-1.28.0.tgz
+    version: 1.28.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "mark a bunch of the charts i've moved over to argo or otherwise not using/maintaining as depreciated ([8c8e767](https://github.com/halkeye/helm-charts/commit/8c8e767d8e17e047b29f270e06152e33dcdd465d))"
          - "**deps:** update matrixdotorg/synapse docker tag to v1.106.0 ([#63](https://github.com/halkeye/helm-charts/issues/63)) ([e2bc5a9](https://github.com/halkeye/helm-charts/commit/e2bc5a92e026e75be9b9c2ff24f891cb7ef271bb))"
          - "**deps:** update vectorim/element-web docker tag to v1.11.66 ([#66](https://github.com/halkeye/helm-charts/issues/66)) ([8ad207d](https://github.com/halkeye/helm-charts/commit/8ad207de124dfb4176e72e59f7aa9c548f7007dd))"
@@ -13259,4 +13291,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-05-15T05:40:17.063178552Z"
+generated: "2024-05-23T15:36:33.641458463Z"
