@@ -8317,6 +8317,45 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.108.0 ([#71](https://github.com/halkeye/helm-charts/issues/71)) ([6461db5](https://github.com/halkeye/helm-charts/commit/6461db5cc44f86bcf24f51b4d6cd71ce8295d8dd))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.67 ([#70](https://github.com/halkeye/helm-charts/issues/70)) ([7cafd3f](https://github.com/halkeye/helm-charts/commit/7cafd3fe9d2f6c29184a770c0dcd9f1b458396ac))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.108.0"
+    apiVersion: v2
+    appVersion: v1.108.0
+    created: "2024-05-29T20:45:43.793317243Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: 739f2e97125149abc7e37b72197f19348f0d66a18ea5ab91b5fee60939e081b8
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.36.0.tgz
+    version: 0.36.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update matrixdotorg/synapse docker tag to v1.107.0 ([#69](https://github.com/halkeye/helm-charts/issues/69)) ([2b2cd61](https://github.com/halkeye/helm-charts/commit/2b2cd61a191a3fe9ad759370994d32c33afa3ed2))"
          - "**deps:** update vectorim/element-web docker tag to v1.11.66 ([#66](https://github.com/halkeye/helm-charts/issues/66)) ([8ad207d](https://github.com/halkeye/helm-charts/commit/8ad207de124dfb4176e72e59f7aa9c548f7007dd))"
       artifacthub.io/images: |
@@ -13291,4 +13330,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-05-23T15:36:33.641458463Z"
+generated: "2024-05-29T20:45:43.793943488Z"
