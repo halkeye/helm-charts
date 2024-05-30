@@ -3,7 +3,7 @@ type: application
 # you can borrow from https://github.com/halkeye/home-k8s/tree/main/charts/mautrix-googlechat but i'm no longer maintaining a public shared one
 deprecated: true
 # image: "dock.mau.dev/mautrix/googlechat"
-appVersion: v0.4.0
+appVersion: v0.5.1
 version: 1.1.0
 name: mautrix-googlechat
 description: A Matrix-Hangouts puppeting bridge (Now externally called mautrix-googlechat)
@@ -95,4 +95,4 @@ annotations:
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: mautrix-googlechat
-      image: "dock.mau.dev/mautrix/googlechat:v0.4.0"
+      image: "dock.mau.dev/mautrix/googlechat:v0.5.1"
