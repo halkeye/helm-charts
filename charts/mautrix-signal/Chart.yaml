@@ -1,4 +1,6 @@
 apiVersion: v2
+# you can borrow from https://github.com/halkeye/home-k8s/tree/main/charts/mautrix-signal but i'm no longer maintaining a public shared one
+deprecated: true
 # image: "dock.mau.dev/mautrix/signal"
 appVersion: latest
 description: A Matrix-Signal puppeting bridge.
