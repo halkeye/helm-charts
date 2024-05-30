@@ -5,7 +5,7 @@ deprecated: true
 appVersion: latest
 description: A Matrix-Signal puppeting bridge.
 name: mautrix-signal
-version: 0.4.0
+version: 0.5.0
 type: application
 keywords:
   - synapse
@@ -20,9 +20,59 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**foundry-vtt:** Annotation indenting was incorrect and had too many spaces on the first one ([015500e](https://github.com/halkeye/helm-charts/commit/015500e3bf67a1f82f26b1d7cbc6b1c67278a072))"
-     - "**foundry-vtt:** fully upgrade to 11.308 and tell renovate to keep that variable up to date too ([4079f84](https://github.com/halkeye/helm-charts/commit/4079f8442a5117da5be55d202cb0be7a67c562d9))"
-     - "**deps:** update felddy/foundryvtt docker tag to v11 ([d08fef7](https://github.com/halkeye/helm-charts/commit/d08fef7f9ada55aaab0cd4bd8e409bae2a45eb03))"
+     - "allow homeserver configs to have variables in them ([6d813f5](https://github.com/halkeye/helm-charts/commit/6d813f5760327ed64d712684bcc0f88f5a4c3552))"
+     - "create services so main/master can talk to workers since communication is no longer one way ([2056aed](https://github.com/halkeye/helm-charts/commit/2056aed332de888e57d2227474c387513c5e3e97))"
+     - "mark a bunch of the charts i've moved over to argo or otherwise not using/maintaining as depreciated ([8c8e767](https://github.com/halkeye/helm-charts/commit/8c8e767d8e17e047b29f270e06152e33dcdd465d))"
+     - "**mautrix-instagram:** use properly released mautrix instagram docker tag ([0a967dd](https://github.com/halkeye/helm-charts/commit/0a967ddf143b67d767883abad0779c8dbe917208))"
+     - "workers shouldn't connect to master on localhost ([c98afca](https://github.com/halkeye/helm-charts/commit/c98afca25323accfca385fd4344899d413d68fa7))"
+     - "**deps:** update actions/setup-node action to v4 ([#31](https://github.com/halkeye/helm-charts/issues/31)) ([2c6811f](https://github.com/halkeye/helm-charts/commit/2c6811fb7268b87cc85ed18c8283c09c05e6388c))"
+     - "**deps:** update azure/setup-helm action to v4 ([#50](https://github.com/halkeye/helm-charts/issues/50)) ([f9c5e72](https://github.com/halkeye/helm-charts/commit/f9c5e720ed2e3057d268fed884d47c5c7aeb1f53))"
+     - "**deps:** update dependency semantic-release to v22 ([fa09bc4](https://github.com/halkeye/helm-charts/commit/fa09bc4e9769c1a5841ff172a747d2885df10031))"
+     - "**deps:** update dependency semantic-release to v22.0.1 ([1101ee5](https://github.com/halkeye/helm-charts/commit/1101ee56a8b6834f7141b2689b0dc5c699517c35))"
+     - "**deps:** update dependency semantic-release to v23 ([#46](https://github.com/halkeye/helm-charts/issues/46)) ([ff6fd10](https://github.com/halkeye/helm-charts/commit/ff6fd10dc2a2999c6e8090a4ea10a8e296c3a172))"
+     - "**deps:** update dependency semantic-release-helm3 to v2.9.3 ([4bf6a79](https://github.com/halkeye/helm-charts/commit/4bf6a79cc2c5b18a6614b7cb083bf4a37879fee7))"
+     - "**deps:** update dock.mau.dev/mautrix/instagram docker tag to v0.3.1 ([542b21c](https://github.com/halkeye/helm-charts/commit/542b21c73d6b4c854e82459d896b25db5be6488f))"
+     - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.3 ([01b7dd5](https://github.com/halkeye/helm-charts/commit/01b7dd5ab4a8820dc2bdf7e8003a8390f5889515))"
+     - "**deps:** update dock.mau.dev/mautrix/whatsapp docker tag to v0.10.5 ([#41](https://github.com/halkeye/helm-charts/issues/41)) ([e2cc82d](https://github.com/halkeye/helm-charts/commit/e2cc82d826494dca4a45a05a96515a24698c412d))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.311 ([7cfb5c4](https://github.com/halkeye/helm-charts/commit/7cfb5c4505f8b89316ebbb1741adaff5159fa6f6))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.313 ([8820393](https://github.com/halkeye/helm-charts/commit/88203937838581740eb4d0ec03cbc386c5d8ea5c))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.314 ([b6009bb](https://github.com/halkeye/helm-charts/commit/b6009bbce9770240c12a3f08f41a4f8310b796e3))"
+     - "**deps:** update felddy/foundryvtt docker tag to v11.315 ([5e485ef](https://github.com/halkeye/helm-charts/commit/5e485ef186759ce3bdcb111ed1ef670396a15abe))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.100.0 ([#40](https://github.com/halkeye/helm-charts/issues/40)) ([65e004d](https://github.com/halkeye/helm-charts/commit/65e004d780117b11bec9832da4a2588541316715))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.101.0 ([#48](https://github.com/halkeye/helm-charts/issues/48)) ([826fdfe](https://github.com/halkeye/helm-charts/commit/826fdfe8bf38a7041d007e43735b741a693da3d8))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.102.0 ([#51](https://github.com/halkeye/helm-charts/issues/51)) ([c2a82bc](https://github.com/halkeye/helm-charts/commit/c2a82bcfeaa8fc6df20bcd1b4d7c6eaa9cd9f5cd))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.103.0 ([#57](https://github.com/halkeye/helm-charts/issues/57)) ([4171e9a](https://github.com/halkeye/helm-charts/commit/4171e9abdafa522717a9e87ceea9c1e631f0585a))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.106.0 ([#63](https://github.com/halkeye/helm-charts/issues/63)) ([e2bc5a9](https://github.com/halkeye/helm-charts/commit/e2bc5a92e026e75be9b9c2ff24f891cb7ef271bb))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.107.0 ([#69](https://github.com/halkeye/helm-charts/issues/69)) ([2b2cd61](https://github.com/halkeye/helm-charts/commit/2b2cd61a191a3fe9ad759370994d32c33afa3ed2))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.108.0 ([#71](https://github.com/halkeye/helm-charts/issues/71)) ([6461db5](https://github.com/halkeye/helm-charts/commit/6461db5cc44f86bcf24f51b4d6cd71ce8295d8dd))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.93.0 ([4d09f33](https://github.com/halkeye/helm-charts/commit/4d09f33d75910fa7e1d163186008ac20df6f5c9a))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.94.0 ([ff8fecd](https://github.com/halkeye/helm-charts/commit/ff8fecd6862a09b187bc45b771813f22709c438d))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.95.0 ([ee35ac6](https://github.com/halkeye/helm-charts/commit/ee35ac6d170dc971df9b4240df9254d36d7b210e))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.95.1 ([7526cc9](https://github.com/halkeye/helm-charts/commit/7526cc9f040884690e44a0e9a110cc3011757154))"
+     - "**deps:** update semantic-release monorepo ([#60](https://github.com/halkeye/helm-charts/issues/60)) ([9fb9019](https://github.com/halkeye/helm-charts/commit/9fb9019f5726ac519af259451c420feda0390235))"
+     - "**deps:** update tj-actions/changed-files action to v40 ([ec07b8a](https://github.com/halkeye/helm-charts/commit/ec07b8ae9710e37dcb3a5c23406fb7318093770c))"
+     - "**deps:** update tj-actions/changed-files action to v41 [security] ([#45](https://github.com/halkeye/helm-charts/issues/45)) ([4cd3e12](https://github.com/halkeye/helm-charts/commit/4cd3e1271a2d2e9b7bf7aed22aa6c40fcb1de99d))"
+     - "**deps:** update tj-actions/changed-files action to v42 ([#47](https://github.com/halkeye/helm-charts/issues/47)) ([c7f88a6](https://github.com/halkeye/helm-charts/commit/c7f88a6cfd422e533ca5f0fcba50a4bb2b6c904f))"
+     - "**deps:** update tj-actions/changed-files action to v43 ([#53](https://github.com/halkeye/helm-charts/issues/53)) ([ce0486f](https://github.com/halkeye/helm-charts/commit/ce0486fe4771ddea2be37f452ee021b02655052e))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.44 ([740a64e](https://github.com/halkeye/helm-charts/commit/740a64ed83b9bbd7c098ba6e07aeb47f8ddf1f5d))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.45 ([e5e0768](https://github.com/halkeye/helm-charts/commit/e5e0768f787d02b10e2949834bd34bf320b8bc13))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.46 ([80c44ec](https://github.com/halkeye/helm-charts/commit/80c44ecd57846fa8680bf76a35f402d909165585))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.47 ([bd19d7e](https://github.com/halkeye/helm-charts/commit/bd19d7e4e29e17eef8e2f469440f5793b7d45106))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.48 ([18ab179](https://github.com/halkeye/helm-charts/commit/18ab179610454e402b444821a98466a38a2224d5))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.49 ([4ca38cd](https://github.com/halkeye/helm-charts/commit/4ca38cd64c42a3fc7c8a672337bc825c5d0f844b))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.58 ([#42](https://github.com/halkeye/helm-charts/issues/42)) ([20ad383](https://github.com/halkeye/helm-charts/commit/20ad3835b038ff7f578a4e08bb36808dd2d0f331))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.59 ([#49](https://github.com/halkeye/helm-charts/issues/49)) ([a5a8ba8](https://github.com/halkeye/helm-charts/commit/a5a8ba80d4829e699c104544e09b3665d44d361a))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.60 ([#52](https://github.com/halkeye/helm-charts/issues/52)) ([c98fb62](https://github.com/halkeye/helm-charts/commit/c98fb62a1d2bd627599217a50f95c23089b3887d))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.61 ([#54](https://github.com/halkeye/helm-charts/issues/54)) ([16156ae](https://github.com/halkeye/helm-charts/commit/16156ae4c34f7d1202920b259f68e27ca9523c65))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.62 ([#58](https://github.com/halkeye/helm-charts/issues/58)) ([7113125](https://github.com/halkeye/helm-charts/commit/7113125fa3259d3c1c80fa25accb8c8563630c23))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.63 ([#62](https://github.com/halkeye/helm-charts/issues/62)) ([d3a7daa](https://github.com/halkeye/helm-charts/commit/d3a7daad4c1e442073f8a9ea0b8dbe3284bf771c))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.64 ([#64](https://github.com/halkeye/helm-charts/issues/64)) ([3ef95ec](https://github.com/halkeye/helm-charts/commit/3ef95ec2414dd5be605168018baf98c2a94c46bd))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.66 ([#66](https://github.com/halkeye/helm-charts/issues/66)) ([8ad207d](https://github.com/halkeye/helm-charts/commit/8ad207de124dfb4176e72e59f7aa9c548f7007dd))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.67 ([#70](https://github.com/halkeye/helm-charts/issues/70)) ([7cafd3f](https://github.com/halkeye/helm-charts/commit/7cafd3fe9d2f6c29184a770c0dcd9f1b458396ac))"
+     - "force release ([f89d4ef](https://github.com/halkeye/helm-charts/commit/f89d4efaefef5c284cca74b94b3e84d76dfccf33))"
+     - "force release ([776a440](https://github.com/halkeye/helm-charts/commit/776a4408be58239d3c54584d43f1e28447cb1b98))"
+     - "force release ([44bcdc0](https://github.com/halkeye/helm-charts/commit/44bcdc0316567b1574629037e0ac14363b5f379e))"
+     - "**synapse:** Switch to element version now that matrix-org isn't releasing any ([42f65ff](https://github.com/halkeye/helm-charts/commit/42f65ff928df796024ea34f0f80a4961b027c8b4))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: mautrix-signal
