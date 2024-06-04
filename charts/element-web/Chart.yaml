@@ -1,6 +1,6 @@
 apiVersion: v2
 # image: "vectorim/element-web"
-appVersion: v1.11.67
+appVersion: v1.11.68
 description: Communicate the way you want with Riot - a universal secure chat
   app entirely under your control.
 icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
@@ -26,4 +26,4 @@ annotations:
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: element-web
-      image: "vectorim/element-web:v1.11.67"
+      image: "vectorim/element-web:v1.11.68"
