@@ -5,7 +5,7 @@ description: Communicate the way you want with Riot - a universal secure chat
   app entirely under your control.
 icon: https://raw.githubusercontent.com/vector-im/element-web/develop/res/themes/element/img/logos/element-logo.svg
 name: element-web
-version: 1.28.0
+version: 1.29.0
 type: application
 keywords:
   - synapse
@@ -21,8 +21,8 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.107.0 ([#69](https://github.com/halkeye/helm-charts/issues/69)) ([2b2cd61](https://github.com/halkeye/helm-charts/commit/2b2cd61a191a3fe9ad759370994d32c33afa3ed2))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.67 ([#70](https://github.com/halkeye/helm-charts/issues/70)) ([7cafd3f](https://github.com/halkeye/helm-charts/commit/7cafd3fe9d2f6c29184a770c0dcd9f1b458396ac))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.108.0 ([#71](https://github.com/halkeye/helm-charts/issues/71)) ([6461db5](https://github.com/halkeye/helm-charts/commit/6461db5cc44f86bcf24f51b4d6cd71ce8295d8dd))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.68 ([#72](https://github.com/halkeye/helm-charts/issues/72)) ([94923ed](https://github.com/halkeye/helm-charts/commit/94923edc849407e35bd9b126b75d16f5df625930))"
   artifacthub.io/containsSecurityUpdates: 'false'
   artifacthub.io/images: |
     - name: element-web
