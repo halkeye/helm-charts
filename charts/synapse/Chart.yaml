@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.109.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.36.0
+version: 0.37.0
 type: application
 keywords:
   - synapse
@@ -29,8 +29,9 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "**deps:** update matrixdotorg/synapse docker tag to v1.108.0 ([#71](https://github.com/halkeye/helm-charts/issues/71)) ([6461db5](https://github.com/halkeye/helm-charts/commit/6461db5cc44f86bcf24f51b4d6cd71ce8295d8dd))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.67 ([#70](https://github.com/halkeye/helm-charts/issues/70)) ([7cafd3f](https://github.com/halkeye/helm-charts/commit/7cafd3fe9d2f6c29184a770c0dcd9f1b458396ac))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.109.0 ([#74](https://github.com/halkeye/helm-charts/issues/74)) ([b9ad9c4](https://github.com/halkeye/helm-charts/commit/b9ad9c469ff34f7107eb07d26e32d44127cfffed))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.68 ([#72](https://github.com/halkeye/helm-charts/issues/72)) ([94923ed](https://github.com/halkeye/helm-charts/commit/94923edc849407e35bd9b126b75d16f5df625930))"
+     - "**deps:** update vectorim/element-web docker tag to v1.11.69 ([#73](https://github.com/halkeye/helm-charts/issues/73)) ([5976789](https://github.com/halkeye/helm-charts/commit/59767892787f195942503724bac0f7909e8ed3e2))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.109.0"
