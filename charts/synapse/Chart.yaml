@@ -1,6 +1,6 @@
 apiVersion: v2
 # image: "matrixdotorg/synapse"
-appVersion: v1.109.0
+appVersion: v1.110.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
 version: 0.37.0
@@ -34,4 +34,4 @@ annotations:
      - "**deps:** update vectorim/element-web docker tag to v1.11.69 ([#73](https://github.com/halkeye/helm-charts/issues/73)) ([5976789](https://github.com/halkeye/helm-charts/commit/59767892787f195942503724bac0f7909e8ed3e2))"
   artifacthub.io/images: |
     - name: synapse
-      image: "matrixdotorg/synapse:v1.109.0"
+      image: "matrixdotorg/synapse:v1.110.0"
