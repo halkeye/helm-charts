@@ -1,6 +1,8 @@
 apiVersion: v2
 # image: "felddy/foundryvtt"
 appVersion: '11.315'
+# you can borrow from https://github.com/halkeye/home-k8s/tree/main/charts/foundry-vtt but i'm no longer maintaining a public shared one
+deprecated: true
 description: Foundry Virtual Tabletop
 name: foundry-vtt
 version: 1.10.0
