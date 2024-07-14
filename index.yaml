@@ -8482,6 +8482,48 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "deprecate foundry-vtt ([9931d53](https://github.com/halkeye/helm-charts/commit/9931d53fa64b98610cb613f29db44b73f80167cc))"
+         - "fix master/main port in instancemap ([83c3f26](https://github.com/halkeye/helm-charts/commit/83c3f265ea8ebb170ec5eeb8b131fb0f1b7f0041))"
+         - "remove foundry-vtt ([f078649](https://github.com/halkeye/helm-charts/commit/f078649df6996657d9af8fb3c49a05f83558a4db))"
+         - "**deps:** update felddy/foundryvtt docker tag to v12 ([#67](https://github.com/halkeye/helm-charts/issues/67)) ([8b80153](https://github.com/halkeye/helm-charts/commit/8b801530ad595f6fdc56bf02a36d6355c2931a5f))"
+         - "**deps:** update vectorim/element-web docker tag to v1.11.70 ([#76](https://github.com/halkeye/helm-charts/issues/76)) ([32bc923](https://github.com/halkeye/helm-charts/commit/32bc923862dd760b015d1f12fab34c6eff0bddb3))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.110.0"
+    apiVersion: v2
+    appVersion: v1.110.0
+    created: "2024-07-14T06:08:39.308779221Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: b9dff402e80203e2488c0689c59c3b74e66fbb8a2c5d925ba034fb5aecd534b8
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.39.0.tgz
+    version: 0.39.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "**deps:** update matrixdotorg/synapse docker tag to v1.110.0 ([#75](https://github.com/halkeye/helm-charts/issues/75)) ([2c02ca8](https://github.com/halkeye/helm-charts/commit/2c02ca842ea7d5b43e4af385cc1382871c5914e2))"
       artifacthub.io/images: |
         - name: synapse
@@ -13573,4 +13615,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-07-14T00:28:38.699068482Z"
+generated: "2024-07-14T06:08:39.30949707Z"
