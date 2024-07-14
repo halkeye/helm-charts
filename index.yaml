@@ -3178,6 +3178,40 @@ entries:
   foundry-vtt:
   - annotations:
       artifacthub.io/changes: |2
+         - "deprecate foundry-vtt ([9931d53](https://github.com/halkeye/helm-charts/commit/9931d53fa64b98610cb613f29db44b73f80167cc))"
+      artifacthub.io/images: |
+        - name: foundryvtt
+          image: "felddy/foundryvtt:12.328"
+    apiVersion: v2
+    appVersion: "11.315"
+    created: "2024-07-14T00:28:38.69834032Z"
+    deprecated: true
+    description: Foundry Virtual Tabletop
+    digest: 8fa4ee173720ba2baa298b637d67436cd05a71aa948601eb2bf28d357d11726d
+    home: https://foundryvtt.com/
+    icon: https://foundryvtt.com/static/assets/icons/fvtt.png
+    keywords:
+    - game
+    - server
+    - vtt
+    - virtualtabletop
+    - foundryvtt
+    - foundry
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    - email: devops@mahahe.it
+      name: MaHaHe DevOps
+      url: https://www.mahahe.it/
+    name: foundry-vtt
+    sources:
+    - https://github.com/halkeye-helm-charts/foundry-vtt/tree/main
+    type: application
+    urls:
+    - foundry-vtt-1.10.1.tgz
+    version: 1.10.1
+  - annotations:
+      artifacthub.io/changes: |2
          - "mark a bunch of the charts i've moved over to argo or otherwise not using/maintaining as depreciated ([8c8e767](https://github.com/halkeye/helm-charts/commit/8c8e767d8e17e047b29f270e06152e33dcdd465d))"
          - "**deps:** update actions/setup-node action to v4 ([#31](https://github.com/halkeye/helm-charts/issues/31)) ([2c6811f](https://github.com/halkeye/helm-charts/commit/2c6811fb7268b87cc85ed18c8283c09c05e6388c))"
          - "**deps:** update azure/setup-helm action to v4 ([#50](https://github.com/halkeye/helm-charts/issues/50)) ([f9c5e72](https://github.com/halkeye/helm-charts/commit/f9c5e720ed2e3057d268fed884d47c5c7aeb1f53))"
@@ -13539,4 +13573,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-07-12T03:12:12.928840872Z"
+generated: "2024-07-14T00:28:38.699068482Z"
