@@ -8482,6 +8482,44 @@ entries:
   synapse:
   - annotations:
       artifacthub.io/changes: |2
+         - "**deps:** update matrixdotorg/synapse docker tag to v1.111.0 ([#78](https://github.com/halkeye/helm-charts/issues/78)) ([047cd5b](https://github.com/halkeye/helm-charts/commit/047cd5bb4c6f1763cc1be0f8f6d3df43be79b3f3))"
+      artifacthub.io/images: |
+        - name: synapse
+          image: "matrixdotorg/synapse:v1.111.0"
+    apiVersion: v2
+    appVersion: v1.111.0
+    created: "2024-07-17T04:19:17.448521898Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~12.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~17.10.0
+    description: The reference implementation for a Matrix.org chat server
+    digest: 51aee7d3f95e1b77faa0c0ef9c9533e7a72c318abad229f06b05f225eae40b68
+    home: https://github.com/matrix-org/synapse
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - riot
+    maintainers:
+    - email: helm@gavinmogan.com
+      name: Gavin Mogan
+    name: synapse
+    sources:
+    - https://github.com/matrix-org/synapse
+    - https://hub.docker.com/r/matrixdotorg/synapse
+    - https://matrix.org/blog/home/
+    type: application
+    urls:
+    - synapse-0.40.0.tgz
+    version: 0.40.0
+  - annotations:
+      artifacthub.io/changes: |2
          - "deprecate foundry-vtt ([9931d53](https://github.com/halkeye/helm-charts/commit/9931d53fa64b98610cb613f29db44b73f80167cc))"
          - "fix master/main port in instancemap ([83c3f26](https://github.com/halkeye/helm-charts/commit/83c3f265ea8ebb170ec5eeb8b131fb0f1b7f0041))"
          - "remove foundry-vtt ([f078649](https://github.com/halkeye/helm-charts/commit/f078649df6996657d9af8fb3c49a05f83558a4db))"
@@ -13615,4 +13653,4 @@ entries:
     urls:
     - whoami/whoami-0.3.1.tgz
     version: 0.3.1
-generated: "2024-07-14T06:08:39.30949707Z"
+generated: "2024-07-17T04:19:17.449203478Z"
