@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v1.111.0
 description: The reference implementation for a Matrix.org chat server
 name: synapse
-version: 0.39.0
+version: 0.40.0
 type: application
 keywords:
   - synapse
@@ -29,11 +29,7 @@ maintainers:
     email: helm@gavinmogan.com
 annotations:
   artifacthub.io/changes: |2
-     - "deprecate foundry-vtt ([9931d53](https://github.com/halkeye/helm-charts/commit/9931d53fa64b98610cb613f29db44b73f80167cc))"
-     - "fix master/main port in instancemap ([83c3f26](https://github.com/halkeye/helm-charts/commit/83c3f265ea8ebb170ec5eeb8b131fb0f1b7f0041))"
-     - "remove foundry-vtt ([f078649](https://github.com/halkeye/helm-charts/commit/f078649df6996657d9af8fb3c49a05f83558a4db))"
-     - "**deps:** update felddy/foundryvtt docker tag to v12 ([#67](https://github.com/halkeye/helm-charts/issues/67)) ([8b80153](https://github.com/halkeye/helm-charts/commit/8b801530ad595f6fdc56bf02a36d6355c2931a5f))"
-     - "**deps:** update vectorim/element-web docker tag to v1.11.70 ([#76](https://github.com/halkeye/helm-charts/issues/76)) ([32bc923](https://github.com/halkeye/helm-charts/commit/32bc923862dd760b015d1f12fab34c6eff0bddb3))"
+     - "**deps:** update matrixdotorg/synapse docker tag to v1.111.0 ([#78](https://github.com/halkeye/helm-charts/issues/78)) ([047cd5b](https://github.com/halkeye/helm-charts/commit/047cd5bb4c6f1763cc1be0f8f6d3df43be79b3f3))"
   artifacthub.io/images: |
     - name: synapse
       image: "matrixdotorg/synapse:v1.111.0"
